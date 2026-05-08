@@ -1,0 +1,55 @@
+seed: 42
+device: cuda
+dataset:
+  manifest_path: data/processed/_smoke_vibe33/manifest_windows.jsonl
+  video_manifest_path: data/processed/_smoke_vibe33/manifest_videos.jsonl
+  dataset_name: ctpgesture_v2
+  label_space: ctpv2_directional
+  train_split: train
+  val_split: val
+  test_split: test
+  clip_len: 32
+  representation: features
+  temporal_mode: crop_pad
+model:
+  name: skeleton_tcn
+  input_dim: 225
+  num_classes: 33
+  hidden_dim: 384
+  num_blocks: 8
+  dropout: 0.35
+trainer:
+  output_dir: runs/_smoke_ctpv2_vibe33
+  epochs: 1
+  batch_size: 64
+  num_workers: 0
+  pin_memory: true
+  persistent_workers: false
+  prefetch_factor: 4
+  amp: false
+  compile: false
+  compile_mode: reduce-overhead
+  ema: false
+  ema_decay: 0.999
+  lr: 0.0008
+  weight_decay: 0.0001
+  grad_clip: 1.0
+  label_smoothing: 0.05
+  class_weighting: inverse_sqrt
+classifier:
+  type: torch
+  checkpoint: runs/_smoke_ctpv2_vibe33/best.pt
+  label_space: ctpv2_directional
+  representation: features
+  clip_len: 32
+  temporal_mode: crop_pad
+  device: cuda
+  tta_num_clips: 1
+  model:
+    name: skeleton_tcn
+    input_dim: 225
+    num_classes: 33
+    hidden_dim: 384
+    num_blocks: 8
+    dropout: 0.35
+    amp: true

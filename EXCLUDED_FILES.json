@@ -1,0 +1,1254 @@
+[
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/README.md",
+    "reason": "markdown written material"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/THIRD_PARTY_NOTICES.md",
+    "reason": "markdown written material"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/ai_upload_package_gt200mb.zip",
+    "reason": "duplicate/archive payload"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/AI_UPLOAD_GT200MB_WITH_RESULTS_README.md",
+    "reason": "markdown written material"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/.pytest_cache/v/cache/lastfailed",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/.pytest_cache/v/cache/nodeids",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/.pytest_cache/.gitignore",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/.pytest_cache/CACHEDIR.TAG",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/.pytest_cache/README.md",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/checkpoints/README.md",
+    "reason": "markdown written material"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/configs/openmmlab/__pycache__/rtmo_body_l_640x640.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/configs/openmmlab/__pycache__/rtmpose_wholebody_l_384x288.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/docs/competition_alignment.md",
+    "reason": "markdown written material"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/docs/datasets.md",
+    "reason": "markdown written material"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/docs/final_best_workflow.md",
+    "reason": "markdown written material"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/docs/final_commands.md",
+    "reason": "markdown written material"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/docs/local_setup.md",
+    "reason": "markdown written material"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/docs/ppt_outline.md",
+    "reason": "markdown written material"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/docs/release_notes.md",
+    "reason": "markdown written material"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/docs/requirements_matrix.md",
+    "reason": "markdown written material"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/docs/resource_selection.md",
+    "reason": "markdown written material"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/docs/self_check_results.md",
+    "reason": "markdown written material"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/docs/solution_report.md",
+    "reason": "markdown written material"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/__pycache__/__init__.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/__pycache__/__init__.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/__pycache__/config.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/__pycache__/config.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/__pycache__/ctpgv2_segmenter.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/__pycache__/ctpgv2_segmenter.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/__pycache__/decoding.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/__pycache__/decoding.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/__pycache__/eval_continuous.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/__pycache__/eval_continuous.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/__pycache__/logging_utils.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/__pycache__/logging_utils.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/__pycache__/version.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/__pycache__/version.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/cli/__pycache__/__init__.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/cli/__pycache__/__init__.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/cli/__pycache__/benchmark.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/cli/__pycache__/benchmark.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/cli/__pycache__/common.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/cli/__pycache__/common.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/cli/__pycache__/debug_dataset.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/cli/__pycache__/debug_dataset.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/cli/__pycache__/evaluate.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/cli/__pycache__/evaluate.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/cli/__pycache__/evaluate_classifier.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/cli/__pycache__/evaluate_classifier.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/cli/__pycache__/evaluate_continuous.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/cli/__pycache__/evaluate_continuous.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/cli/__pycache__/evaluate_continuous_classifier.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/cli/__pycache__/evaluate_continuous_classifier.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/cli/__pycache__/export_onnx.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/cli/__pycache__/export_onnx.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/cli/__pycache__/infer_camera.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/cli/__pycache__/infer_camera.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/cli/__pycache__/infer_video.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/cli/__pycache__/infer_video.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/cli/__pycache__/offline_validate.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/cli/__pycache__/offline_validate.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/cli/__pycache__/train.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/cli/__pycache__/train.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/io/__pycache__/__init__.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/io/__pycache__/__init__.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/io/__pycache__/autoware_bridge.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/io/__pycache__/autoware_bridge.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/io/__pycache__/json_io.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/io/__pycache__/json_io.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/io/__pycache__/ros2_bridge.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/io/__pycache__/ros2_bridge.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/io/__pycache__/video_io.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/io/__pycache__/video_io.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/io/__pycache__/visualization.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/io/__pycache__/visualization.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/metrics/__pycache__/__init__.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/metrics/__pycache__/__init__.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/metrics/__pycache__/classification.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/metrics/__pycache__/classification.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/metrics/__pycache__/latency.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/metrics/__pycache__/latency.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/metrics/__pycache__/sequence.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/metrics/__pycache__/sequence.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/models/__pycache__/__init__.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/models/__pycache__/__init__.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/models/__pycache__/builder.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/models/__pycache__/builder.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/models/__pycache__/frame_gru_segmenter.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/models/__pycache__/frame_gru_segmenter.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/models/__pycache__/frame_segmenter.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/models/__pycache__/frame_segmenter.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/models/__pycache__/frame_unet_segmenter.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/models/__pycache__/frame_unet_segmenter.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/models/__pycache__/multitask_temporal.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/models/__pycache__/multitask_temporal.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/models/__pycache__/prgraph_eps.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/models/__pycache__/prgraph_eps.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/models/__pycache__/skeleton_stgcn.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/models/__pycache__/skeleton_stgcn.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/models/__pycache__/skeleton_tcn.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/models/__pycache__/skeleton_tcn.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/models/__pycache__/skeleton_transformer.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/models/__pycache__/skeleton_transformer.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/pipeline/__pycache__/__init__.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/pipeline/__pycache__/__init__.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/pipeline/__pycache__/classifier.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/pipeline/__pycache__/classifier.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/pipeline/__pycache__/detector.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/pipeline/__pycache__/detector.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/pipeline/__pycache__/intent.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/pipeline/__pycache__/intent.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/pipeline/__pycache__/pose_backends.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/pipeline/__pycache__/pose_backends.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/pipeline/__pycache__/runtime_utils.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/pipeline/__pycache__/runtime_utils.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/pipeline/__pycache__/selector.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/pipeline/__pycache__/selector.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/pipeline/__pycache__/sequence_buffer.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/pipeline/__pycache__/sequence_buffer.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/pipeline/__pycache__/state_machine.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/pipeline/__pycache__/state_machine.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/pipeline/__pycache__/system.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/pipeline/__pycache__/system.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/pipeline/__pycache__/tracker.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/pipeline/__pycache__/tracker.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/sim/__pycache__/__init__.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/sim/__pycache__/__init__.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/sim/__pycache__/carla_adapter.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr/sim/__pycache__/carla_adapter.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr_av.egg-info/SOURCES.txt",
+    "reason": "plain text written material"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr_av.egg-info/dependency_links.txt",
+    "reason": "plain text written material"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr_av.egg-info/requires.txt",
+    "reason": "plain text written material"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/src/tpgr_av.egg-info/top_level.txt",
+    "reason": "plain text written material"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/conftest.cpython-311-pytest-9.0.2.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/conftest.cpython-37-PYTEST.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/conftest.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/test_classifier.cpython-311-pytest-9.0.2.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/test_classifier.cpython-37-PYTEST.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/test_classifier.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/test_dataset.cpython-311-pytest-9.0.2.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/test_dataset.cpython-37-PYTEST.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/test_dataset.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/test_decoding.cpython-311-pytest-9.0.2.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/test_decoding.cpython-37-PYTEST.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/test_decoding.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/test_evaluate_continuous.cpython-311-pytest-9.0.2.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/test_evaluate_continuous.cpython-37-PYTEST.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/test_evaluate_continuous.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/test_features_variant.cpython-311-pytest-9.0.2.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/test_features_variant.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/test_features_variant.cpython-37-PYTEST.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/test_features_variant.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/test_frame_segmenter.cpython-311-pytest-9.0.2.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/test_frame_segmenter.cpython-37-PYTEST.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/test_frame_segmenter.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/test_labels.cpython-311-pytest-9.0.2.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/test_labels.cpython-37-PYTEST.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/test_labels.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/test_metrics.cpython-311-pytest-9.0.2.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/test_metrics.cpython-37-PYTEST.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/test_metrics.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/test_models.cpython-311-pytest-9.0.2.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/test_models.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/test_models.cpython-37-PYTEST.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/test_models.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/test_pipeline_mock.cpython-311-pytest-9.0.2.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/test_pipeline_mock.cpython-37-PYTEST.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/test_pipeline_mock.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/test_pose_backends.cpython-311-pytest-9.0.2.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/test_pose_backends.cpython-37-PYTEST.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/test_pose_backends.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/test_runtime_utils.cpython-311-pytest-9.0.2.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/test_runtime_utils.cpython-37-PYTEST.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/test_runtime_utils.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/test_state_machine.cpython-311-pytest-9.0.2.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/test_state_machine.cpython-37-PYTEST.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/test_state_machine.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/test_system_reset.cpython-311-pytest-9.0.2.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/test_system_reset.cpython-37-PYTEST.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/test_system_reset.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/test_temporal_sampling.cpython-311-pytest-9.0.2.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/test_temporal_sampling.cpython-37-PYTEST.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/test_temporal_sampling.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/test_visualization.cpython-311-pytest-9.0.2.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/test_visualization.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/test_visualization.cpython-37-PYTEST.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tests/__pycache__/test_visualization.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tools/__pycache__/build_ctpgesture_v2_vibe33_rich.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tools/__pycache__/build_ctpgesture_v2_vibe33_rich.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tools/__pycache__/build_ctpgesture_v2_vibe33_trackaug.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tools/__pycache__/build_ctpgesture_v2_vibe33_trackaug.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tools/__pycache__/build_ctpgesture_v2_wholebody33_trackaug.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tools/__pycache__/download_datasets.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tools/__pycache__/download_datasets.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tools/__pycache__/eval_ctpgesture_v2_segmenter.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tools/__pycache__/eval_ctpgesture_v2_segmenter.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tools/__pycache__/eval_ctpgesture_v2_segmenter_ensemble.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tools/__pycache__/eval_ctpgesture_v2_segmenter_ensemble.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tools/__pycache__/extract_pose_sequences.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tools/__pycache__/extract_pose_sequences.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tools/__pycache__/generate_toy_dataset.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tools/__pycache__/generate_toy_dataset.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tools/__pycache__/merge_manifests.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tools/__pycache__/merge_manifests.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tools/__pycache__/prepare_ctpgesture_v1.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tools/__pycache__/prepare_ctpgesture_v1.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tools/__pycache__/prepare_ctpgesture_v2.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tools/__pycache__/prepare_ctpgesture_v2.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tools/__pycache__/prepare_ctpgesture_v2_vibe33.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tools/__pycache__/prepare_ctpgesture_v2_vibe33.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tools/__pycache__/prepare_ctpgesture_v2_wholebody33.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tools/__pycache__/prepare_ctpgesture_v2_wholebody33.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tools/__pycache__/rebuild_ctpgesture_v2_wholebody_features.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tools/__pycache__/rebuild_ctpgesture_v2_wholebody_features.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tools/__pycache__/smoke_check.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tools/__pycache__/smoke_check.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tools/__pycache__/train_ctpgesture_v2_segmenter.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tools/__pycache__/train_ctpgesture_v2_segmenter.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tools/__pycache__/tune_ensemble_weights.cpython-311.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tools/__pycache__/tune_ensemble_weights.cpython-37.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tools/request_tcg_email_template.md",
+    "reason": "markdown written material"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/smoke_check.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/ctpgesture_v2_segmenter_unet_fair_stage1/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/_smoke_segmenter_allfit/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/segmenter_allfit_try1/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/ctpgesture_v2_segmenter_trainval_wholebody456_b12_d05_seed7/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/seg384_s40/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/prgraph_eps_finetune_cmd60/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/_smoke_vibe33_multitask_tiny_r2/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/prgraph_eps_finetune_cmd60_focal/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/seg384_b12_d05_tw084/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/seg320_b12_d05/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/ctpgesture_v2_segmenter_trainval_wholebody850_causal_ft/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/ctpgesture_v2_segmenter_trainval_seg512_b12_d05/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/ctpgesture_v2_segmenter_trainval_wholebody456_b12_d05/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/seg384_lr2e4/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/ctpgesture_v2_segmenter_trainval_track239_b12_d05/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/ctpgesture_v2_segmenter_trainval_wholebody470_b12_d05/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/seg384_focus_v2/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/seg384_focal20/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/seg_wholebody456_h512_b12_d05/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/wholebody_tcn/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/seg_wholebody456_b12_d05_seed7/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/_smoke_prgraph_eps_best_cfg/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/seg384_b12_d05_seed7/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/seg512_b14_d05/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/ctpgesture_v2_vibe33_tcn/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/seg512_b12_d05/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/ctpgesture_v2_segmenter_trainval_wholebody850_b12_d05/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/prgraph_eps_trainval_ft/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/prgraph_eps_allfit_ft/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/seg320_b14_d05/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/ctpgesture_v1v2_tcn/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/ctpgesture_v2_segmenter_fair_ctx4096_ft/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/prgraph_eps_probe3/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/seg384_focus_v2_seed7/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/prgraph_eps_probe3b/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/segmenter_fair_stage1/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/seg384_b12_d05/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/phase3_body17_tcn_ema/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/_warmup_prgraph_eps_full1/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/ctpgesture_v2_segmenter_trainval_seed7/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/toy_tcn/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/seg_wholebody456_partial10/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/seg384_rawdir_v1/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/phase2_tcn_rich/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/seg384_trainval_from_fair_e5/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/phase3_tcn_resample/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/ctpgesture_v2_segmenter_trainval_wholebody470_causal_ft/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/seg384_b12_d05_seed123/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/seg_rich513_b12_d05/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/_smoke_vibe33_multitask/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/seg384_b12_d05_tw063/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/seg_track239_b12_d05/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/_smoke_ctpv2_vibe33_inline/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/toy_tcn_setup/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/segmenter_fair_focus_stage1/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/ctpgesture_v2_continuous_phase2/console.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/seg384_b12_d05_nocw/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/phase2_stgcn/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/segmenter_trainval_from_fair_stage1/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/ctpgesture_v2_segmenter_trainval_best/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/segmenter_fair_stage2/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/seg384_focal15/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/phase2_tcn_big/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/ctpgesture_v2_segmenter_trainval_rawdir_v1/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/phase2_tcn_big_balanced/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/_smoke_prgraph_eps_multitask/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/wholebody_transformer/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/segmenter_allfit_try1_ft/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/seg384_ls0/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/_smoke_vibe33_multitask_tiny/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/seg_wholebody850_b12_d05/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/seg384_b14_d05/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/seg_wholebody456_b12_d05/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/seg512_focus_v2/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/ctpgesture_v2_segmenter_fair_best/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/seg_gru384_bi2/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/seg512_b12_d05_seed7/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/_smoke_ctpv2_vibe33/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/ctpgesture_v2_segmenter_trainval_focus384_v2_seed7/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/ctpgesture_v2_segmenter_trainval_focus384_v2/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/runs/ctpgesture_v2_segmenter_trainval_rich513_b12_d05/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tmp/ema_cpu_smoke/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tmp/phase3_resample_smoke/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "code/ai_upload_package_gt200mb_with_results/tmp/wholebody_smoke_train/train.log",
+    "reason": "cache/log artifact"
+  },
+  {
+    "path": "showcase_uhd_screenshots/.DS_Store",
+    "reason": "macOS metadata"
+  },
+  {
+    "path": "processed_demo_videos/.DS_Store",
+    "reason": "macOS metadata"
+  },
+  {
+    "path": "processed_demo_videos/README.md",
+    "reason": "markdown written material"
+  },
+  {
+    "path": "processed_demo_videos/poliguide_submission_compilation_package.zip",
+    "reason": "duplicate/archive payload"
+  },
+  {
+    "path": "processed_demo_videos/poliguide_submission_compilation_package/README.md",
+    "reason": "markdown written material"
+  },
+  {
+    "path": "tools/__pycache__/create_poliguide_compilation_video.cpython-312.pyc",
+    "reason": "cache/build artifact"
+  },
+  {
+    "path": "tools/__pycache__/create_poliguide_demo_videos.cpython-312.pyc",
+    "reason": "cache/build artifact"
+  }
+]

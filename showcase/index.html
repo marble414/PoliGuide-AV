@@ -1,0 +1,959 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>警势智行 PoliGuide-AV | 交警手势识别与指令解析系统</title>
+    <meta
+      name="description"
+      content="警势智行 PoliGuide-AV：面向无人驾驶的交警手势识别、交通指令解析与平台对接系统。"
+    />
+    <link
+      rel="icon"
+      href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="8" fill="%230f1720"/><path d="M16 5 26 10v6c0 6-3.8 9.6-10 11-6.2-1.4-10-5-10-11v-6l10-5Z" fill="none" stroke="white" stroke-width="2"/><path d="M11 16h10M16 11v10" stroke="%232ee48a" stroke-width="2" stroke-linecap="round"/></svg>'
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-anchor" id="top" aria-hidden="true"></div>
+    <aside class="sidebar" aria-label="系统导航">
+      <a class="brand" href="#top" aria-label="回到首页">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32">
+            <path d="M16 3 27 8v8c0 7-4.3 11.1-11 13C9.3 27.1 5 23 5 16V8l11-5Z" />
+            <path d="M10.5 16.2h11M16 10.5v11" />
+          </svg>
+        </span>
+        <span>
+          <strong>警势智行</strong>
+          <small>PoliGuide-AV</small>
+        </span>
+      </a>
+      <nav class="side-nav">
+        <a href="#top" class="is-active">首页概览</a>
+        <a href="#experience">体验路径</a>
+        <a href="#workspace">系统操作台</a>
+        <a href="#coverage">需求覆盖</a>
+        <a href="#capabilities">功能矩阵</a>
+        <a href="#scenarios">场景实验室</a>
+        <a href="#pipeline">在线流水线</a>
+        <a href="#architecture">系统架构</a>
+        <a href="#safety">安全状态机</a>
+        <a href="#routes">路线对比</a>
+        <a href="#metrics">指标总览</a>
+        <a href="#demo">在线演示</a>
+        <a href="#commands">命令字典</a>
+        <a href="#integration">接口对接</a>
+        <a href="#runbook">运行命令</a>
+        <a href="#evidence">交付依据</a>
+        <a href="#validation">能力验证</a>
+        <a href="#delivery">交付资源</a>
+      </nav>
+      <div class="sidebar-cta">
+        <span>快速开始</span>
+        <a href="#workspace">打开系统操作台</a>
+        <a href="#demo">播放演示视频</a>
+      </div>
+    </aside>
+
+    <main class="page-shell">
+      <header class="topbar">
+        <div>
+          <span>v0.2.0</span>
+          <span>智能网联汽车长尾安全场景</span>
+        </div>
+        <div>
+          <a href="#competition">能力要求</a>
+          <a href="#integration">接口说明</a>
+          <a class="topbar-button" href="../code.zip">代码包</a>
+        </div>
+      </header>
+
+      <section class="hero section-band">
+        <div class="hero-copy">
+          <h1>警势智行 /<br /><span>PoliGuide-AV</span></h1>
+          <p class="subtitle">让无人驾驶车辆读懂交警现场指挥</p>
+          <p class="hero-lede">
+            系统面向信号灯故障、事故占道、临时交通管制和测试场人工接管等场景，把交警连续手势转化为车辆可理解的交通意图、控制命令和安全状态。
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#demo">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7-11-7Z" /></svg>
+              观看演示
+            </a>
+            <a class="button secondary" href="#integration">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10H7zM3 12h4M17 12h4M12 3v4M12 17v4" /></svg>
+              查看对接
+            </a>
+            <a class="button tertiary" href="#workspace">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10M7 6v12M17 6v6" /></svg>
+              打开操作台
+            </a>
+          </div>
+        </div>
+
+        <div class="console-panel" aria-label="实时演示控制台">
+          <div class="console-toolbar">
+            <span class="live-dot">LIVE</span>
+            <span>2440 x 1080</span>
+            <span>25 FPS</span>
+            <span>在线识别画面</span>
+          </div>
+          <div class="console-main">
+            <div class="video-stage">
+              <video
+                src="../在线演示.mp4"
+                poster="assets/online-poster.jpg"
+                autoplay
+                muted
+                loop
+                playsinline
+              ></video>
+            </div>
+            <aside class="result-rail">
+              <article>
+                <span>识别输出</span>
+                <strong>随视频同步</strong>
+                <small>与画面中的轨迹、手势和命令状态保持一致</small>
+              </article>
+              <article>
+                <span>安全状态机</span>
+                <strong>保守约束</strong>
+                <small>低置信、遮挡或目标丢失时不强行输出通行命令</small>
+              </article>
+              <article class="diagnostic-pills">
+                <span>系统状态维度</span>
+                <div>
+                  <i>track</i>
+                  <i>gesture</i>
+                  <i>command</i>
+                  <i>fallback</i>
+                </div>
+              </article>
+            </aside>
+          </div>
+          <div class="console-metrics">
+            <div><span>在线准确率</span><strong>0.8074</strong></div>
+            <div><span>宏平均 F1</span><strong>0.8091</strong></div>
+            <div><span>公平 Jaccard</span><strong>0.849077</strong></div>
+            <div><span>前景 Jaccard</span><strong>0.847576</strong></div>
+            <div><span>在线全身 FPS</span><strong>37.02</strong></div>
+          </div>
+        </div>
+
+        <div class="hero-summary" aria-label="核心能力摘要">
+          <article>
+            <span>在线入口</span>
+            <strong>实时摄像头流</strong>
+            <small>滚动缓冲 + 状态机</small>
+          </article>
+          <article>
+            <span>识别任务</span>
+            <strong>9 类基础 / 33 类方向</strong>
+            <small>手势 + 指令 + 方向</small>
+          </article>
+          <article>
+            <span>平台接口</span>
+            <strong>JSON / ROS2 / Autoware / CARLA</strong>
+            <small>规划提示与速度约束</small>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-band" id="experience">
+        <div class="section-heading">
+          <h2>角色化使用路径</h2>
+          <p>系统按业务确认、工程部署、平台集成和运行体验组织入口，让不同角色快速进入所需能力。</p>
+        </div>
+        <div class="path-grid">
+          <article>
+            <span>业务视角</span>
+            <h3>确认场景价值与可靠边界</h3>
+            <a href="#validation">能力验证矩阵</a>
+            <a href="#coverage">需求覆盖对照</a>
+            <a href="#metrics">核心指标与边界</a>
+            <a href="#evidence">交付依据来源</a>
+          </article>
+          <article>
+            <span>部署视角</span>
+            <h3>从环境到命令，按步骤落地</h3>
+            <a href="#runbook">准备环境与运行命令</a>
+            <a href="#pipeline">在线处理流水线</a>
+            <a href="#delivery">代码包与报告</a>
+          </article>
+          <article>
+            <span>平台视角</span>
+            <h3>重点确认输出字段和车辆约束</h3>
+            <a href="#commands">手势到控制命令</a>
+            <a href="#integration">JSON / ROS2 / Autoware / CARLA</a>
+            <a href="#safety">安全回退策略</a>
+          </article>
+          <article>
+            <span>体验视角</span>
+            <h3>快速理解适用场景</h3>
+            <a href="#demo">在线与离线演示</a>
+            <a href="#scenarios">典型交通场景</a>
+            <a href="#routes">三条技术路线</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-band" id="workspace">
+        <div class="section-heading">
+          <h2>系统操作台</h2>
+          <p>面向真实交付使用，操作台提供运行配置生成、接口消息校验、JSONL 结果解析和上线检查。模型推理按工程命令在本地环境执行，界面负责配置、校验、分析和交付准备。</p>
+        </div>
+        <div class="workspace-shell">
+          <div class="workspace-tabs" role="tablist" aria-label="系统操作台功能">
+            <button class="is-active" data-workspace-tab="builder" type="button">运行配置器</button>
+            <button data-workspace-tab="validator" type="button">接口校验器</button>
+            <button data-workspace-tab="analyzer" type="button">JSONL 解析器</button>
+            <button data-workspace-tab="release" type="button">上线检查</button>
+          </div>
+
+          <div class="workspace-panel is-active" data-workspace-panel="builder">
+            <div class="workspace-grid">
+              <form class="builder-form" id="run-builder">
+                <label>
+                  运行入口
+                  <select id="builder-mode" name="mode">
+                    <option value="camera">摄像头实时推理</option>
+                    <option value="video">离线视频推理</option>
+                    <option value="debug">单视频诊断分析</option>
+                    <option value="fair">公平 split 评测</option>
+                    <option value="wholebody">在线 wholebody 路线</option>
+                    <option value="onnx">导出 ONNX</option>
+                    <option value="toy">闭环自检</option>
+                  </select>
+                </label>
+                <label>
+                  部署配置
+                  <select id="builder-config" name="config">
+                    <option value="configs/deploy_openmmlab_rtmo_phase2.yaml">在线部署主线（RTMO phase2）</option>
+                    <option value="configs/debug_openmmlab_rtmo_phase2.yaml">全量诊断配置（RTMO phase2）</option>
+                    <option value="configs/deploy_openmmlab_wholebody_segmenter_online.yaml">在线 wholebody segmenter</option>
+                    <option value="configs/eval_ctpgesture_v2_segmenter_ensemble_refine_plus_rawdir_0p075_track239_0p025_classbias_best.yaml">公平评测 ensemble best</option>
+                    <option value="configs/ctpgesture_v1v2_tcn_phase2.yaml">训练主线（phase2 TCN）</option>
+                    <option value="configs/deploy_toy_tcn_demo.yaml">内置闭环自检配置</option>
+                  </select>
+                </label>
+                <label>
+                  输入视频 / 流
+                  <input id="builder-input" name="input" type="text" value="your_video.mp4" />
+                </label>
+                <label>
+                  摄像头 ID
+                  <input id="builder-camera" name="camera" type="number" min="0" step="1" value="0" />
+                </label>
+                <label>
+                  输出视频
+                  <input id="builder-output-video" name="outputVideo" type="text" value="outputs/your_video_phase2.mp4" />
+                </label>
+                <label>
+                  输出 JSONL
+                  <input id="builder-output-jsonl" name="outputJsonl" type="text" value="outputs/your_video_phase2.jsonl" />
+                </label>
+                <label>
+                  评测输出目录
+                  <input id="builder-output-dir" name="outputDir" type="text" value="runs/phase2_tta_eval" />
+                </label>
+                <label>
+                  ONNX 输出
+                  <input id="builder-onnx-output" name="onnxOutput" type="text" value="exports/phase2_tcn_big_final.onnx" />
+                </label>
+                <div class="builder-flags" aria-label="运行选项">
+                  <label><input id="builder-debug" type="checkbox" checked /> 诊断叠加</label>
+                  <label><input id="builder-no-display" type="checkbox" /> 无桌面环境</label>
+                  <label><input id="builder-env" type="checkbox" checked /> 附带环境准备</label>
+                </div>
+              </form>
+              <div class="workspace-output">
+                <div class="mini-heading">
+                  <span>生成命令</span>
+                  <strong id="builder-mode-title">摄像头实时推理</strong>
+                </div>
+                <pre id="builder-command"></pre>
+                <button class="copy-button" type="button" data-copy-target="builder-command">复制命令</button>
+              </div>
+            </div>
+            <div class="workspace-insights">
+              <article><span>部署主线</span><strong>OpenMMLab RTMO + SkeletonTCN phase2</strong><small>适合摄像头流、离线视频和诊断模式</small></article>
+              <article><span>评测主线</span><strong>CTPGesture v2 frame segmenter ensemble</strong><small>保留 fair-best 与调优边界说明</small></article>
+              <article><span>输出约定</span><strong>MP4 可视化 + JSONL 结构化结果</strong><small>可继续进入接口校验和 JSONL 解析器</small></article>
+            </div>
+          </div>
+
+          <div class="workspace-panel" data-workspace-panel="validator">
+            <div class="workspace-grid">
+              <div class="editor-card">
+                <div class="mini-heading">
+                  <span>输入消息</span>
+                  <strong>JSON / JSONL 单行均可</strong>
+                </div>
+                <textarea id="message-input" spellcheck="false"></textarea>
+                <div class="inline-actions">
+                  <button class="button primary compact-button" id="validate-message" type="button">校验消息</button>
+                  <button class="button secondary compact-button" id="load-sample-message" type="button">填入标准消息</button>
+                </div>
+              </div>
+              <div class="report-card">
+                <div class="mini-heading">
+                  <span>校验报告</span>
+                  <strong id="message-status">未校验</strong>
+                </div>
+                <div class="report-stack" id="message-report"></div>
+                <pre id="bridge-output"></pre>
+                <button class="copy-button" type="button" data-copy-target="bridge-output">复制桥接提示</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="workspace-panel" data-workspace-panel="analyzer">
+            <div class="workspace-grid">
+              <div class="editor-card">
+                <div class="mini-heading">
+                  <span>推理结果</span>
+                  <strong>粘贴 outputs/*.jsonl</strong>
+                </div>
+                <textarea id="jsonl-input" spellcheck="false"></textarea>
+                <div class="inline-actions">
+                  <button class="button primary compact-button" id="analyze-jsonl" type="button">解析 JSONL</button>
+                  <button class="button secondary compact-button" id="load-sample-jsonl" type="button">填入参考结果</button>
+                </div>
+              </div>
+              <div class="analysis-card">
+                <div class="mini-heading">
+                  <span>解析结果</span>
+                  <strong id="jsonl-status">未解析</strong>
+                </div>
+                <div class="analyzer-summary" id="jsonl-summary"></div>
+                <div class="distribution-list" id="jsonl-bars"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="workspace-panel" data-workspace-panel="release">
+            <div class="release-layout">
+              <div class="release-progress">
+                <span>上线就绪度</span>
+                <strong id="release-score">0%</strong>
+                <i><b id="release-bar"></b></i>
+                <small id="release-caption">未确认</small>
+              </div>
+              <div class="release-checks" aria-label="上线检查清单">
+                <label><input type="checkbox" data-release-check="environment" /> 环境可创建，工程源码基础模块可导入</label>
+                <label><input type="checkbox" data-release-check="assets" /> code.zip、报告、需求文档、在线和离线演示资源可访问</label>
+                <label><input type="checkbox" data-release-check="camera" /> 摄像头实时推理命令可运行并生成 JSONL</label>
+                <label><input type="checkbox" data-release-check="video" /> 离线视频推理已生成 MP4 和 JSONL 结果</label>
+                <label><input type="checkbox" data-release-check="interface" /> JSON / ROS2 / Autoware / CARLA 字段映射已校验</label>
+                <label><input type="checkbox" data-release-check="metrics" /> 在线、fair split、wholebody、all-data 指标口径已分开说明</label>
+                <label><input type="checkbox" data-release-check="limits" /> fair-best 调优边界和真实车端部署边界已明确披露</label>
+                <label><input type="checkbox" data-release-check="presentation" /> 桌面、平板和手机视口完成可用性检查</label>
+              </div>
+              <div class="workspace-output">
+                <div class="mini-heading">
+                  <span>交付摘要</span>
+                  <strong>可复制到交付说明</strong>
+                </div>
+                <pre id="release-summary"></pre>
+                <button class="copy-button" type="button" data-copy-target="release-summary">复制摘要</button>
+                <button class="reset-button" id="reset-release-checks" type="button">重置检查</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band" id="coverage">
+        <div class="section-heading">
+          <h2>需求覆盖总表</h2>
+          <p>依据需求文档、系统报告、README、命令清单、源码模块、测试记录和演示资源逐项核对，展示系统从场景、功能、接口到交付的完整覆盖情况。</p>
+        </div>
+        <div class="coverage-board">
+          <table class="coverage-table">
+            <thead>
+              <tr>
+                <th>需求维度</th>
+                <th>具体要求</th>
+                <th>当前实现</th>
+                <th>前端展示入口</th>
+                <th>状态</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>真实道路场景</td>
+                <td>信号灯故障、事故占道、临时管制、施工绕行、检查点、多人干扰等人工接管场景。</td>
+                <td>场景实验室覆盖 6 类典型业务流，并关联命令、安全策略和验证依据。</td>
+                <td>体验路径 / 场景实验室 / 在线演示</td>
+                <td><span class="status-pill complete">完成</span></td>
+              </tr>
+              <tr>
+                <td>核心识别链路</td>
+                <td>稳定完成交警检测、目标跟踪、姿态提取、手势分类和意图解析。</td>
+                <td>OpenMMLab 姿态后端、GreedyIoUTracker、OfficerSelector、SkeletonTCN、IntentParser 与状态机串联。</td>
+                <td>在线流水线 / 系统架构 / 功能矩阵</td>
+                <td><span class="status-pill complete">完成</span></td>
+              </tr>
+              <tr>
+                <td>实时输入能力</td>
+                <td>支持未知长度实时摄像头流，不依赖整段视频离线切片。</td>
+                <td><code>infer_camera</code>、滚动缓冲、最小预测长度、命令保持和过期清空共同支撑在线输出。</td>
+                <td>系统操作台 / 运行命令 / 指标总览</td>
+                <td><span class="status-pill complete">完成</span></td>
+              </tr>
+              <tr>
+                <td>离线验证能力</td>
+                <td>对视频文件生成可视化结果和结构化输出，便于复核与复现。</td>
+                <td><code>infer_video</code> 同步输出 MP4 与 JSONL；JSONL 解析器可统计帧数、命令分布、回退次数和平均延迟。</td>
+                <td>在线与离线演示 / JSONL 解析器</td>
+                <td><span class="status-pill complete">完成</span></td>
+              </tr>
+              <tr>
+                <td>安全稳定输出</td>
+                <td>降低误报、抑制抖动，在低置信、遮挡或目标丢失时保守处理。</td>
+                <td>窗口投票、最小一致性、置信阈值、hold、expiry、KEEP_WAIT / STOP 回退和诊断状态输出。</td>
+                <td>安全状态机 / 接口校验器</td>
+                <td><span class="status-pill complete">完成</span></td>
+              </tr>
+              <tr>
+                <td>标准化车辆语义</td>
+                <td>将手势结果转成车辆控制域可理解的标准化指令。</td>
+                <td>9 类基础手势、33 类方向标签、命令字典、交通意图、速度约束和 planner hint 已统一展示。</td>
+                <td>命令字典 / 接口对接</td>
+                <td><span class="status-pill complete">完成</span></td>
+              </tr>
+              <tr>
+                <td>平台对接</td>
+                <td>可作为独立感知模块接入无人驾驶、仿真或测试平台。</td>
+                <td>JSONL、ROS2 <code>/perception/traffic_police_command</code>、Autoware 速度提示、CARLA adapter 均有字段示例。</td>
+                <td>接口对接 / 接口校验器</td>
+                <td><span class="status-pill complete">完成</span></td>
+              </tr>
+              <tr>
+                <td>评测与指标</td>
+                <td>给出准确率、宏平均 F1、Jaccard、FPS 等指标，并区分不同实验口径。</td>
+                <td>在线部署、公平 split、online wholebody、all-data 上限、论文公开值分开展示，不混用结论。</td>
+                <td>路线对比 / 指标总览 / 交付资源</td>
+                <td><span class="status-pill complete">完成</span></td>
+              </tr>
+              <tr>
+                <td>工程可运行性</td>
+                <td>环境、命令、配置、数据处理、训练、评估、推理、诊断、ONNX 导出路径明确。</td>
+                <td>命令生成器覆盖摄像头、视频、诊断、fair 评测、wholebody 路线、ONNX 和闭环自检。</td>
+                <td>系统操作台 / 运行命令手册</td>
+                <td><span class="status-pill complete">完成</span></td>
+              </tr>
+              <tr>
+                <td>发布包完整性</td>
+                <td>代码包需要可安装、可导入，不能缺少基础源码模块。</td>
+                <td><code>src/tpgr/data</code> 基础数据模块已纳入发布包，包含标签、特征、清单、schema 和数据集加载。</td>
+                <td>交付资源 / 上线检查</td>
+                <td><span class="status-pill complete">完成</span></td>
+              </tr>
+              <tr>
+                <td>鲁棒性与边界</td>
+                <td>复杂光照、天气、背景干扰、遮挡、个体差异下保持稳定，并说明真实车端边界。</td>
+                <td>主体选择、关键点可见性、状态机、场景实验室和边界说明共同覆盖；真实车端联调边界保留。</td>
+                <td>场景实验室 / 安全状态机 / 交付资源</td>
+                <td><span class="status-pill bounded">边界明确</span></td>
+              </tr>
+              <tr>
+                <td>数据与许可</td>
+                <td>说明公开数据、第三方模型权重、仿真资源和代码许可边界，避免交付后误用。</td>
+                <td>数据与权重、许可与复用两类交付卡片已对应包内 datasets、checkpoints、THIRD_PARTY_NOTICES。</td>
+                <td>交付资源 / 交付依据</td>
+                <td><span class="status-pill complete">完成</span></td>
+              </tr>
+              <tr>
+                <td>扩展与应用潜力</td>
+                <td>模块化适配新车型、新平台、新场景，可迁移至智慧交通和人机交互任务。</td>
+                <td>分层架构、接口层、命令字典、三路线组织和交付资源支持二次集成与后续扩展。</td>
+                <td>系统架构 / 接口对接 / 能力验证</td>
+                <td><span class="status-pill complete">完成</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="coverage-cards">
+          <article>
+            <span>需求来源</span>
+            <strong>两份正式文档 + 包内 13 份工程文档</strong>
+            <p>覆盖项目背景、作品形式、功能指标、验证方式、部署资源、路线边界、命令清单和自检记录。</p>
+          </article>
+          <article>
+            <span>源码依据</span>
+            <strong>pipeline / data / io / sim / tools</strong>
+            <p>前端展示内容对应真实工程模块：感知流水线、标签映射、数据集加载、JSONL、ROS2、Autoware、CARLA 与训练评测脚本。</p>
+          </article>
+          <article>
+            <span>可用体验</span>
+            <strong>配置、校验、解析、验收四合一</strong>
+            <p>浏览器界面不伪装成模型运行环境，而是为真实本地推理提供参数生成、消息校验、结果解析和交付检查。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-band" id="capabilities">
+        <div class="section-heading">
+          <h2>功能能力矩阵</h2>
+          <p>围绕感知、理解、稳定输出和平台对接梳理核心能力，帮助使用者快速判断系统可落地范围。</p>
+        </div>
+        <div class="capability-grid">
+          <article>
+            <span>01</span>
+            <h3>实时摄像头推理</h3>
+            <p>支持未知长度视频流，不需要等待整段视频结束；滚动时序缓冲在当前帧持续输出。</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>离线视频推理</h3>
+            <p>对单个视频生成带叠加可视化的输出视频，并同步写出 JSONL 结构化结果。</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>主体检测与选择</h3>
+            <p>结合中心性、目标尺度、关键点可见性、手部可见性、轨迹年龄、稳定性和反光背心先验评分。</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>连续手势理解</h3>
+            <p>支持 SkeletonTCN、STGCN、Transformer、frame segmenter multitask 等时序模型路线。</p>
+          </article>
+          <article>
+            <span>05</span>
+            <h3>安全状态机</h3>
+            <p>窗口投票、最小一致性、置信度阈值、命令保持和过期清空共同抑制抖动与误触发。</p>
+          </article>
+          <article>
+            <span>06</span>
+            <h3>诊断可视化</h3>
+            <p>呈现预测、Top-K、状态机、关键点、候选轨迹和实时累计指标，便于定位错误来源。</p>
+          </article>
+          <article>
+            <span>07</span>
+            <h3>ONNX 导出</h3>
+            <p>部署主线模型可导出为 ONNX，为后续嵌入式部署、TensorRT 加速和平台集成预留接口。</p>
+          </article>
+          <article>
+            <span>08</span>
+            <h3>多平台对接</h3>
+            <p>结构化 JSON 输出，提供 ROS2 发布、Autoware 速度约束、CARLA planner hint 适配示例。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-band split-section" id="scenarios">
+        <div class="section-heading stacked">
+          <h2>典型场景实验室</h2>
+          <p>系统面向复杂道路和人工接管场景，将场景、技术链路、输出命令和验证依据放在同一个可切换面板里。</p>
+        </div>
+        <div class="scenario-lab">
+          <div class="scenario-list" aria-label="场景选择">
+            <button class="is-active" data-scenario="signal" type="button">信号灯故障</button>
+            <button data-scenario="accident" type="button">事故占道</button>
+            <button data-scenario="control" type="button">临时交通管制</button>
+            <button data-scenario="construction" type="button">施工绕行</button>
+            <button data-scenario="checkpoint" type="button">检查点接管</button>
+            <button data-scenario="interference" type="button">多人干扰</button>
+          </div>
+          <article class="scenario-board">
+            <div class="scenario-header">
+              <span id="scenario-tag">高优先级人工指挥</span>
+              <strong id="scenario-title">信号灯故障路口</strong>
+            </div>
+            <div class="scenario-copy">
+              <p id="scenario-pain">固定信号失效后，交警现场手势成为最高优先级通行依据。</p>
+              <dl>
+                <div><dt>关键模块</dt><dd id="scenario-flow">检测 -> 跟踪 -> 姿态 -> 时序识别 -> 状态机</dd></div>
+                <div><dt>推荐输出</dt><dd id="scenario-command">STOP / GO_STRAIGHT / TURN_LEFT</dd></div>
+                <div><dt>验证依据</dt><dd id="scenario-evidence">在线演示视频、JSONL 输出、状态机诊断信息</dd></div>
+              </dl>
+            </div>
+            <div class="scenario-response">
+              <div><span>主体选择</span><strong>track_id: 1</strong><small>中心 + 尺度 + 可见性 + sticky</small></div>
+              <div><span>命令策略</span><strong id="scenario-policy">安全优先</strong><small>低置信度时保持或回退</small></div>
+              <div><span>对下游影响</span><strong id="scenario-effect">速度约束</strong><small>传给规划器或仿真适配器</small></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-band" id="pipeline">
+        <div class="section-heading">
+          <h2>十步在线处理流水线</h2>
+          <p>系统不是普通单帧手势分类演示，而是从输入到安全输出的连续理解链路。</p>
+        </div>
+        <div class="timeline">
+          <article><span>01</span><strong>视频帧读取</strong><small>camera / video / keypoints</small></article>
+          <article><span>02</span><strong>候选人体检测</strong><small>OpenMMLab / detector</small></article>
+          <article><span>03</span><strong>姿态关键点</strong><small>body17 / wholebody133</small></article>
+          <article><span>04</span><strong>候选轨迹更新</strong><small>GreedyIoUTracker</small></article>
+          <article><span>05</span><strong>指挥主体选择</strong><small>OfficerSelector</small></article>
+          <article><span>06</span><strong>关键点归一化</strong><small>feature vector</small></article>
+          <article><span>07</span><strong>滚动缓冲</strong><small>SequenceBuffer</small></article>
+          <article><span>08</span><strong>时序模型推理</strong><small>TCN / segmenter</small></article>
+          <article><span>09</span><strong>交通语义解析</strong><small>gesture -> intent -> command</small></article>
+          <article><span>10</span><strong>安全状态输出</strong><small>hold / fallback / expiry</small></article>
+        </div>
+      </section>
+
+      <section class="section-band split-section" id="architecture">
+        <div class="section-heading stacked">
+          <h2>五层系统架构</h2>
+          <p>分层结构让系统能定位错误来源，也方便替换姿态后端、扩展手势类别和接入不同车辆平台。</p>
+        </div>
+        <div class="layer-stack">
+          <article><span>输入层</span><strong>摄像头、离线视频、预计算关键点</strong><small>统一输入源组织与基础预处理</small></article>
+          <article><span>感知层</span><strong>检测、姿态、跟踪、主体选择</strong><small>解决“谁在指挥”的问题</small></article>
+          <article><span>理解层</span><strong>骨架时序建模与连续动作识别</strong><small>解决“动作如何随时间变化”的问题</small></article>
+          <article><span>语义层</span><strong>手势、意图、控制指令、方向融合</strong><small>把模型结果转为交通语义</small></article>
+          <article><span>输出层</span><strong>JSONL、诊断视频、ROS2、Autoware、CARLA</strong><small>向下游系统稳定、规范输出</small></article>
+        </div>
+      </section>
+
+      <section class="section-band" id="safety">
+        <div class="section-heading">
+          <h2>安全状态机与稳定输出</h2>
+          <p>系统把模型预测和车辆命令分开处理。状态机负责过滤抖动、保持高置信命令、处理目标离开和低置信度回退。</p>
+        </div>
+        <div class="safety-layout">
+          <div class="state-flow">
+            <article><span>01</span><strong>模型预测</strong><small>输出手势与置信度</small></article>
+            <article><span>02</span><strong>窗口投票</strong><small>最近窗口内聚合判断</small></article>
+            <article><span>03</span><strong>一致性门控</strong><small>满足一致性才更新命令</small></article>
+            <article><span>04</span><strong>命令保持</strong><small>短时不确定时保留上一命令</small></article>
+            <article><span>05</span><strong>过期回退</strong><small>目标消失或持续低置信时清空</small></article>
+          </div>
+          <div class="safety-params">
+            <article><span>window</span><strong>9 帧</strong><small>deploy_openmmlab_rtmo_phase2</small></article>
+            <article><span>min consensus</span><strong>6</strong><small>减少单帧误触发</small></article>
+            <article><span>confidence</span><strong>0.60</strong><small>低于阈值进入保守策略</small></article>
+            <article><span>hold / expiry</span><strong>8 / 18</strong><small>命令保持与过期清空</small></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band" id="routes">
+        <div class="section-heading">
+          <h2>三条路线对比</h2>
+          <p>三条技术路线分别服务在线部署、论文对齐 benchmark 和 all-data 上限实验，指标口径保持清晰分离。</p>
+        </div>
+        <div class="route-tabs" role="tablist" aria-label="路线选择">
+          <button type="button" class="is-active" data-route="online">在线部署</button>
+          <button type="button" data-route="fair">公平 split</button>
+          <button type="button" data-route="upper">all-data 上限</button>
+          <button type="button" data-route="wholebody">在线 wholebody</button>
+        </div>
+        <div class="route-board">
+          <div>
+            <h3 id="route-title">OpenMMLab human pose -> SkeletonTCN phase2</h3>
+            <p id="route-desc">在线部署入口支持实时摄像头、离线视频、诊断模式和 ONNX 导出。</p>
+            <ul id="route-points">
+              <li>accuracy = 0.8074</li>
+              <li>macro F1 = 0.8091</li>
+              <li>未知长度摄像头流已支持</li>
+            </ul>
+          </div>
+          <table class="route-table">
+            <thead>
+              <tr><th>维度</th><th>在线部署</th><th>公平 benchmark</th><th>上限实验</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>输入</td><td>摄像头 / 视频</td><td>CTPGesture v2 特征</td><td>全数据特征</td></tr>
+              <tr><td>模型</td><td>SkeletonTCN</td><td>frame segmenter ensemble</td><td>frame segmenter allfit</td></tr>
+              <tr><td>用途</td><td>演示与部署</td><td>论文对齐</td><td>容量上界</td></tr>
+              <tr><td>边界</td><td>非 benchmark 冠军</td><td>含 test-guided 调优</td><td>不是公平 split</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section-band" id="metrics">
+        <div class="section-heading">
+          <h2>指标总览仪表盘</h2>
+          <p>指标按在线部署、公平评测、在线 wholebody 和 all-data 上限分口径呈现，保留各自适用边界。</p>
+        </div>
+        <div class="metric-dashboard">
+          <article><span>在线部署主线</span><strong>0.8074</strong><small>accuracy</small></article>
+          <article><span>在线部署主线</span><strong>0.8091</strong><small>macro F1</small></article>
+          <article><span>公平 split</span><strong>0.849077</strong><small>gesture macro Jaccard</small></article>
+          <article><span>公平 split</span><strong>0.847576</strong><small>foreground macro Jaccard</small></article>
+          <article><span>公平 split</span><strong>0.843301</strong><small>command macro Jaccard</small></article>
+          <article><span>在线 wholebody</span><strong>37.02</strong><small>system FPS estimate</small></article>
+          <article><span>all-data 上限</span><strong>0.890252</strong><small>gesture macro Jaccard</small></article>
+          <article><span>论文公开</span><strong>0.842</strong><small>Jaccard baseline</small></article>
+        </div>
+        <p class="note">
+          公平 split 数值已高于论文公开 Jaccard 0.842，但 fair-best 经历同一 test split 上的多轮集成 / class-bias 调优；all-data 只说明模型容量上限，不能替代公平对标结论。
+        </p>
+      </section>
+
+      <section class="section-band" id="demo">
+        <div class="section-heading">
+          <h2>在线与离线演示视频</h2>
+          <p>内置在线、离线与实拍场景演示视频，直接呈现主体检测、骨架叠加、命令输出、状态机诊断和 JSONL 结构化结果。</p>
+        </div>
+        <article class="submission-demo-card">
+          <video src="../processed_demo_videos/poliguide_submission_compilation_1080p.mp4" poster="../processed_demo_videos/poliguide_submission_compilation_poster.jpg" controls playsinline></video>
+          <div>
+            <span>提交版总览视频</span>
+            <h3>12 个真实场景动作与字幕说明</h3>
+            <p>无声 1080p 总览片覆盖夜间眩光、施工入口、路侧车辆、逆光和正面指挥等实拍场景，左侧保留识别画面，右侧展示姿态质量、输出延迟、动作命令一致率和主要命令，便于正式提交和快速讲解。</p>
+            <dl><dt>分辨率</dt><dd>1920 x 1080</dd><dt>时长</dt><dd>65.3 秒</dd><dt>文件大小</dt><dd>16.2 MB</dd><dt>字幕</dt><dd>内嵌 + SRT</dd></dl>
+          </div>
+        </article>
+        <div class="demo-grid">
+          <article>
+            <div>
+              <h3>在线演示（摄像头链路）</h3>
+              <p>呈现实时输入、主体选择、识别叠加、命令输出和诊断面板。</p>
+            </div>
+            <video src="../在线演示.mp4" poster="assets/online-poster.jpg" controls playsinline></video>
+            <dl><dt>分辨率</dt><dd>2440 x 1080</dd><dt>时长</dt><dd>24 秒</dd><dt>帧率</dt><dd>25 FPS</dd></dl>
+          </article>
+          <article>
+            <div>
+              <h3>离线演示（视频文件）</h3>
+              <p>呈现离线文件推理、输出视频和 JSONL 结果的可视化解释。</p>
+            </div>
+            <video src="../离线演示.mp4" poster="assets/offline-poster.jpg" controls playsinline></video>
+            <dl><dt>分辨率</dt><dd>2440 x 1080</dd><dt>时长</dt><dd>24 秒</dd><dt>帧率</dt><dd>25 FPS</dd></dl>
+          </article>
+        </div>
+        <div class="field-demo-header">
+          <span>新增实拍演示集</span>
+          <strong>7 段真实道路 / 施工 / 夜间强光场景</strong>
+          <p>以下视频由真实实拍画面生成，叠加 MediaPipe 姿态、项目规则分类、时序状态机、主体评分、姿态质量和接口输出字段，配套 JSONL 逐帧结果用于复核。</p>
+        </div>
+        <div class="field-demo-grid">
+          <article>
+            <video src="../processed_demo_videos/demo_01_night_high_glare_297c01ab_poliguide_visual_demo.mp4" poster="../processed_demo_videos/demo_01_night_high_glare_297c01ab_poster.jpg" controls playsinline></video>
+            <h3>夜间强光示停</h3>
+            <p>强光、低照度与道路边缘场景，展示姿态质量、主体框和状态机稳定输出。</p>
+            <dl><dt>分辨率</dt><dd>1128 x 1080</dd><dt>时长</dt><dd>23.9 秒</dd><dt>帧率</dt><dd>30 FPS</dd></dl>
+          </article>
+          <article>
+            <video src="../processed_demo_videos/demo_02_construction_entry_5191f223_poliguide_visual_demo.mp4" poster="../processed_demo_videos/demo_02_construction_entry_5191f223_poster.jpg" controls playsinline></video>
+            <h3>施工入口引导</h3>
+            <p>施工围挡与导向牌背景下，展示连续骨架、命令投票和车辆语义输出。</p>
+            <dl><dt>分辨率</dt><dd>1128 x 1080</dd><dt>时长</dt><dd>26.2 秒</dd><dt>帧率</dt><dd>30 FPS</dd></dl>
+          </article>
+          <article>
+            <video src="../processed_demo_videos/demo_03_roadside_vehicle_869dd470_poliguide_visual_demo.mp4" poster="../processed_demo_videos/demo_03_roadside_vehicle_869dd470_poster.jpg" controls playsinline></video>
+            <h3>路侧车辆遮挡</h3>
+            <p>近车身遮挡条件下，展示主体框、关键点可见性和安全状态输出。</p>
+            <dl><dt>分辨率</dt><dd>1128 x 1080</dd><dt>时长</dt><dd>22.8 秒</dd><dt>帧率</dt><dd>30 FPS</dd></dl>
+          </article>
+          <article>
+            <video src="../processed_demo_videos/demo_04_night_speed_limit_a457c95c_poliguide_visual_demo.mp4" poster="../processed_demo_videos/demo_04_night_speed_limit_a457c95c_poster.jpg" controls playsinline></video>
+            <h3>夜间限速路段</h3>
+            <p>路灯眩光和限速标志场景，展示低照度下的姿态检测和命令保持。</p>
+            <dl><dt>分辨率</dt><dd>1128 x 1080</dd><dt>时长</dt><dd>31.7 秒</dd><dt>帧率</dt><dd>30 FPS</dd></dl>
+          </article>
+          <article>
+            <video src="../processed_demo_videos/demo_05_backlight_side_aa337036_poliguide_visual_demo.mp4" poster="../processed_demo_videos/demo_05_backlight_side_aa337036_poster.jpg" controls playsinline></video>
+            <h3>逆光侧身手势</h3>
+            <p>强逆光与侧身姿态条件下，展示姿态质量条和命令置信度变化。</p>
+            <dl><dt>分辨率</dt><dd>1128 x 1080</dd><dt>时长</dt><dd>36.5 秒</dd><dt>帧率</dt><dd>30 FPS</dd></dl>
+          </article>
+          <article>
+            <video src="../processed_demo_videos/demo_06_construction_stop_b32482df_poliguide_visual_demo.mp4" poster="../processed_demo_videos/demo_06_construction_stop_b32482df_poster.jpg" controls playsinline></video>
+            <h3>施工区域示停</h3>
+            <p>施工路段人工接管条件下，展示 STOP、TURN 和安全保持的切换过程。</p>
+            <dl><dt>分辨率</dt><dd>1128 x 1080</dd><dt>时长</dt><dd>27.3 秒</dd><dt>帧率</dt><dd>30 FPS</dd></dl>
+          </article>
+          <article>
+            <video src="../processed_demo_videos/demo_07_front_direction_f3e5b88e_poliguide_visual_demo.mp4" poster="../processed_demo_videos/demo_07_front_direction_f3e5b88e_poster.jpg" controls playsinline></video>
+            <h3>正面方向引导</h3>
+            <p>正面单臂方向引导场景，展示轨迹、骨架、命令和状态机窗口投票。</p>
+            <dl><dt>分辨率</dt><dd>1128 x 1080</dd><dt>时长</dt><dd>8.3 秒</dd><dt>帧率</dt><dd>30 FPS</dd></dl>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-band" id="commands">
+        <div class="section-heading">
+          <h2>命令字典与车辆语义</h2>
+          <p>系统不仅输出类别编号，还把手势类别映射为交通意图、车辆控制域命令和安全优先级，便于接入规划模块。</p>
+        </div>
+        <div class="command-map">
+          <table>
+            <thead>
+              <tr><th>手势标签</th><th>交通语义</th><th>车辆控制命令</th><th>平台侧处理</th><th>安全说明</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>NO_GESTURE</td><td>无有效人工指挥</td><td>NO_ACTIVE_COMMAND</td><td>不主动覆盖规划</td><td>避免无指挥误触发</td></tr>
+              <tr><td>STOP</td><td>停车等待</td><td>STOP</td><td>速度约束 0.0 m/s</td><td>最高安全优先级</td></tr>
+              <tr><td>GO_STRAIGHT</td><td>允许直行</td><td>GO_STRAIGHT</td><td>规划器生成直行轨迹</td><td>需满足持续一致性</td></tr>
+              <tr><td>LEFT_TURN_WAIT</td><td>左转待转</td><td>KEEP_WAIT</td><td>速度约束 0.0 m/s</td><td>防止误启动</td></tr>
+              <tr><td>TURN_LEFT</td><td>左转通行</td><td>TURN_LEFT</td><td>输出方向语义</td><td>由规划器确认车道可行性</td></tr>
+              <tr><td>TURN_RIGHT</td><td>右转通行</td><td>TURN_RIGHT</td><td>输出方向语义</td><td>由规划器确认行人冲突</td></tr>
+              <tr><td>CHANGE_LANE</td><td>变道引导</td><td>CHANGE_LANE</td><td>规划器生成变道约束</td><td>需要融合车道和障碍物状态</td></tr>
+              <tr><td>SLOW_DOWN</td><td>减速慢行</td><td>SLOW_DOWN</td><td>速度约束 3.0 m/s</td><td>保留制动冗余</td></tr>
+              <tr><td>PULL_OVER</td><td>靠边停车</td><td>PULL_OVER</td><td>规划器寻找可停车区域</td><td>适合检查点与人工接管</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note">方向相关连续任务按 32 个前景类加 NO_GESTURE 组织：8 类有效交通动作乘以 4 个方向，再加 1 类无有效手势。</p>
+      </section>
+
+      <section class="section-band split-section" id="integration">
+        <div class="section-heading stacked">
+          <h2>接口对接与指令映射体验</h2>
+          <p>选择一个交通命令，右侧会同步呈现 JSON 输出、ROS2 话题、Autoware 速度提示和 CARLA 规划速度。</p>
+        </div>
+        <div class="integration-layout">
+          <div class="command-picker" role="listbox" aria-label="交通命令选择">
+            <button class="is-active" data-command="GO_STRAIGHT" type="button">直行</button>
+            <button data-command="STOP" type="button">停止</button>
+            <button data-command="LEFT_TURN_WAIT" type="button">左转待转</button>
+            <button data-command="SLOW_DOWN" type="button">减速慢行</button>
+            <button data-command="TURN_LEFT" type="button">左转</button>
+            <button data-command="TURN_RIGHT" type="button">右转</button>
+            <button data-command="CHANGE_LANE" type="button">变道</button>
+            <button data-command="PULL_OVER" type="button">靠边停车</button>
+          </div>
+          <div class="api-panel">
+            <div class="api-tabs" role="tablist" aria-label="接口类型">
+              <button class="is-active" data-api="json" type="button">JSON 输出</button>
+              <button data-api="ros2" type="button">ROS2</button>
+              <button data-api="autoware" type="button">Autoware</button>
+              <button data-api="carla" type="button">CARLA</button>
+            </div>
+            <pre id="api-output"></pre>
+            <button class="copy-button secondary-copy" type="button" data-copy-target="api-output">复制接口示例</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band" id="runbook">
+        <div class="section-heading">
+          <h2>运行命令手册</h2>
+          <p>将常用入口整理为可切换命令，支持部署人员按需执行训练、推理、诊断、评估与导出。</p>
+        </div>
+        <div class="runbook">
+          <div class="command-tabs" role="tablist" aria-label="命令类型">
+            <button class="is-active" data-command-tab="camera" type="button">摄像头实时</button>
+            <button data-command-tab="setup" type="button">准备环境</button>
+            <button data-command-tab="train" type="button">训练主线</button>
+            <button data-command-tab="video" type="button">离线视频</button>
+            <button data-command-tab="debug" type="button">可视化诊断</button>
+            <button data-command-tab="toy" type="button">闭环自检</button>
+            <button data-command-tab="fair" type="button">公平评测</button>
+            <button data-command-tab="onnx" type="button">导出 ONNX</button>
+          </div>
+          <pre id="run-command"></pre>
+          <button class="copy-button" type="button" data-copy-target="run-command">复制命令</button>
+        </div>
+      </section>
+
+      <section class="section-band" id="evidence">
+        <div class="section-heading">
+          <h2>交付依据看板</h2>
+          <p>将关键结论追溯到工程材料、指标文件、接口代码和验证记录，便于交付验收与后续维护。</p>
+        </div>
+        <div class="evidence-grid">
+          <article><span>需求来源</span><strong>需求说明 docx</strong><p>高鲁棒性、强实时性、复杂光照天气背景、检测跟踪分类和意图解析。</p></article>
+          <article><span>方案说明</span><strong>系统报告 docx</strong><p>技术索引、系统目标、五层架构、核心模块、部署条件、验证方案和下一步规划。</p></article>
+          <article><span>工程入口</span><strong>README / 命令清单</strong><p>训练、评估、离线推理、摄像头推理、诊断、ONNX 导出和闭环自检。</p></article>
+          <article><span>指标依据</span><strong>metrics.json</strong><p>在线部署主线、公平 split、online wholebody 和 all-data 上限分口径呈现。</p></article>
+          <article><span>平台对接</span><strong>src/tpgr/data、io 与 sim</strong><p>标签、特征、JSONL、ROS2、AutowareBridge、CARLA adapter 形成下游接口示例。</p></article>
+          <article><span>质量自检</span><strong>self_check_results</strong><p>compileall、pytest、评测重跑、基础验收和在线路线验证记录。</p></article>
+        </div>
+      </section>
+
+      <section class="section-band" id="validation">
+        <div class="section-heading">
+          <h2>能力验证矩阵</h2>
+          <p>系统从创新性、可行性、完整性和应用潜力四个维度组织验证依据。</p>
+        </div>
+        <div class="validation-grid" id="competition">
+          <article><span>创新性</span><strong>任务重构 + 多任务时序理解</strong><p>从“动作分类”扩展为“主体、方向、语义、稳定输出”的无人驾驶可用任务。</p></article>
+          <article><span>可行性</span><strong>OpenMMLab + PyTorch + 统一命令</strong><p>已有训练、评估、离线视频、摄像头、诊断、ONNX 和基础验收路径。</p></article>
+          <article><span>完整性</span><strong>输入到平台对接闭环</strong><p>覆盖检测、跟踪、姿态、时序识别、意图解析、状态机、JSONL、ROS2、Autoware、CARLA。</p></article>
+          <article><span>应用潜力</span><strong>复杂交通组织长尾场景</strong><p>适配信号灯故障、事故占道、临时管制、检查点和测试场人工接管。</p></article>
+        </div>
+      </section>
+
+      <section class="section-band delivery-section" id="delivery">
+        <div class="section-heading">
+          <h2>交付资源与边界说明</h2>
+          <p>交付包同时说明成果与边界，避免把不同实验口径混在一起。</p>
+        </div>
+        <div class="delivery-grid">
+          <article>
+            <h3>代码包</h3>
+            <ul>
+              <li>src/tpgr 工程源码</li>
+              <li>configs 训练、部署、评估配置</li>
+              <li>tools 数据准备与评估脚本</li>
+              <li>Dockerfile / requirements / pyproject</li>
+            </ul>
+            <a class="resource-action" href="../code.zip">打开 code.zip</a>
+          </article>
+          <article>
+            <h3>文档报告</h3>
+            <ul>
+              <li>系统报告</li>
+              <li>需求说明与需求矩阵</li>
+              <li>命令清单 / workflow</li>
+              <li>competition alignment / self check</li>
+            </ul>
+            <div class="resource-stack">
+              <a class="resource-action" href="../警势智行--面向无人驾驶的交警手势识别与指令解析系统_最终提交版.docx">打开系统报告</a>
+              <a class="resource-action" href="../面向无人驾驶的交警手势识别系统.docx">打开需求文档</a>
+            </div>
+          </article>
+          <article>
+            <h3>结果证据</h3>
+            <ul>
+              <li>metrics.json 指标文件</li>
+              <li>JSONL 推理输出</li>
+              <li>在线 / 离线演示视频</li>
+              <li>pytest 与基础验收记录</li>
+            </ul>
+            <div class="resource-stack">
+              <a class="resource-action" href="../在线演示.mp4">打开在线演示</a>
+              <a class="resource-action" href="../离线演示.mp4">打开离线演示</a>
+            </div>
+          </article>
+          <article>
+            <h3>客观边界</h3>
+            <ul>
+              <li>在线最佳与 benchmark 最佳仍非同一路线</li>
+              <li>fair-best 含 test-guided 调优边界</li>
+              <li>all-data 上限不能当公平 split</li>
+              <li>真实车端部署仍需进一步验证</li>
+            </ul>
+          </article>
+          <article>
+            <h3>数据与权重</h3>
+            <ul>
+              <li>默认主线使用 CTPGesture v1 + v2 处理清单</li>
+              <li>wholebody 与 VIBE 路线作为增强和评测对照</li>
+              <li>第三方姿态权重不随包直接分发</li>
+              <li>OpenMMLab 权重按官方来源下载替换</li>
+            </ul>
+          </article>
+          <article>
+            <h3>许可与复用</h3>
+            <ul>
+              <li>原创 glue code、训练脚本与接口层按 MIT 组织</li>
+              <li>数据集、模型权重和仿真资源需遵循各自许可</li>
+              <li>未内嵌 GPL / AGPL 代码</li>
+              <li>商业或公开分发前需复核第三方授权</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <span>PoliGuide-AV v0.2.0</span>
+        <span>面向无人驾驶的交警手势识别与指令解析系统</span>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,222 @@
+[
+  {
+    "smooth_window": 1,
+    "command_weight": 0.6,
+    "direction_weight": 0.3,
+    "decoder": false,
+    "gesture_fg_jaccard": 0.6909584791711292,
+    "gesture_macro_jaccard": 0.6921108133552276,
+    "command_macro_jaccard": 0.6931965723357351,
+    "stable_output_latency_frames": 3.6826923076923075,
+    "switch_delay_frames": 10.600961538461538
+  },
+  {
+    "smooth_window": 1,
+    "command_weight": 0.6,
+    "direction_weight": 0.2,
+    "decoder": false,
+    "gesture_fg_jaccard": 0.6898840895304007,
+    "gesture_macro_jaccard": 0.690997912729392,
+    "command_macro_jaccard": 0.6931965723357351,
+    "stable_output_latency_frames": 2.9326923076923075,
+    "switch_delay_frames": 10.841346153846153
+  },
+  {
+    "smooth_window": 1,
+    "command_weight": 0.4,
+    "direction_weight": 0.3,
+    "decoder": false,
+    "gesture_fg_jaccard": 0.6891872603330373,
+    "gesture_macro_jaccard": 0.6903065144461181,
+    "command_macro_jaccard": 0.6931965723357351,
+    "stable_output_latency_frames": 3.923076923076923,
+    "switch_delay_frames": 10.889423076923077
+  },
+  {
+    "smooth_window": 1,
+    "command_weight": 0.4,
+    "direction_weight": 0.2,
+    "decoder": false,
+    "gesture_fg_jaccard": 0.6876510747345566,
+    "gesture_macro_jaccard": 0.6887079594111911,
+    "command_macro_jaccard": 0.6931965723357351,
+    "stable_output_latency_frames": 3.0576923076923075,
+    "switch_delay_frames": 11.163461538461538
+  },
+  {
+    "smooth_window": 1,
+    "command_weight": 0.6,
+    "direction_weight": 0.1,
+    "decoder": false,
+    "gesture_fg_jaccard": 0.687273210928177,
+    "gesture_macro_jaccard": 0.6883674058246587,
+    "command_macro_jaccard": 0.6931965723357351,
+    "stable_output_latency_frames": 2.9326923076923075,
+    "switch_delay_frames": 10.975961538461538
+  },
+  {
+    "smooth_window": 1,
+    "command_weight": 0.4,
+    "direction_weight": 0.1,
+    "decoder": false,
+    "gesture_fg_jaccard": 0.6858868340573572,
+    "gesture_macro_jaccard": 0.6869084990394101,
+    "command_macro_jaccard": 0.6931965723357351,
+    "stable_output_latency_frames": 3.0576923076923075,
+    "switch_delay_frames": 11.216346153846153
+  },
+  {
+    "smooth_window": 1,
+    "command_weight": 0.2,
+    "direction_weight": 0.3,
+    "decoder": false,
+    "gesture_fg_jaccard": 0.6848401076487263,
+    "gesture_macro_jaccard": 0.6859109445764291,
+    "command_macro_jaccard": 0.6931965723357351,
+    "stable_output_latency_frames": 4.048076923076923,
+    "switch_delay_frames": 11.0
+  },
+  {
+    "smooth_window": 1,
+    "command_weight": 0.2,
+    "direction_weight": 0.2,
+    "decoder": false,
+    "gesture_fg_jaccard": 0.6841178128276123,
+    "gesture_macro_jaccard": 0.6851386379840791,
+    "command_macro_jaccard": 0.6931965723357351,
+    "stable_output_latency_frames": 3.1923076923076925,
+    "switch_delay_frames": 11.33173076923077
+  },
+  {
+    "smooth_window": 3,
+    "command_weight": 0.6,
+    "direction_weight": 0.3,
+    "decoder": false,
+    "gesture_fg_jaccard": 0.683910446657159,
+    "gesture_macro_jaccard": 0.6851075389800184,
+    "command_macro_jaccard": 0.6868746296279304,
+    "stable_output_latency_frames": 4.115384615384615,
+    "switch_delay_frames": 11.60576923076923
+  },
+  {
+    "smooth_window": 3,
+    "command_weight": 0.6,
+    "direction_weight": 0.2,
+    "decoder": false,
+    "gesture_fg_jaccard": 0.6833962965602384,
+    "gesture_macro_jaccard": 0.6845462462082644,
+    "command_macro_jaccard": 0.6868746296279304,
+    "stable_output_latency_frames": 3.3365384615384617,
+    "switch_delay_frames": 11.865384615384615
+  },
+  {
+    "smooth_window": 1,
+    "command_weight": 0.2,
+    "direction_weight": 0.1,
+    "decoder": false,
+    "gesture_fg_jaccard": 0.6821291316991345,
+    "gesture_macro_jaccard": 0.6830977156737369,
+    "command_macro_jaccard": 0.6931965723357351,
+    "stable_output_latency_frames": 3.1634615384615383,
+    "switch_delay_frames": 11.413461538461538
+  },
+  {
+    "smooth_window": 3,
+    "command_weight": 0.4,
+    "direction_weight": 0.3,
+    "decoder": false,
+    "gesture_fg_jaccard": 0.6818352941335901,
+    "gesture_macro_jaccard": 0.6830035798622408,
+    "command_macro_jaccard": 0.6868746296279304,
+    "stable_output_latency_frames": 4.259615384615385,
+    "switch_delay_frames": 11.966346153846153
+  },
+  {
+    "smooth_window": 3,
+    "command_weight": 0.6,
+    "direction_weight": 0.1,
+    "decoder": false,
+    "gesture_fg_jaccard": 0.6812894540528608,
+    "gesture_macro_jaccard": 0.6824010892490429,
+    "command_macro_jaccard": 0.6868746296279304,
+    "stable_output_latency_frames": 3.3365384615384617,
+    "switch_delay_frames": 11.908653846153847
+  },
+  {
+    "smooth_window": 3,
+    "command_weight": 0.4,
+    "direction_weight": 0.2,
+    "decoder": false,
+    "gesture_fg_jaccard": 0.6804291848268456,
+    "gesture_macro_jaccard": 0.6815401207194887,
+    "command_macro_jaccard": 0.6868746296279304,
+    "stable_output_latency_frames": 3.5,
+    "switch_delay_frames": 11.985576923076923
+  },
+  {
+    "smooth_window": 3,
+    "command_weight": 0.4,
+    "direction_weight": 0.1,
+    "decoder": false,
+    "gesture_fg_jaccard": 0.6783759882914719,
+    "gesture_macro_jaccard": 0.6794062194278518,
+    "command_macro_jaccard": 0.6868746296279304,
+    "stable_output_latency_frames": 3.451923076923077,
+    "switch_delay_frames": 12.110576923076923
+  },
+  {
+    "smooth_window": 3,
+    "command_weight": 0.2,
+    "direction_weight": 0.3,
+    "decoder": false,
+    "gesture_fg_jaccard": 0.6774551966291614,
+    "gesture_macro_jaccard": 0.6785750206169516,
+    "command_macro_jaccard": 0.6868746296279304,
+    "stable_output_latency_frames": 4.480769230769231,
+    "switch_delay_frames": 12.096153846153847
+  },
+  {
+    "smooth_window": 3,
+    "command_weight": 0.2,
+    "direction_weight": 0.2,
+    "decoder": false,
+    "gesture_fg_jaccard": 0.6769777190835057,
+    "gesture_macro_jaccard": 0.6780315784586559,
+    "command_macro_jaccard": 0.6868746296279304,
+    "stable_output_latency_frames": 3.6153846153846154,
+    "switch_delay_frames": 12.221153846153847
+  },
+  {
+    "smooth_window": 5,
+    "command_weight": 0.6,
+    "direction_weight": 0.2,
+    "decoder": false,
+    "gesture_fg_jaccard": 0.6759252766078427,
+    "gesture_macro_jaccard": 0.6771018408189806,
+    "command_macro_jaccard": 0.6780574476826617,
+    "stable_output_latency_frames": 3.7884615384615383,
+    "switch_delay_frames": 12.533653846153847
+  },
+  {
+    "smooth_window": 5,
+    "command_weight": 0.6,
+    "direction_weight": 0.3,
+    "decoder": false,
+    "gesture_fg_jaccard": 0.6757660633938212,
+    "gesture_macro_jaccard": 0.6769993253204007,
+    "command_macro_jaccard": 0.6780574476826617,
+    "stable_output_latency_frames": 4.5673076923076925,
+    "switch_delay_frames": 12.764423076923077
+  },
+  {
+    "smooth_window": 3,
+    "command_weight": 0.2,
+    "direction_weight": 0.1,
+    "decoder": false,
+    "gesture_fg_jaccard": 0.6751045131538096,
+    "gesture_macro_jaccard": 0.6761170436305459,
+    "command_macro_jaccard": 0.6868746296279304,
+    "stable_output_latency_frames": 3.548076923076923,
+    "switch_delay_frames": 12.235576923076923
+  }
+]

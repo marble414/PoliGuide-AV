@@ -1,0 +1,7 @@
+model:
+  name: skeleton_stgcn
+  in_channels: 3
+  num_nodes: 17
+  num_classes: 9
+  hidden_dim: 64
+  dropout: 0.2

@@ -1,0 +1,8 @@
+dataset:
+  dataset_name: ctpgesture_v2
+  manifest_path: data/processed/ctpgesture_v2/manifest_pose.jsonl
+  train_split: train
+  val_split: val
+  test_split: test
+  clip_len: 48
+  representation: features

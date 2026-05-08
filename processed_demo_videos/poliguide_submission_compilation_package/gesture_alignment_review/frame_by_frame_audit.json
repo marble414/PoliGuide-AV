@@ -1,0 +1,301 @@
+{
+  "video": {
+    "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/processed_demo_videos/poliguide_submission_compilation_1080p.mp4",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30.0,
+    "frames": 1959,
+    "duration_sec": 65.3,
+    "mb": 16.124
+  },
+  "planned_output_frames": 1959,
+  "frame_count_matches_plan": true,
+  "action_frames_checked": 1719,
+  "clip_count": 14,
+  "visual_issues_count": 0,
+  "visual_issues_sample": [],
+  "semantic_issues_count": 0,
+  "semantic_issues_sample": [],
+  "clip_reports": [
+    {
+      "clip_index": 1,
+      "title": "警势智行 PoliGuide-AV",
+      "kind": "title",
+      "output_start_frame": 0,
+      "output_frames": 120,
+      "issue_count": 0
+    },
+    {
+      "clip_index": 2,
+      "title": "夜间右向指挥",
+      "kind": "video",
+      "source": "demo_01_night_high_glare",
+      "focus": "TURN_RIGHT",
+      "display_duration": 5.0,
+      "output_start_frame": 120,
+      "output_frames": 150,
+      "unique_source_frames": 96,
+      "commands": {
+        "TURN_RIGHT": 150
+      },
+      "gestures": {
+        "TURN_RIGHT": 150
+      },
+      "avg_pose_quality": 0.9618,
+      "min_pose_quality": 0.9575,
+      "avg_latency_ms": 10.2987,
+      "issue_count": 0,
+      "issues_sample": []
+    },
+    {
+      "clip_index": 3,
+      "title": "夜间示停指挥",
+      "kind": "video",
+      "source": "demo_01_night_high_glare",
+      "focus": "STOP",
+      "display_duration": 4.2,
+      "output_start_frame": 270,
+      "output_frames": 126,
+      "unique_source_frames": 24,
+      "commands": {
+        "STOP": 126
+      },
+      "gestures": {
+        "STOP": 126
+      },
+      "avg_pose_quality": 0.9896,
+      "min_pose_quality": 0.9886,
+      "avg_latency_ms": 10.2716,
+      "issue_count": 0,
+      "issues_sample": []
+    },
+    {
+      "clip_index": 4,
+      "title": "施工入口右向指挥",
+      "kind": "video",
+      "source": "demo_02_construction_entry",
+      "focus": "TURN_RIGHT",
+      "display_duration": 5.0,
+      "output_start_frame": 396,
+      "output_frames": 150,
+      "unique_source_frames": 108,
+      "commands": {
+        "TURN_RIGHT": 150
+      },
+      "gestures": {
+        "TURN_RIGHT": 150
+      },
+      "avg_pose_quality": 0.9696,
+      "min_pose_quality": 0.9545,
+      "avg_latency_ms": 10.4252,
+      "issue_count": 0,
+      "issues_sample": []
+    },
+    {
+      "clip_index": 5,
+      "title": "施工入口左向指挥",
+      "kind": "video",
+      "source": "demo_02_construction_entry",
+      "focus": "TURN_LEFT",
+      "display_duration": 4.5,
+      "output_start_frame": 546,
+      "output_frames": 135,
+      "unique_source_frames": 62,
+      "commands": {
+        "TURN_LEFT": 135
+      },
+      "gestures": {
+        "TURN_LEFT": 135
+      },
+      "avg_pose_quality": 0.9536,
+      "min_pose_quality": 0.9409,
+      "avg_latency_ms": 10.3809,
+      "issue_count": 0,
+      "issues_sample": []
+    },
+    {
+      "clip_index": 6,
+      "title": "路侧车辆右向指挥",
+      "kind": "video",
+      "source": "demo_03_roadside_vehicle",
+      "focus": "TURN_RIGHT",
+      "display_duration": 4.5,
+      "output_start_frame": 681,
+      "output_frames": 135,
+      "unique_source_frames": 63,
+      "commands": {
+        "TURN_RIGHT": 135
+      },
+      "gestures": {
+        "TURN_RIGHT": 135
+      },
+      "avg_pose_quality": 0.8989,
+      "min_pose_quality": 0.8954,
+      "avg_latency_ms": 10.4128,
+      "issue_count": 0,
+      "issues_sample": []
+    },
+    {
+      "clip_index": 7,
+      "title": "路侧车辆左向指挥",
+      "kind": "video",
+      "source": "demo_03_roadside_vehicle",
+      "focus": "TURN_LEFT",
+      "display_duration": 7.5,
+      "output_start_frame": 816,
+      "output_frames": 225,
+      "unique_source_frames": 210,
+      "commands": {
+        "TURN_LEFT": 225
+      },
+      "gestures": {
+        "TURN_LEFT": 225
+      },
+      "avg_pose_quality": 0.8747,
+      "min_pose_quality": 0.8595,
+      "avg_latency_ms": 10.4361,
+      "issue_count": 0,
+      "issues_sample": []
+    },
+    {
+      "clip_index": 8,
+      "title": "夜间限速右向指挥",
+      "kind": "video",
+      "source": "demo_04_night_speed_limit",
+      "focus": "TURN_RIGHT",
+      "display_duration": 5.0,
+      "output_start_frame": 1041,
+      "output_frames": 150,
+      "unique_source_frames": 90,
+      "commands": {
+        "TURN_RIGHT": 150
+      },
+      "gestures": {
+        "TURN_RIGHT": 150
+      },
+      "avg_pose_quality": 0.9954,
+      "min_pose_quality": 0.9921,
+      "avg_latency_ms": 10.7436,
+      "issue_count": 0,
+      "issues_sample": []
+    },
+    {
+      "clip_index": 9,
+      "title": "夜间限速左向指挥",
+      "kind": "video",
+      "source": "demo_04_night_speed_limit",
+      "focus": "TURN_LEFT",
+      "display_duration": 5.0,
+      "output_start_frame": 1191,
+      "output_frames": 150,
+      "unique_source_frames": 108,
+      "commands": {
+        "TURN_LEFT": 150
+      },
+      "gestures": {
+        "TURN_LEFT": 150
+      },
+      "avg_pose_quality": 0.9418,
+      "min_pose_quality": 0.9181,
+      "avg_latency_ms": 10.6556,
+      "issue_count": 0,
+      "issues_sample": []
+    },
+    {
+      "clip_index": 10,
+      "title": "逆光左向指挥",
+      "kind": "video",
+      "source": "demo_05_backlight_side",
+      "focus": "TURN_LEFT",
+      "display_duration": 4.2,
+      "output_start_frame": 1341,
+      "output_frames": 126,
+      "unique_source_frames": 42,
+      "commands": {
+        "TURN_LEFT": 126
+      },
+      "gestures": {
+        "TURN_LEFT": 126
+      },
+      "avg_pose_quality": 0.9649,
+      "min_pose_quality": 0.9609,
+      "avg_latency_ms": 10.454,
+      "issue_count": 0,
+      "issues_sample": []
+    },
+    {
+      "clip_index": 11,
+      "title": "逆光慢行指挥",
+      "kind": "video",
+      "source": "demo_05_backlight_side",
+      "focus": "SLOW_DOWN",
+      "display_duration": 4.2,
+      "output_start_frame": 1467,
+      "output_frames": 126,
+      "unique_source_frames": 22,
+      "commands": {
+        "SLOW_DOWN": 126
+      },
+      "gestures": {
+        "SLOW_DOWN": 126
+      },
+      "avg_pose_quality": 0.9159,
+      "min_pose_quality": 0.8994,
+      "avg_latency_ms": 10.5432,
+      "issue_count": 0,
+      "issues_sample": []
+    },
+    {
+      "clip_index": 12,
+      "title": "施工区域示停",
+      "kind": "video",
+      "source": "demo_06_construction_stop",
+      "focus": "STOP",
+      "display_duration": 4.2,
+      "output_start_frame": 1593,
+      "output_frames": 126,
+      "unique_source_frames": 42,
+      "commands": {
+        "STOP": 126
+      },
+      "gestures": {
+        "STOP": 126
+      },
+      "avg_pose_quality": 0.9972,
+      "min_pose_quality": 0.9968,
+      "avg_latency_ms": 10.7618,
+      "issue_count": 0,
+      "issues_sample": []
+    },
+    {
+      "clip_index": 13,
+      "title": "正面右向指挥",
+      "kind": "video",
+      "source": "demo_07_front_direction",
+      "focus": "TURN_RIGHT",
+      "display_duration": 4.0,
+      "output_start_frame": 1719,
+      "output_frames": 120,
+      "unique_source_frames": 19,
+      "commands": {
+        "TURN_RIGHT": 120
+      },
+      "gestures": {
+        "TURN_RIGHT": 120
+      },
+      "avg_pose_quality": 0.9773,
+      "min_pose_quality": 0.968,
+      "avg_latency_ms": 10.7823,
+      "issue_count": 0,
+      "issues_sample": []
+    },
+    {
+      "clip_index": 14,
+      "title": "结构化交付结果",
+      "kind": "title",
+      "output_start_frame": 1839,
+      "output_frames": 120,
+      "issue_count": 0
+    }
+  ]
+}

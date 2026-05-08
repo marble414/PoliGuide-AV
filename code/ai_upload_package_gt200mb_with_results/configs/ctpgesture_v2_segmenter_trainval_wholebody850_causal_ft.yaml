@@ -1,0 +1,51 @@
+seed: 42
+device: cuda
+
+dataset:
+  video_manifest_path: data/processed/ctpgesture_v2_wholebodyfull33/manifest_videos_trainval.jsonl
+  dataset_name: ctpgesture_v2
+  label_space: ctpv2_directional
+  train_split: train
+  eval_split: train
+  crop_len: 2048
+  samples_per_video: 32
+
+model:
+  name: frame_segmenter_causal_multitask
+  input_dim: 826
+  task_dims:
+    gesture: 33
+    command: 9
+    direction: 5
+  hidden_dim: 384
+  num_blocks: 12
+  dropout: 0.05
+
+trainer:
+  output_dir: runs/ctpgesture_v2_segmenter_trainval_wholebody850_causal_ft
+  init_checkpoint: runs/ctpgesture_v2_segmenter_trainval_wholebody850_b12_d05/best.pt
+  init_strict: false
+  epochs: 3
+  batch_size: 4
+  num_workers: 4
+  pin_memory: true
+  persistent_workers: true
+  amp: true
+  compile: false
+  lr: 0.0001
+  weight_decay: 0.0001
+  grad_clip: 1.0
+  label_smoothing: 0.02
+  class_weighting: inverse_sqrt
+  task_weights:
+    gesture: 1.0
+    command: 0.40
+    direction: 0.20
+
+evaluation:
+  chunk_len: 4096
+  overlap: 1024
+  smooth_window: 1
+  task_fusion:
+    command_weight: 0.80
+    direction_weight: 0.30

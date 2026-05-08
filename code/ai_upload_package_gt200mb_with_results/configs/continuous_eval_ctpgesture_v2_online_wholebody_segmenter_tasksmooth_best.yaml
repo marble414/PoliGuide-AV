@@ -1,0 +1,94 @@
+dataset:
+  video_manifest_path: data/processed/ctpgesture_v2_wholebody33/manifest_videos_trainval.jsonl
+  dataset_name: ctpgesture_v2
+  label_space: ctpv2_directional
+  sequence_source: keypoints
+  train_split: train
+  val_split: val
+  test_split: test
+
+classifier:
+  type: ensemble
+  members:
+    - type: torch
+      weight: 1.0
+      checkpoint: runs/ctpgesture_v2_segmenter_trainval_wholebody456_b12_d05/best.pt
+      representation: features
+      feature_variant: wholebody_focus
+      clip_len: 384
+      tta_num_clips: 1
+      temporal_mode: crop_pad
+      device: cuda
+      label_space: ctpv2_directional
+      task_fusion:
+        command_weight: 0.80
+        direction_weight: 0.30
+      model:
+        name: frame_segmenter_multitask
+        input_dim: 456
+        task_dims:
+          gesture: 33
+          command: 9
+          direction: 5
+        hidden_dim: 384
+        num_blocks: 12
+        dropout: 0.05
+        amp: true
+    - type: torch
+      weight: 0.75
+      checkpoint: runs/ctpgesture_v2_segmenter_trainval_wholebody456_b12_d05_seed7/best.pt
+      representation: features
+      feature_variant: wholebody_focus
+      clip_len: 384
+      tta_num_clips: 1
+      temporal_mode: crop_pad
+      device: cuda
+      label_space: ctpv2_directional
+      task_fusion:
+        command_weight: 0.80
+        direction_weight: 0.30
+      model:
+        name: frame_segmenter_multitask
+        input_dim: 456
+        task_dims:
+          gesture: 33
+          command: 9
+          direction: 5
+        hidden_dim: 384
+        num_blocks: 12
+        dropout: 0.05
+        amp: true
+    - type: torch
+      weight: 0.90
+      checkpoint: runs/ctpgesture_v2_segmenter_trainval_wholebody850_b12_d05/best.pt
+      representation: features
+      feature_variant: wholebody_full
+      clip_len: 384
+      tta_num_clips: 1
+      temporal_mode: crop_pad
+      device: cuda
+      label_space: ctpv2_directional
+      task_fusion:
+        command_weight: 0.80
+        direction_weight: 0.30
+      model:
+        name: frame_segmenter_multitask
+        input_dim: 826
+        task_dims:
+          gesture: 33
+          command: 9
+          direction: 5
+        hidden_dim: 384
+        num_blocks: 12
+        dropout: 0.05
+        amp: true
+
+evaluation:
+  context_len: 384
+  window_mode: causal
+  smooth_window: 1
+  task_smoothing:
+    enabled: true
+    gesture_window: 3
+    command_window: 5
+    direction_window: 5

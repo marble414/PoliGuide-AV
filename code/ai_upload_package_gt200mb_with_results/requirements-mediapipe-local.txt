@@ -1,0 +1,10 @@
+# 本仓库当前 MediaPipe Solutions API 本地验证组合
+# 安装方式：
+#   pip install -r requirements-optional.txt
+#   pip install --no-deps -r requirements-mediapipe-local.txt
+# 说明：
+#   该组合在本机导入与推理 smoke 已验证可用，但 `pip check`
+#   会提示 mediapipe 官方元数据仍声明 `protobuf<4`。
+#   当前发布版默认主线不依赖 MediaPipe，该提示不影响 OpenMMLab GPU 主线。
+mediapipe==0.10.9
+protobuf==4.25.9

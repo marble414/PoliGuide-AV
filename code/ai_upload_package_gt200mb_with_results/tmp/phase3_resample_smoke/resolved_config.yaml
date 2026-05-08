@@ -1,0 +1,49 @@
+seed: 42
+device: cuda
+dataset:
+  manifest_path: data/processed/ctpgesture_all/manifest_pose.jsonl
+  dataset_name: ctpgesture_v2
+  train_split: train
+  val_split: val
+  test_split: test
+  clip_len: 64
+  representation: features
+  feature_variant: base
+  temporal_mode: hybrid
+model:
+  name: skeleton_tcn
+  input_dim: 85
+  num_classes: 9
+  hidden_dim: 256
+  num_blocks: 6
+  dropout: 0.3
+trainer:
+  output_dir: tmp/phase3_resample_smoke
+  init_checkpoint: runs/phase2_tcn_big/best.pt
+  init_strict: true
+  epochs: 1
+  batch_size: 128
+  num_workers: 0
+  pin_memory: true
+  persistent_workers: false
+  amp: true
+  lr: 0.0003
+  weight_decay: 0.0001
+  grad_clip: 1.0
+  label_smoothing: 0.05
+classifier:
+  type: torch
+  checkpoint: runs/phase3_tcn_resample/best.pt
+  representation: features
+  feature_variant: base
+  clip_len: 64
+  temporal_mode: resample
+  tta_num_clips: 1
+  device: cuda
+  model:
+    name: skeleton_tcn
+    input_dim: 85
+    num_classes: 9
+    hidden_dim: 256
+    num_blocks: 6
+    dropout: 0.3

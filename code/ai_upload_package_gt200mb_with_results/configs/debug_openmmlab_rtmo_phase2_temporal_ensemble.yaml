@@ -1,0 +1,73 @@
+dataset:
+  manifest_path: data/processed/ctpgesture_all/manifest_pose.jsonl
+  dataset_name: ctpgesture_v2
+  train_split: train
+  val_split: val
+  test_split: test
+
+runtime:
+  sequence_len: 64
+  min_predict_len: 12
+  pose_backend:
+    type: openmmlab
+    model_alias: human
+    device: cuda
+    pose2d_weights: weights/openmmlab/rtmpose-m_simcc-body7_pt-body7_420e-256x192-e48f03d0_20230504.pth
+    det_weights: weights/openmmlab/rtmdet_m_8xb32-100e_coco-obj365-person-235e8209.pth
+  tracker:
+    iou_threshold: 0.3
+    max_age: 12
+    min_hits: 1
+  selector:
+    center_weight: 0.35
+    size_weight: 0.15
+    visibility_weight: 0.25
+    hand_weight: 0.15
+    track_age_weight: 0.15
+    stability_weight: 0.08
+    vest_weight: 0.10
+    sticky_bonus: 0.10
+  state_machine:
+    window_size: 9
+    min_consensus: 6
+    conf_threshold: 0.60
+    hold_frames: 8
+    expiry_frames: 18
+
+classifier:
+  type: ensemble
+  members:
+    - type: torch
+      weight: 0.5
+      checkpoint: runs/phase2_tcn_big/best.pt
+      representation: features
+      feature_variant: base
+      clip_len: 48
+      temporal_mode: crop_pad
+      tta_num_clips: 3
+      device: cuda
+      model:
+        name: skeleton_tcn
+        input_dim: 85
+        num_classes: 9
+        hidden_dim: 256
+        num_blocks: 6
+        dropout: 0.3
+        amp: true
+    - type: torch
+      weight: 0.5
+      checkpoint: runs/phase2_tcn_big/best.pt
+      representation: features
+      feature_variant: base
+      clip_len: 64
+      temporal_mode: resample
+      tta_num_clips: 1
+      device: cuda
+      model:
+        name: skeleton_tcn
+        input_dim: 85
+        num_classes: 9
+        hidden_dim: 256
+        num_blocks: 6
+        dropout: 0.3
+        amp: true

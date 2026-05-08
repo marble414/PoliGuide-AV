@@ -1,0 +1,722 @@
+[
+  {
+    "gesture_window": 1,
+    "command_window": 1,
+    "direction_window": 3,
+    "cw": 1.1,
+    "dw": 0.35,
+    "fg": 0.8201090353668316,
+    "macro": 0.8216273608624455
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 1,
+    "direction_window": 3,
+    "cw": 1.1,
+    "dw": 0.5,
+    "fg": 0.8200292071056047,
+    "macro": 0.8215629579823608
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 1,
+    "direction_window": 3,
+    "cw": 1.15,
+    "dw": 0.5,
+    "fg": 0.8199939720223194,
+    "macro": 0.8215295350803988
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 1,
+    "direction_window": 3,
+    "cw": 1.15,
+    "dw": 0.35,
+    "fg": 0.8199932946260908,
+    "macro": 0.8215126221808493
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 1,
+    "direction_window": 3,
+    "cw": 1.0,
+    "dw": 0.5,
+    "fg": 0.8199737226659791,
+    "macro": 0.8215051588074178
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 1,
+    "direction_window": 3,
+    "cw": 1.1,
+    "dw": 0.45,
+    "fg": 0.8198078813823857,
+    "macro": 0.8213422101127159
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 1,
+    "direction_window": 3,
+    "cw": 1.05,
+    "dw": 0.5,
+    "fg": 0.8197430168252904,
+    "macro": 0.8212764328209133
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 1,
+    "direction_window": 3,
+    "cw": 1.1,
+    "dw": 0.4,
+    "fg": 0.8197291661753251,
+    "macro": 0.821257245232921
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 1,
+    "direction_window": 3,
+    "cw": 1.15,
+    "dw": 0.4,
+    "fg": 0.8196986104581793,
+    "macro": 0.8212279891452854
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 1,
+    "direction_window": 3,
+    "cw": 1.0,
+    "dw": 0.35,
+    "fg": 0.8196740687627427,
+    "macro": 0.8211933087951384
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 1,
+    "direction_window": 3,
+    "cw": 1.15,
+    "dw": 0.45,
+    "fg": 0.8196605270306072,
+    "macro": 0.8211918069454349
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 1,
+    "direction_window": 3,
+    "cw": 1.05,
+    "dw": 0.4,
+    "fg": 0.8196406450949563,
+    "macro": 0.8211685282821866
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 1,
+    "direction_window": 3,
+    "cw": 1.05,
+    "dw": 0.45,
+    "fg": 0.8196334818117668,
+    "macro": 0.821166965226615
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 1,
+    "direction_window": 3,
+    "cw": 1.05,
+    "dw": 0.35,
+    "fg": 0.8196284610006734,
+    "macro": 0.8211502074971033
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 1,
+    "direction_window": 3,
+    "cw": 1.0,
+    "dw": 0.4,
+    "fg": 0.8196013575288565,
+    "macro": 0.8211321880536065
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 1,
+    "direction_window": 1,
+    "cw": 1.05,
+    "dw": 0.4,
+    "fg": 0.8194729951486038,
+    "macro": 0.8210013253255706
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 1,
+    "direction_window": 1,
+    "cw": 1.0,
+    "dw": 0.35,
+    "fg": 0.8194423855489363,
+    "macro": 0.8209640129469289
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 3,
+    "direction_window": 1,
+    "cw": 1.05,
+    "dw": 0.5,
+    "fg": 0.8193895692117407,
+    "macro": 0.8209175499400124
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 3,
+    "direction_window": 1,
+    "cw": 1.15,
+    "dw": 0.5,
+    "fg": 0.819371454139619,
+    "macro": 0.8209032356223197
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 1,
+    "direction_window": 3,
+    "cw": 1.0,
+    "dw": 0.45,
+    "fg": 0.8193627405679131,
+    "macro": 0.820895792460569
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 3,
+    "direction_window": 1,
+    "cw": 1.0,
+    "dw": 0.5,
+    "fg": 0.8192962546795575,
+    "macro": 0.820829566251759
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 1,
+    "direction_window": 1,
+    "cw": 1.15,
+    "dw": 0.4,
+    "fg": 0.8192931640863801,
+    "macro": 0.8208223130168679
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 1,
+    "direction_window": 1,
+    "cw": 1.15,
+    "dw": 0.45,
+    "fg": 0.8192827218790368,
+    "macro": 0.8208125618784742
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 3,
+    "direction_window": 1,
+    "cw": 1.1,
+    "dw": 0.5,
+    "fg": 0.8192630708588939,
+    "macro": 0.8207952594492625
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 1,
+    "direction_window": 1,
+    "cw": 1.15,
+    "dw": 0.35,
+    "fg": 0.8192159321495722,
+    "macro": 0.8207466719515056
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 1,
+    "direction_window": 1,
+    "cw": 1.1,
+    "dw": 0.45,
+    "fg": 0.8191893075022832,
+    "macro": 0.8207187269140895
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 3,
+    "direction_window": 1,
+    "cw": 1.0,
+    "dw": 0.45,
+    "fg": 0.819188782600356,
+    "macro": 0.820715591543495
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 1,
+    "direction_window": 1,
+    "cw": 1.1,
+    "dw": 0.4,
+    "fg": 0.8191612807643309,
+    "macro": 0.8206915494712267
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 1,
+    "direction_window": 1,
+    "cw": 1.1,
+    "dw": 0.35,
+    "fg": 0.8191230033805543,
+    "macro": 0.8206536819716188
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 1,
+    "direction_window": 1,
+    "cw": 1.05,
+    "dw": 0.45,
+    "fg": 0.8190983407778811,
+    "macro": 0.8206326439547141
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 1,
+    "direction_window": 5,
+    "cw": 1.1,
+    "dw": 0.5,
+    "fg": 0.8190879094661416,
+    "macro": 0.8206202785636127
+  },
+  {
+    "gesture_window": 3,
+    "command_window": 1,
+    "direction_window": 1,
+    "cw": 1.0,
+    "dw": 0.5,
+    "fg": 0.819085721844341,
+    "macro": 0.8206142775464307
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 3,
+    "direction_window": 1,
+    "cw": 1.15,
+    "dw": 0.45,
+    "fg": 0.8190420232284139,
+    "macro": 0.8205784077783713
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 1,
+    "direction_window": 1,
+    "cw": 1.0,
+    "dw": 0.5,
+    "fg": 0.8190357673938273,
+    "macro": 0.8205719667338134
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 1,
+    "direction_window": 1,
+    "cw": 1.05,
+    "dw": 0.5,
+    "fg": 0.8190357673938273,
+    "macro": 0.8205719667338134
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 1,
+    "direction_window": 5,
+    "cw": 1.05,
+    "dw": 0.5,
+    "fg": 0.8190157805145888,
+    "macro": 0.8205470809107133
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 3,
+    "direction_window": 1,
+    "cw": 1.1,
+    "dw": 0.45,
+    "fg": 0.8190028664359648,
+    "macro": 0.820533932908005
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 1,
+    "direction_window": 1,
+    "cw": 1.05,
+    "dw": 0.35,
+    "fg": 0.8189997408709557,
+    "macro": 0.8205305265874622
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 1,
+    "direction_window": 5,
+    "cw": 1.15,
+    "dw": 0.5,
+    "fg": 0.818970428263134,
+    "macro": 0.8205038540043708
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 3,
+    "direction_window": 1,
+    "cw": 1.0,
+    "dw": 0.4,
+    "fg": 0.8189696491907725,
+    "macro": 0.8204969653102169
+  },
+  {
+    "gesture_window": 3,
+    "command_window": 1,
+    "direction_window": 1,
+    "cw": 1.1,
+    "dw": 0.45,
+    "fg": 0.8189670844470971,
+    "macro": 0.8204996106201546
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 3,
+    "direction_window": 1,
+    "cw": 1.05,
+    "dw": 0.4,
+    "fg": 0.8189549493042971,
+    "macro": 0.820483086903353
+  },
+  {
+    "gesture_window": 3,
+    "command_window": 1,
+    "direction_window": 3,
+    "cw": 1.05,
+    "dw": 0.4,
+    "fg": 0.818928189232994,
+    "macro": 0.8204592647626067
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 1,
+    "direction_window": 5,
+    "cw": 1.15,
+    "dw": 0.45,
+    "fg": 0.818921483167427,
+    "macro": 0.8204567675036079
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 1,
+    "direction_window": 1,
+    "cw": 1.0,
+    "dw": 0.4,
+    "fg": 0.8189032532939571,
+    "macro": 0.8204362117231998
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 1,
+    "direction_window": 1,
+    "cw": 1.0,
+    "dw": 0.45,
+    "fg": 0.8188832477120827,
+    "macro": 0.8204211916264343
+  },
+  {
+    "gesture_window": 3,
+    "command_window": 1,
+    "direction_window": 1,
+    "cw": 1.15,
+    "dw": 0.45,
+    "fg": 0.8188762414238413,
+    "macro": 0.8204090187818207
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 1,
+    "direction_window": 5,
+    "cw": 1.1,
+    "dw": 0.35,
+    "fg": 0.8188748881763774,
+    "macro": 0.8204046997417517
+  },
+  {
+    "gesture_window": 3,
+    "command_window": 1,
+    "direction_window": 1,
+    "cw": 1.0,
+    "dw": 0.45,
+    "fg": 0.81886535414349,
+    "macro": 0.8203940805361752
+  },
+  {
+    "gesture_window": 3,
+    "command_window": 1,
+    "direction_window": 1,
+    "cw": 1.05,
+    "dw": 0.45,
+    "fg": 0.8188639029305882,
+    "macro": 0.8203966785820948
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 1,
+    "direction_window": 5,
+    "cw": 1.0,
+    "dw": 0.5,
+    "fg": 0.8188411995090021,
+    "macro": 0.8203752869172906
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 3,
+    "direction_window": 1,
+    "cw": 1.0,
+    "dw": 0.35,
+    "fg": 0.8188332830952796,
+    "macro": 0.8203610998279003
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 3,
+    "direction_window": 1,
+    "cw": 1.05,
+    "dw": 0.45,
+    "fg": 0.818830005100469,
+    "macro": 0.820360554780021
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 1,
+    "direction_window": 1,
+    "cw": 1.15,
+    "dw": 0.5,
+    "fg": 0.8188228944057752,
+    "macro": 0.8203609157413957
+  },
+  {
+    "gesture_window": 3,
+    "command_window": 1,
+    "direction_window": 3,
+    "cw": 1.0,
+    "dw": 0.4,
+    "fg": 0.8188029372060095,
+    "macro": 0.8203345529323837
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 1,
+    "direction_window": 5,
+    "cw": 1.1,
+    "dw": 0.45,
+    "fg": 0.8188008516741168,
+    "macro": 0.8203365374990994
+  },
+  {
+    "gesture_window": 3,
+    "command_window": 1,
+    "direction_window": 1,
+    "cw": 1.1,
+    "dw": 0.5,
+    "fg": 0.8188003426004533,
+    "macro": 0.82033867213957
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 3,
+    "direction_window": 3,
+    "cw": 1.0,
+    "dw": 0.35,
+    "fg": 0.8187947479603499,
+    "macro": 0.820326235602753
+  },
+  {
+    "gesture_window": 3,
+    "command_window": 1,
+    "direction_window": 1,
+    "cw": 1.05,
+    "dw": 0.5,
+    "fg": 0.8187880041072001,
+    "macro": 0.820326332284268
+  },
+  {
+    "gesture_window": 3,
+    "command_window": 1,
+    "direction_window": 3,
+    "cw": 1.05,
+    "dw": 0.35,
+    "fg": 0.8187535369533672,
+    "macro": 0.8202837702357427
+  },
+  {
+    "gesture_window": 3,
+    "command_window": 1,
+    "direction_window": 3,
+    "cw": 1.0,
+    "dw": 0.35,
+    "fg": 0.8187494042982655,
+    "macro": 0.8202790097079228
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 1,
+    "direction_window": 5,
+    "cw": 1.0,
+    "dw": 0.35,
+    "fg": 0.818742609477408,
+    "macro": 0.8202749243734117
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 3,
+    "direction_window": 1,
+    "cw": 1.15,
+    "dw": 0.4,
+    "fg": 0.8187315898498934,
+    "macro": 0.8202687505889015
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 1,
+    "direction_window": 5,
+    "cw": 1.05,
+    "dw": 0.35,
+    "fg": 0.8187263097549433,
+    "macro": 0.8202594949679125
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 1,
+    "direction_window": 1,
+    "cw": 1.1,
+    "dw": 0.5,
+    "fg": 0.8187184706351277,
+    "macro": 0.820256779912598
+  },
+  {
+    "gesture_window": 3,
+    "command_window": 1,
+    "direction_window": 1,
+    "cw": 1.15,
+    "dw": 0.4,
+    "fg": 0.818716581260505,
+    "macro": 0.8202513198442436
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 1,
+    "direction_window": 5,
+    "cw": 1.05,
+    "dw": 0.4,
+    "fg": 0.8187148542213847,
+    "macro": 0.8202495153005467
+  },
+  {
+    "gesture_window": 3,
+    "command_window": 1,
+    "direction_window": 1,
+    "cw": 1.15,
+    "dw": 0.35,
+    "fg": 0.8187009916834754,
+    "macro": 0.8202358268052677
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 3,
+    "direction_window": 1,
+    "cw": 1.05,
+    "dw": 0.35,
+    "fg": 0.8186920391508765,
+    "macro": 0.820222386522739
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 3,
+    "direction_window": 3,
+    "cw": 1.05,
+    "dw": 0.35,
+    "fg": 0.8186771518698177,
+    "macro": 0.8202100762967095
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 3,
+    "direction_window": 3,
+    "cw": 1.1,
+    "dw": 0.35,
+    "fg": 0.8186620167054528,
+    "macro": 0.820195776147177
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 3,
+    "direction_window": 3,
+    "cw": 1.15,
+    "dw": 0.35,
+    "fg": 0.8186465799694675,
+    "macro": 0.8201819358825777
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 1,
+    "direction_window": 5,
+    "cw": 1.15,
+    "dw": 0.35,
+    "fg": 0.8186397928086222,
+    "macro": 0.8201720999068965
+  },
+  {
+    "gesture_window": 3,
+    "command_window": 1,
+    "direction_window": 1,
+    "cw": 1.1,
+    "dw": 0.4,
+    "fg": 0.8186394124491487,
+    "macro": 0.8201732363741725
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 1,
+    "direction_window": 5,
+    "cw": 1.05,
+    "dw": 0.45,
+    "fg": 0.8186390104213592,
+    "macro": 0.8201734670232075
+  },
+  {
+    "gesture_window": 3,
+    "command_window": 1,
+    "direction_window": 1,
+    "cw": 1.15,
+    "dw": 0.5,
+    "fg": 0.8185784802059353,
+    "macro": 0.8201185308621277
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 3,
+    "direction_window": 1,
+    "cw": 1.1,
+    "dw": 0.4,
+    "fg": 0.8185730711725808,
+    "macro": 0.8201085292213476
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 1,
+    "direction_window": 5,
+    "cw": 1.1,
+    "dw": 0.4,
+    "fg": 0.8185542981744847,
+    "macro": 0.8200916981160986
+  },
+  {
+    "gesture_window": 1,
+    "command_window": 1,
+    "direction_window": 5,
+    "cw": 1.0,
+    "dw": 0.4,
+    "fg": 0.8185513730087727,
+    "macro": 0.820084476259743
+  },
+  {
+    "gesture_window": 3,
+    "command_window": 1,
+    "direction_window": 1,
+    "cw": 1.05,
+    "dw": 0.4,
+    "fg": 0.8185388781061991,
+    "macro": 0.8200724948011046
+  }
+]

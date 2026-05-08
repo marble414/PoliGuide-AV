@@ -1,0 +1,41 @@
+device: cuda
+
+dataset:
+  video_manifest_path: data/processed/ctpgesture_v2_vibe33/manifest_videos_trainval.jsonl
+  dataset_name: ctpgesture_v2
+  label_space: ctpv2_directional
+  eval_split: test
+
+evaluation:
+  smooth_window: 1
+  task_fusion:
+    command_weight: 0.90
+    direction_weight: 0.40
+  gesture_bias:
+    B_STOP: 1.50
+    R_TURN_LEFT: 1.125
+    R_LEFT_TURN_WAIT: 0.75
+    R_STOP: -0.375
+    R_TURN_RIGHT: -0.75
+    F_STOP: -0.75
+    B_GO_STRAIGHT: -0.75
+    B_CHANGE_LANE: -0.375
+    R_SLOW_DOWN: -0.375
+
+members:
+  - name: seg384_b12_d05_trainval
+    config: configs/eval_ctpgesture_v2_segmenter_trainval_best.yaml
+    checkpoint: runs/ctpgesture_v2_segmenter_trainval_best/best.pt
+    weight: 3.0
+  - name: seg512_b12_d05_trainval
+    config: configs/eval_ctpgesture_v2_segmenter_trainval_seg512_b12_d05.yaml
+    checkpoint: runs/ctpgesture_v2_segmenter_trainval_seg512_b12_d05/best.pt
+    weight: 2.0
+  - name: seg384_focus_v2_trainval
+    config: configs/ctpgesture_v2_segmenter_trainval_focus384_v2.yaml
+    checkpoint: runs/ctpgesture_v2_segmenter_trainval_focus384_v2/best.pt
+    weight: 1.5
+  - name: seg_wholebody456_b12_d05_trainval
+    config: configs/eval_ctpgesture_v2_segmenter_trainval_wholebody456_b12_d05.yaml
+    checkpoint: runs/ctpgesture_v2_segmenter_trainval_wholebody456_b12_d05/best.pt
+    weight: 2.5

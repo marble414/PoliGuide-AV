@@ -1,0 +1,65 @@
+seed: 42
+device: cuda
+
+dataset:
+  manifest_path: data/processed/ctpgesture_all_wholebody/manifest_pose.jsonl
+  dataset_name: ctpgesture_v2
+  train_split: train
+  val_split: val
+  test_split: test
+  clip_len: 48
+  representation: features
+  feature_variant: wholebody_focus
+  augment:
+    coord_noise_std: 0.01
+    score_noise_std: 0.02
+    joint_dropout_prob: 0.02
+    frame_dropout_prob: 0.02
+
+model:
+  name: skeleton_transformer
+  input_dim: 456
+  num_classes: 9
+  d_model: 512
+  depth: 8
+  num_heads: 8
+  mlp_ratio: 4.0
+  dropout: 0.2
+  max_len: 64
+
+trainer:
+  output_dir: runs/wholebody_transformer
+  epochs: 40
+  batch_size: 128
+  num_workers: 8
+  pin_memory: true
+  persistent_workers: true
+  prefetch_factor: 4
+  amp: true
+  compile: true
+  compile_mode: reduce-overhead
+  ema: true
+  ema_decay: 0.9996
+  lr: 0.0007
+  weight_decay: 0.0001
+  grad_clip: 1.0
+
+classifier:
+  type: torch
+  checkpoint: runs/wholebody_transformer/best.pt
+  representation: features
+  feature_variant: wholebody_focus
+  clip_len: 48
+  tta_num_clips: 3
+  device: cuda
+  model:
+    name: skeleton_transformer
+    input_dim: 456
+    num_classes: 9
+    d_model: 512
+    depth: 8
+    num_heads: 8
+    mlp_ratio: 4.0
+    dropout: 0.2
+    max_len: 64
+    amp: true

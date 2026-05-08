@@ -1,0 +1,40 @@
+seed: 42
+device: auto
+
+dataset:
+  manifest_path: data/processed/toy/manifest.jsonl
+  dataset_name: toy
+  train_split: train
+  val_split: val
+  test_split: test
+  clip_len: 48
+  representation: graph
+
+model:
+  name: skeleton_stgcn
+  in_channels: 3
+  num_nodes: 17
+  num_classes: 9
+  hidden_dim: 64
+  dropout: 0.2
+
+trainer:
+  output_dir: runs/toy_gcn
+  epochs: 10
+  batch_size: 16
+  num_workers: 0
+  lr: 0.001
+  weight_decay: 0.0001
+  grad_clip: 1.0
+
+classifier:
+  type: torch
+  representation: graph
+  clip_len: 48
+  model:
+    name: skeleton_stgcn
+    in_channels: 3
+    num_nodes: 17
+    num_classes: 9
+    hidden_dim: 64
+    dropout: 0.2

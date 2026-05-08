@@ -1,0 +1,41 @@
+{
+  "dataset_size": 112,
+  "batch_shape": [
+    8,
+    48,
+    85
+  ],
+  "logits_shape": [
+    8,
+    9
+  ],
+  "loss": 2.0505149364471436,
+  "first_25_commands": [
+    "NO_COMMAND",
+    "NO_COMMAND",
+    "NO_COMMAND",
+    "NO_COMMAND",
+    "NO_COMMAND",
+    "NO_COMMAND",
+    "NO_COMMAND",
+    "NO_COMMAND",
+    "NO_COMMAND",
+    "NO_COMMAND",
+    "NO_COMMAND",
+    "NO_COMMAND",
+    "NO_COMMAND",
+    "NO_COMMAND",
+    "NO_COMMAND",
+    "STOP",
+    "STOP",
+    "STOP",
+    "STOP",
+    "STOP",
+    "STOP",
+    "STOP",
+    "STOP",
+    "STOP",
+    "STOP"
+  ],
+  "non_no_command_frames": 10
+}

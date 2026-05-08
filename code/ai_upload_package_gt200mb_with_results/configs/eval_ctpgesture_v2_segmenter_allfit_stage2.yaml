@@ -1,0 +1,34 @@
+device: cuda
+
+dataset:
+  video_manifest_path: data/processed/ctpgesture_v2_vibe33/manifest_videos_allfit.jsonl
+  dataset_name: ctpgesture_v2
+  label_space: ctpv2_directional
+  train_split: train
+  eval_split: train
+
+model:
+  name: frame_segmenter_multitask
+  input_dim: 225
+  task_dims:
+    gesture: 33
+    command: 9
+    direction: 5
+  hidden_dim: 256
+  num_blocks: 10
+  dropout: 0.05
+
+classifier:
+  checkpoint: runs/segmenter_allfit_try1_ft/best.pt
+  amp: true
+
+evaluation:
+  chunk_len: 4096
+  overlap: 1024
+  smooth_window: 1
+  task_fusion:
+    command_weight: 0.40
+    direction_weight: 0.20
+
+decoder:
+  enabled: false

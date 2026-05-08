@@ -1,0 +1,30 @@
+dataset:
+  video_manifest_path: data/processed/ctpgesture_v2_vibe33/manifest_videos.jsonl
+  dataset_name: ctpgesture_v2
+  label_space: ctpv2_directional
+  test_split: test
+  clip_len: 64
+
+classifier:
+  type: torch
+  checkpoint: runs/ctpgesture_v2_vibe33_multitask_tcn/best.pt
+  label_space: ctpv2_directional
+  representation: features
+  clip_len: 64
+  device: cuda
+  tta_num_clips: 1
+  task_fusion:
+    command_weight: 0.35
+    direction_weight: 0.25
+  model:
+    name: multitask_skeleton_tcn
+    input_dim: 225
+    num_classes: 33
+    task_dims:
+      gesture: 33
+      command: 9
+      direction: 5
+    hidden_dim: 384
+    num_blocks: 8
+    dropout: 0.35
+    amp: true

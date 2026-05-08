@@ -1,0 +1,40 @@
+seed: 42
+device: auto
+
+dataset:
+  manifest_path: data/processed/ctpgesture_v2/manifest_pose.jsonl
+  dataset_name: ctpgesture_v2
+  train_split: train
+  val_split: val
+  test_split: test
+  clip_len: 48
+  representation: graph
+
+model:
+  name: skeleton_stgcn
+  in_channels: 3
+  num_nodes: 17
+  num_classes: 9
+  hidden_dim: 64
+  dropout: 0.2
+
+trainer:
+  output_dir: runs/ctpgesture_gcn
+  epochs: 50
+  batch_size: 32
+  num_workers: 0
+  lr: 0.001
+  weight_decay: 0.0001
+  grad_clip: 1.0
+
+classifier:
+  type: torch
+  representation: graph
+  clip_len: 48
+  model:
+    name: skeleton_stgcn
+    in_channels: 3
+    num_nodes: 17
+    num_classes: 9
+    hidden_dim: 64
+    dropout: 0.2

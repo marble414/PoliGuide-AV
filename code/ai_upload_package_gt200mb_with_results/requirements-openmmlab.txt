@@ -1,0 +1,11 @@
+# OpenMMLab 姿态推理依赖
+# 说明：
+# - 该组合在本仓库当前代码路径下需要 NumPy 1.x，避免 xtcocotools 与 NumPy 2.x 的 ABI 冲突
+# - 先安装 requirements.txt / requirements-optional.txt，再安装本文件
+# - `mmcv` 需使用 OpenMIM 按 PyTorch/CUDA 组合安装 full 版，不要装 `mmcv-lite`
+numpy>=1.24,<2.0
+chumpy>=0.70
+mmengine>=0.10,<1.0
+mmdet>=3.3,<4.0
+mmpose>=1.3,<2.0
+xtcocotools>=1.14

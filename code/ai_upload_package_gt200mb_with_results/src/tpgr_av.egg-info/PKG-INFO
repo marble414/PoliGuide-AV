@@ -1,0 +1,409 @@
+Metadata-Version: 2.4
+Name: tpgr-av
+Version: 0.2.0
+Summary: PoliGuide-AV: 面向无人驾驶的交警手势识别系统
+Author: OpenAI GPT-5.4 Pro generated baseline
+License: MIT
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy<2.0,>=1.24
+Requires-Dist: opencv-python<5.0,>=4.8
+Requires-Dist: PyYAML<7.0,>=6.0
+Requires-Dist: torch<2.11,>=2.1
+Requires-Dist: tqdm<5.0,>=4.65
+Requires-Dist: scikit-learn<2.0,>=1.4
+Requires-Dist: matplotlib<4.0,>=3.8
+Requires-Dist: pandas<3.1,>=2.2
+Dynamic: license-file
+
+# PoliGuide-AV：面向无人驾驶的交警手势识别系统
+
+当前发布版：`v0.2.0`
+
+本仓库给出一套**面向自动驾驶场景**的交警手势识别完整工程基线，覆盖：
+
+- 交警/指挥人员候选检测
+- 多目标跟踪
+- 2D 姿态/关键点提取
+- 时序手势识别（可训练）
+- 意图解析与车辆控制命令输出
+- 安全状态机（时序稳定、低置信度回退、命令保持/过期）
+- JSON / ROS2 / Autoware / CARLA 适配示例
+- 离线视频验证与 toy demo
+
+> 项目定位：竞赛可交付、学生团队可复现、面向无人驾驶平台集成，而不是普通单帧手势分类 demo。
+
+---
+
+## 1. 推荐技术路线
+
+### 默认主路线（比赛提交推荐）
+`交警候选 -> 跟踪 -> 姿态估计 -> 轻量时序分类器 -> 意图解析 -> 安全状态机 -> 车辆命令`
+
+- 实时在线版：
+  - 姿态：OpenMMLab RTMO / RTMPose / RTMW（可选）
+  - 跟踪：本仓库 clean-room `GreedyIoUTracker`
+  - 时序：`SkeletonTCN`（默认）或 `SkeletonSTGCN`
+  - 命令：规范标签层 + 驾驶意图层 + 控制命令层
+
+### 零外部权重可跑通版
+- 使用 `PrecomputedPoseBackend` 或 `RuleBasedGestureClassifier`
+- 可直接跑 toy 数据集与 toy 演示视频，验证工程闭环
+
+### 当前仓库实测最优版（clip / 发布口径）
+- `OpenMMLab human pose (RTMDet-m + RTMPose-m) -> SkeletonTCN phase2 -> 3-clip TTA`
+- 本机实测：`accuracy = 0.8074`，`macro_f1 = 0.8091`
+- 最终命令请直接参考 `docs/final_commands.md`
+- 长版流程请参考 `docs/final_best_workflow.md`
+- 发布记录请参考 `docs/release_notes.md`
+
+### 当前比赛对齐最优版（CTPGesture v2 continuous）
+- `CTPGesture v2 only -> VIBE 3D/rotation features -> PRGraph-EPS multitask -> causal sliding windows`
+- 当前 best 评测设置：`context_len=64`、`smooth_window=1`、`tta_num_clips=1`
+- 当前最优全量 `test` 连续结果：
+  - `gesture macro_jaccard = 0.4770`
+  - `gesture foreground_macro_jaccard = 0.4724`
+  - `gesture foreground_frame_accuracy = 0.7790`
+  - `system_fps_estimate = 267.08`
+- 指标文件：`runs/prgraph_eps_finetune_cmd60/continuous_eval_full_s1/metrics.json`
+- 这是当前仓库最接近论文 `Position-rotation graph and elevation partitioning strategy for traffic police gesture recognition` 的主线，但还没有超过论文公开结果 `Jaccard = 0.842`
+- 说明：当前 clip 冠军不等于连续识别冠军，详见 `docs/competition_alignment.md`
+- 直接命令清单：`docs/final_commands.md`
+
+### 新增的 CTPGesture v2 冲榜主路线
+- 任务口径：`32` 个前景方向条件手势，工程实现按 `33` 类逐帧标签处理
+- 特征：官方 `VIBE` 导出的 `49x3 joints3d + pose(72) + center trajectory`
+- 训练样本：整视频因果滑窗，不再依赖单个 gesture clip
+- 主配置：
+  - `configs/ctpgesture_v2_vibe33_tcn.yaml`
+  - `configs/ctpgesture_v2_vibe33_transformer.yaml`
+  - `configs/continuous_eval_ctpgesture_v2_vibe33_tcn.yaml`
+  - `configs/ctpgesture_v2_vibe33_multitask_tcn.yaml`
+  - `configs/continuous_eval_ctpgesture_v2_vibe33_multitask_tcn.yaml`
+  - `configs/ctpgesture_v2_prgraph_eps_multitask.yaml`
+  - `configs/continuous_eval_ctpgesture_v2_prgraph_eps_multitask.yaml`
+- 数据准备脚本：`python tools/prepare_ctpgesture_v2_vibe33.py --output-dir data/processed/ctpgesture_v2_vibe33`
+- 当前结论：
+  - `VIBE + 单头 33 类 TCN` 已完成首轮全量 baseline，但还没有超过旧连续基线
+  - `gesture + command + direction` 多任务版本已经完成训练与连续评测 smoke，可直接进入下一轮全量实验
+  - 新的 `PRGraph-EPS` 主线已经完成训练与连续评测 smoke，并且不再依赖旧的 flatten-TCN 主干
+- 说明：这条线是本仓库当前最接近 `CTPGesture v2` 论文任务定义的 benchmark 主线，当前最强配置已整理成：
+  - `configs/ctpgesture_v2_prgraph_eps_multitask_best.yaml`
+  - `configs/continuous_eval_ctpgesture_v2_prgraph_eps_multitask_best.yaml`
+  - 详见 `docs/competition_alignment.md`
+
+---
+
+## 2. 环境安装
+
+### 2.1 最小可跑环境
+```bash
+conda create -n tpgr-av python=3.10 -y
+conda activate tpgr-av
+pip install -r requirements.txt
+pip install -e .
+```
+
+### 2.2 可选依赖
+```bash
+pip install -r requirements-optional.txt
+```
+
+### 2.3 OpenMMLab（真实视频推荐）
+真实视频推荐使用 full `mmcv`，不是 `mmcv-lite`。本机已经验证通过的完整环境与命令见 `docs/local_setup.md`。
+
+---
+
+## 3. 一键跑 toy 版
+
+### 3.1 生成 toy 数据
+```bash
+export PYTHONPATH=$(pwd)/src
+python tools/generate_toy_dataset.py --output-dir data/processed/toy
+```
+
+### 3.2 训练 toy TCN
+```bash
+export PYTHONPATH=$(pwd)/src
+python -m tpgr.cli.train --config configs/toy_tcn.yaml
+```
+
+### 3.3 评估 toy TCN
+```bash
+export PYTHONPATH=$(pwd)/src
+python -m tpgr.cli.evaluate \
+  --config configs/toy_tcn.yaml \
+  --checkpoint runs/toy_tcn/best.pt \
+  --split test \
+  --output-dir runs/toy_tcn/eval_test
+```
+
+### 3.4 跑离线 demo 视频
+#### 规则版（无需训练）
+```bash
+export PYTHONPATH=$(pwd)/src
+python -m tpgr.cli.infer_video \
+  --config configs/deploy_precomputed_demo.yaml \
+  --input data/processed/toy/demo/toy_demo.mp4 \
+  --output-video outputs/toy_rule_demo.mp4 \
+  --output-jsonl outputs/toy_rule_demo.jsonl
+```
+
+#### 学习版（需先训练 toy TCN）
+```bash
+export PYTHONPATH=$(pwd)/src
+python -m tpgr.cli.infer_video \
+  --config configs/deploy_toy_tcn_demo.yaml \
+  --input data/processed/toy/demo/toy_demo.mp4 \
+  --output-video outputs/toy_tcn_demo.mp4 \
+  --output-jsonl outputs/toy_tcn_demo.jsonl
+```
+
+---
+
+## 4. 真实数据使用流程
+
+### 4.1 下载 CTPGesture v1 / v2
+```bash
+export PYTHONPATH=$(pwd)/src
+python tools/download_datasets.py --dataset ctpgesture_v1 --output-dir data/raw --download
+python tools/download_datasets.py --dataset ctpgesture_v2 --output-dir data/raw --download
+unzip -q -o data/raw/ctpgesture_v1.zip -d data/raw
+unzip -q -o data/raw/ctpgesture_v2.zip -d data/raw
+```
+
+### 4.2 整理 manifest
+```bash
+python tools/prepare_ctpgesture_v1.py \
+  --dataset-root data/raw/police_gesture_v1 \
+  --output-manifest data/processed/ctpgesture_v1/manifest_raw.jsonl
+
+python tools/prepare_ctpgesture_v2.py \
+  --dataset-root data/raw/police_gesture_v2 \
+  --output-manifest data/processed/ctpgesture_v2/manifest_raw.jsonl
+```
+
+### 4.2.1 构建 CTPGesture v2 33 类 VIBE 主线数据
+```bash
+python tools/prepare_ctpgesture_v2_vibe33.py \
+  --output-dir data/processed/ctpgesture_v2_vibe33
+```
+
+这条命令会生成：
+
+- `data/processed/ctpgesture_v2_vibe33/manifest_windows.jsonl`
+- `data/processed/ctpgesture_v2_vibe33/manifest_videos.jsonl`
+- `data/processed/ctpgesture_v2_vibe33/videos/*.npz`
+
+新版本还会把这些结构化模态一并写进每个逐视频 `.npz`：
+
+- `joints3d_49`
+- `smpl_joints24`
+- `pose_axis_angle`
+- `root_orient`
+- `center_rel`
+- `center_vel`
+
+默认采用“逐视频特征 + 在线切窗”格式，避免生成海量小窗口文件。
+
+### 4.3 批量提取姿态序列
+```bash
+python tools/extract_pose_sequences.py \
+  --config configs/deploy_openmmlab_rtmo_phase2.yaml \
+  --manifest data/processed/ctpgesture_v2/manifest_raw.jsonl \
+  --output-dir data/processed/ctpgesture_v2/sequences \
+  --output-manifest data/processed/ctpgesture_v2/manifest_pose.jsonl \
+  --skip-existing
+```
+
+### 4.4 训练真实版模型
+最终推荐训练配置已经准备好，直接执行：
+```bash
+python -m tpgr.cli.train --config configs/ctpgesture_v1v2_tcn_phase2.yaml
+```
+
+### 4.5 与 CTPGesture v2 连续任务对齐的评测
+```bash
+python -m tpgr.cli.evaluate_continuous \
+  --config configs/continuous_eval_ctpgesture_v2_phase2.yaml \
+  --split test \
+  --output-dir runs/ctpgesture_v2_continuous_phase2
+```
+
+这条命令会直接跑整视频连续流，不再按单个 clip 分类。
+
+如果你要的是最贴近 `CTPGesture v2` 原论文的 `33` 类 benchmark 路线，请使用：
+
+```bash
+python -m tpgr.cli.train --config configs/ctpgesture_v2_vibe33_tcn.yaml
+```
+
+```bash
+python -m tpgr.cli.evaluate_classifier \
+  --config configs/ctpgesture_v2_vibe33_tcn.yaml \
+  --manifest data/processed/ctpgesture_v2_vibe33/manifest_windows.jsonl \
+  --split test \
+  --output-dir runs/ctpgesture_v2_vibe33_tcn/eval_classifier
+```
+
+```bash
+python -m tpgr.cli.evaluate_continuous_classifier \
+  --config configs/continuous_eval_ctpgesture_v2_vibe33_tcn.yaml \
+  --split test \
+  --output-dir runs/ctpgesture_v2_vibe33_tcn/continuous_eval
+```
+
+如果你要继续沿“命令 / 方向解耦”推进，请直接使用多任务配置：
+
+```bash
+python -m tpgr.cli.train --config configs/ctpgesture_v2_vibe33_multitask_tcn.yaml
+```
+
+```bash
+python -m tpgr.cli.evaluate_continuous_classifier \
+  --config configs/continuous_eval_ctpgesture_v2_vibe33_multitask_tcn.yaml \
+  --split test \
+  --output-dir runs/ctpgesture_v2_vibe33_multitask_tcn/continuous_eval
+```
+
+如果你要直接试新的 `position + rotation graph` 主线，请使用：
+
+```bash
+python -m tpgr.cli.train --config configs/ctpgesture_v2_prgraph_eps_multitask.yaml
+```
+
+```bash
+python -m tpgr.cli.evaluate_continuous_classifier \
+  --config configs/continuous_eval_ctpgesture_v2_prgraph_eps_multitask.yaml \
+  --split test \
+  --output-dir runs/ctpgesture_v2_prgraph_eps_multitask/continuous_eval
+```
+
+如果你要直接复现实测最优的比赛对齐版本，请使用：
+
+```bash
+python -m tpgr.cli.train --config configs/ctpgesture_v2_prgraph_eps_multitask_best.yaml
+```
+
+```bash
+python -m tpgr.cli.evaluate_continuous_classifier \
+  --config configs/continuous_eval_ctpgesture_v2_prgraph_eps_multitask_best.yaml \
+  --split test \
+  --output-dir runs/prgraph_eps_finetune_cmd60/continuous_eval_full_s1
+```
+
+这组命令对应当前仓库的连续 benchmark 最优结果：
+
+- `gesture macro_jaccard = 0.476951`
+- `gesture foreground_macro_jaccard = 0.472409`
+- `command macro_jaccard = 0.448392`
+- `system_fps_estimate = 267.08`
+- 结果文件：`runs/prgraph_eps_finetune_cmd60/continuous_eval_full_s1/metrics.json`
+- 备注：后续做过 `context_len=128/192` 和多 clip 连续 TTA 搜索，验证集都退化，当前 best 仍是上述默认设置
+
+---
+
+## 5. 推理与部署
+
+### 5.1 摄像头实时推理
+```bash
+python -m tpgr.cli.infer_camera \
+  --config configs/deploy_openmmlab_rtmo_phase2.yaml \
+  --camera-id 0 \
+  --output-video outputs/camera_demo.mp4 \
+  --output-jsonl outputs/camera_demo.jsonl \
+  --debug
+```
+
+### 5.2 OpenMMLab GPU 推理
+```bash
+python -m tpgr.cli.infer_video \
+  --config configs/deploy_openmmlab_rtmo_phase2.yaml \
+  --input your_video.mp4 \
+  --output-video outputs/rtmo_demo.mp4 \
+  --output-jsonl outputs/rtmo_demo.jsonl
+```
+
+### 5.3 全测试集弹窗 Debug
+```bash
+python -m tpgr.cli.debug_dataset \
+  --config configs/debug_openmmlab_rtmo_phase2.yaml
+```
+
+### 5.4 导出 ONNX
+```bash
+python -m tpgr.cli.export_onnx \
+  --config configs/ctpgesture_v1v2_tcn_phase2.yaml \
+  --checkpoint runs/phase2_tcn_big/best.pt \
+  --output exports/phase2_tcn_big_final.onnx
+```
+
+---
+
+## 6. 目录结构
+
+详见 `docs/solution_report.md` 和项目根目录树说明。
+
+---
+
+## 7. 标签层与命令层
+
+### 7.1 规范手势标签
+- `NO_GESTURE`
+- `STOP`
+- `GO_STRAIGHT`
+- `TURN_LEFT`
+- `LEFT_TURN_WAIT`
+- `TURN_RIGHT`
+- `CHANGE_LANE`
+- `SLOW_DOWN`
+- `PULL_OVER`
+
+### 7.2 标准化命令
+- `NO_COMMAND`
+- `STOP`
+- `GO_STRAIGHT`
+- `LEFT_TURN_WAIT`
+- `TURN_LEFT`
+- `TURN_RIGHT`
+- `CHANGE_LANE`
+- `SLOW_DOWN`
+- `PULL_OVER`
+- `KEEP_WAIT`
+
+其中 `KEEP_WAIT` 由安全状态机生成，表示低置信度/短时遮挡时的保守保持状态，而不是原始数据集类别。
+
+---
+
+## 8. 安全策略
+
+- 多帧投票稳定输出
+- 低置信度与遮挡回退到 `KEEP_WAIT/STOP`
+- 命令保持与过期机制
+- 多人时只选择**对 ego vehicle 最可能有效**的指挥者：
+  - 视野中心优先
+  - 上半身关键点可见性
+  - track 持续性
+  - 近距离/大目标
+  - 荧光背心颜色先验（弱约束）
+
+---
+
+## 9. 重要许可提醒
+
+- 本仓库代码：MIT
+- 不内嵌第三方 copyleft 代码
+- `ctpgr-pytorch / traffic-gesture-datasets` 等 GPL 仓库仅作数据格式/标签参考，不复制代码
+- 原始数据集与预训练权重均需遵循其各自许可；本仓库不再分发原始数据
+
+详见 `THIRD_PARTY_NOTICES.md`。
+
+---
+
+## 10. 建议比赛提交包
+
+- 报告底稿：`docs/solution_report.md`
+- PPT 大纲：`docs/ppt_outline.md`
+- 数据与许可说明：`docs/datasets.md`
+- 需求满足矩阵：`docs/requirements_matrix.md`

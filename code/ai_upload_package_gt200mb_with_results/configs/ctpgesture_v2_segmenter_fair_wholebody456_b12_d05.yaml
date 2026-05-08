@@ -1,0 +1,49 @@
+seed: 42
+device: cuda
+
+dataset:
+  video_manifest_path: data/processed/ctpgesture_v2_wholebody33/manifest_videos.jsonl
+  dataset_name: ctpgesture_v2
+  label_space: ctpv2_directional
+  train_split: train
+  eval_split: val
+  crop_len: 2048
+  samples_per_video: 32
+
+model:
+  name: frame_segmenter_multitask
+  input_dim: 456
+  task_dims:
+    gesture: 33
+    command: 9
+    direction: 5
+  hidden_dim: 384
+  num_blocks: 12
+  dropout: 0.05
+
+trainer:
+  output_dir: runs/seg_wholebody456_b12_d05
+  epochs: 10
+  batch_size: 4
+  num_workers: 4
+  pin_memory: true
+  persistent_workers: true
+  amp: true
+  compile: false
+  lr: 0.0003
+  weight_decay: 0.0001
+  grad_clip: 1.0
+  label_smoothing: 0.02
+  class_weighting: inverse_sqrt
+  task_weights:
+    gesture: 1.0
+    command: 0.40
+    direction: 0.20
+
+evaluation:
+  chunk_len: 4096
+  overlap: 1024
+  smooth_window: 1
+  task_fusion:
+    command_weight: 0.80
+    direction_weight: 0.30

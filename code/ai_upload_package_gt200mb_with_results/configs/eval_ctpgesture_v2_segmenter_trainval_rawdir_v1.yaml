@@ -1,0 +1,26 @@
+seed: 42
+device: cuda
+
+dataset:
+  video_manifest_path: data/processed/ctpgesture_v2_vibe33/manifest_videos_trainval.jsonl
+  dataset_name: ctpgesture_v2
+  label_space: ctpv2_directional
+  direction_target_source: raw
+  eval_split: train
+
+classifier:
+  config: configs/ctpgesture_v2_segmenter_trainval_rawdir_v1.yaml
+  checkpoint: runs/ctpgesture_v2_segmenter_trainval_rawdir_v1/best.pt
+  amp: true
+
+evaluation:
+  chunk_len: 4096
+  overlap: 1024
+  smooth_window: 1
+  task_fusion:
+    command_weight: 0.80
+    direction_weight: 0.30
+    background_agnostic_direction: true
+
+decoder:
+  enabled: false

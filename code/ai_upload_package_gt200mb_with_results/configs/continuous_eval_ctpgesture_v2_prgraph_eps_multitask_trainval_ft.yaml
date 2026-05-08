@@ -1,0 +1,39 @@
+dataset:
+  video_manifest_path: data/processed/ctpgesture_v2_vibe33/manifest_videos_trainval.jsonl
+  dataset_name: ctpgesture_v2
+  label_space: ctpv2_directional
+  test_split: test
+  clip_len: 64
+
+evaluation:
+  smooth_window: 1
+  context_len: 64
+  window_mode: causal
+
+classifier:
+  type: torch
+  checkpoint: runs/prgraph_eps_trainval_ft/best.pt
+  label_space: ctpv2_directional
+  representation: features
+  clip_len: 64
+  device: cuda
+  tta_num_clips: 1
+  task_fusion:
+    command_weight: 0.60
+    direction_weight: 0.30
+  model:
+    name: prgraph_eps_multitask
+    input_dim: 225
+    num_classes: 33
+    task_dims:
+      gesture: 33
+      command: 9
+      direction: 5
+    hidden_dim: 192
+    num_blocks: 4
+    dropout: 0.2
+    elevation_threshold: 0.15
+    amp: true
+
+decoder:
+  enabled: false

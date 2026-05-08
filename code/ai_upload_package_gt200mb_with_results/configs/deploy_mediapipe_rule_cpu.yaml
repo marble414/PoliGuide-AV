@@ -1,0 +1,30 @@
+runtime:
+  sequence_len: 64
+  min_predict_len: 12
+  pose_backend:
+    type: mediapipe
+    static_image_mode: false
+    model_complexity: 1
+  detector:
+    score_threshold: 0.2
+    max_detections: 8
+  tracker:
+    iou_threshold: 0.3
+    max_age: 12
+    min_hits: 1
+  selector:
+    center_weight: 0.35
+    size_weight: 0.15
+    visibility_weight: 0.25
+    track_age_weight: 0.15
+    vest_weight: 0.10
+    sticky_bonus: 0.10
+  state_machine:
+    window_size: 9
+    min_consensus: 6
+    conf_threshold: 0.60
+    hold_frames: 8
+    expiry_frames: 18
+
+classifier:
+  type: rule_based

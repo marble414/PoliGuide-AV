@@ -1,0 +1,65 @@
+seed: 42
+device: cuda
+
+dataset:
+  manifest_path: data/processed/ctpgesture_v2_vibe33/manifest_windows.jsonl
+  video_manifest_path: data/processed/ctpgesture_v2_vibe33/manifest_videos.jsonl
+  dataset_name: ctpgesture_v2
+  label_space: ctpv2_directional
+  train_split: train
+  val_split: val
+  test_split: test
+  clip_len: 64
+  representation: features
+  temporal_mode: crop_pad
+
+model:
+  name: skeleton_transformer
+  input_dim: 225
+  num_classes: 33
+  d_model: 384
+  depth: 6
+  num_heads: 8
+  mlp_ratio: 4.0
+  dropout: 0.2
+  max_len: 64
+
+trainer:
+  output_dir: runs/ctpgesture_v2_vibe33_transformer
+  epochs: 40
+  batch_size: 160
+  num_workers: 6
+  pin_memory: true
+  persistent_workers: true
+  prefetch_factor: 4
+  amp: true
+  compile: true
+  compile_mode: reduce-overhead
+  ema: true
+  ema_decay: 0.999
+  lr: 0.0005
+  weight_decay: 0.0001
+  grad_clip: 1.0
+  label_smoothing: 0.05
+  class_weighting: inverse_sqrt
+
+classifier:
+  type: torch
+  checkpoint: runs/ctpgesture_v2_vibe33_transformer/best.pt
+  label_space: ctpv2_directional
+  representation: features
+  clip_len: 64
+  temporal_mode: crop_pad
+  device: cuda
+  tta_num_clips: 1
+  model:
+    name: skeleton_transformer
+    input_dim: 225
+    num_classes: 33
+    d_model: 384
+    depth: 6
+    num_heads: 8
+    mlp_ratio: 4.0
+    dropout: 0.2
+    max_len: 64
+    amp: true

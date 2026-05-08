@@ -1,0 +1,26 @@
+runtime:
+  sequence_len: 64
+  min_predict_len: 12
+  pose_backend:
+    type: precomputed
+    jsonl_path: data/processed/toy/demo/toy_demo_detections.jsonl
+  tracker:
+    iou_threshold: 0.3
+    max_age: 10
+    min_hits: 1
+  selector:
+    center_weight: 0.35
+    size_weight: 0.15
+    visibility_weight: 0.25
+    track_age_weight: 0.15
+    vest_weight: 0.0
+    sticky_bonus: 0.10
+  state_machine:
+    window_size: 7
+    min_consensus: 5
+    conf_threshold: 0.55
+    hold_frames: 8
+    expiry_frames: 20
+
+classifier:
+  type: rule_based

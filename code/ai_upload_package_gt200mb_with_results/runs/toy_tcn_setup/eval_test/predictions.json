@@ -1,0 +1,740 @@
+{
+  "predictions": [
+    {
+      "sample_id": "test_STOP_000",
+      "true_label": "STOP",
+      "pred_label": "STOP",
+      "scores": {
+        "NO_GESTURE": 0.0015533172991126776,
+        "STOP": 0.8189963698387146,
+        "GO_STRAIGHT": 0.004057598300278187,
+        "TURN_LEFT": 0.001236734795384109,
+        "LEFT_TURN_WAIT": 0.006573954597115517,
+        "TURN_RIGHT": 0.0018608227837830782,
+        "CHANGE_LANE": 0.0027379177045077085,
+        "SLOW_DOWN": 0.000792351202107966,
+        "PULL_OVER": 0.16219092905521393
+      },
+      "meta": {
+        "lighting": "day",
+        "weather": "rain_aug",
+        "occlusion": "light",
+        "distance": "mid",
+        "people": "single"
+      }
+    },
+    {
+      "sample_id": "test_STOP_001",
+      "true_label": "STOP",
+      "pred_label": "STOP",
+      "scores": {
+        "NO_GESTURE": 0.0015435974346473813,
+        "STOP": 0.8162702918052673,
+        "GO_STRAIGHT": 0.004185330122709274,
+        "TURN_LEFT": 0.0012604639632627368,
+        "LEFT_TURN_WAIT": 0.0064115324057638645,
+        "TURN_RIGHT": 0.0018954133847728372,
+        "CHANGE_LANE": 0.0027737389318645,
+        "SLOW_DOWN": 0.0007918548071756959,
+        "PULL_OVER": 0.16486774384975433
+      },
+      "meta": {
+        "lighting": "night",
+        "weather": "clear",
+        "occlusion": "none",
+        "distance": "near",
+        "people": "single"
+      }
+    },
+    {
+      "sample_id": "test_STOP_002",
+      "true_label": "STOP",
+      "pred_label": "STOP",
+      "scores": {
+        "NO_GESTURE": 0.0015315727796405554,
+        "STOP": 0.7128791809082031,
+        "GO_STRAIGHT": 0.004346057772636414,
+        "TURN_LEFT": 0.001550782471895218,
+        "LEFT_TURN_WAIT": 0.006789740640670061,
+        "TURN_RIGHT": 0.001814293791539967,
+        "CHANGE_LANE": 0.002973023569211364,
+        "SLOW_DOWN": 0.0007834296557120979,
+        "PULL_OVER": 0.2673320472240448
+      },
+      "meta": {
+        "lighting": "day",
+        "weather": "rain_aug",
+        "occlusion": "light",
+        "distance": "mid",
+        "people": "single"
+      }
+    },
+    {
+      "sample_id": "test_STOP_003",
+      "true_label": "STOP",
+      "pred_label": "STOP",
+      "scores": {
+        "NO_GESTURE": 0.0016243860591202974,
+        "STOP": 0.8549328446388245,
+        "GO_STRAIGHT": 0.00419433182105422,
+        "TURN_LEFT": 0.00118383823428303,
+        "LEFT_TURN_WAIT": 0.006394156254827976,
+        "TURN_RIGHT": 0.0020313686691224575,
+        "CHANGE_LANE": 0.0027880810666829348,
+        "SLOW_DOWN": 0.0008301585912704468,
+        "PULL_OVER": 0.1260206550359726
+      },
+      "meta": {
+        "lighting": "night",
+        "weather": "rain_aug",
+        "occlusion": "none",
+        "distance": "mid",
+        "people": "single"
+      }
+    },
+    {
+      "sample_id": "test_GO_STRAIGHT_000",
+      "true_label": "GO_STRAIGHT",
+      "pred_label": "GO_STRAIGHT",
+      "scores": {
+        "NO_GESTURE": 0.0013857160229235888,
+        "STOP": 0.0032512322068214417,
+        "GO_STRAIGHT": 0.9779152870178223,
+        "TURN_LEFT": 0.007369403261691332,
+        "LEFT_TURN_WAIT": 0.004948036279529333,
+        "TURN_RIGHT": 0.0008383059175685048,
+        "CHANGE_LANE": 0.0019164379918947816,
+        "SLOW_DOWN": 0.0012770649045705795,
+        "PULL_OVER": 0.0010985337430611253
+      },
+      "meta": {
+        "lighting": "day",
+        "weather": "clear",
+        "occlusion": "light",
+        "distance": "near",
+        "people": "single"
+      }
+    },
+    {
+      "sample_id": "test_GO_STRAIGHT_001",
+      "true_label": "GO_STRAIGHT",
+      "pred_label": "GO_STRAIGHT",
+      "scores": {
+        "NO_GESTURE": 0.0014082195702940226,
+        "STOP": 0.003262610174715519,
+        "GO_STRAIGHT": 0.9774897694587708,
+        "TURN_LEFT": 0.007727419957518578,
+        "LEFT_TURN_WAIT": 0.004880054853856564,
+        "TURN_RIGHT": 0.0008477805531583726,
+        "CHANGE_LANE": 0.0019536411855369806,
+        "SLOW_DOWN": 0.0013217584928497672,
+        "PULL_OVER": 0.0011087089078500867
+      },
+      "meta": {
+        "lighting": "day",
+        "weather": "rain_aug",
+        "occlusion": "light",
+        "distance": "near",
+        "people": "single"
+      }
+    },
+    {
+      "sample_id": "test_GO_STRAIGHT_002",
+      "true_label": "GO_STRAIGHT",
+      "pred_label": "GO_STRAIGHT",
+      "scores": {
+        "NO_GESTURE": 0.0014401263324543834,
+        "STOP": 0.003330143168568611,
+        "GO_STRAIGHT": 0.9775102734565735,
+        "TURN_LEFT": 0.007399584166705608,
+        "LEFT_TURN_WAIT": 0.005048207938671112,
+        "TURN_RIGHT": 0.0008633644902147353,
+        "CHANGE_LANE": 0.001963900402188301,
+        "SLOW_DOWN": 0.001328279497101903,
+        "PULL_OVER": 0.001116082421503961
+      },
+      "meta": {
+        "lighting": "night",
+        "weather": "clear",
+        "occlusion": "light",
+        "distance": "mid",
+        "people": "single"
+      }
+    },
+    {
+      "sample_id": "test_GO_STRAIGHT_003",
+      "true_label": "GO_STRAIGHT",
+      "pred_label": "GO_STRAIGHT",
+      "scores": {
+        "NO_GESTURE": 0.0013879038160666823,
+        "STOP": 0.003262600861489773,
+        "GO_STRAIGHT": 0.9779751300811768,
+        "TURN_LEFT": 0.0071760863065719604,
+        "LEFT_TURN_WAIT": 0.00507625937461853,
+        "TURN_RIGHT": 0.0008414346375502646,
+        "CHANGE_LANE": 0.0019131092121824622,
+        "SLOW_DOWN": 0.001292462577112019,
+        "PULL_OVER": 0.0010750407818704844
+      },
+      "meta": {
+        "lighting": "day",
+        "weather": "clear",
+        "occlusion": "none",
+        "distance": "near",
+        "people": "single"
+      }
+    },
+    {
+      "sample_id": "test_TURN_LEFT_000",
+      "true_label": "TURN_LEFT",
+      "pred_label": "TURN_LEFT",
+      "scores": {
+        "NO_GESTURE": 0.003224902553483844,
+        "STOP": 0.0016709271585568786,
+        "GO_STRAIGHT": 0.005649203434586525,
+        "TURN_LEFT": 0.9819507598876953,
+        "LEFT_TURN_WAIT": 0.0006121076876297593,
+        "TURN_RIGHT": 0.00043022408499382436,
+        "CHANGE_LANE": 0.0019038869068026543,
+        "SLOW_DOWN": 0.0019194947089999914,
+        "PULL_OVER": 0.0026385376695543528
+      },
+      "meta": {
+        "lighting": "night",
+        "weather": "clear",
+        "occlusion": "none",
+        "distance": "mid",
+        "people": "single"
+      }
+    },
+    {
+      "sample_id": "test_TURN_LEFT_001",
+      "true_label": "TURN_LEFT",
+      "pred_label": "TURN_LEFT",
+      "scores": {
+        "NO_GESTURE": 0.004519626032561064,
+        "STOP": 0.0017582926666364074,
+        "GO_STRAIGHT": 0.005535946227610111,
+        "TURN_LEFT": 0.9802574515342712,
+        "LEFT_TURN_WAIT": 0.0006273326580412686,
+        "TURN_RIGHT": 0.0004711822548415512,
+        "CHANGE_LANE": 0.00201398809440434,
+        "SLOW_DOWN": 0.0020280114840716124,
+        "PULL_OVER": 0.0027881741989403963
+      },
+      "meta": {
+        "lighting": "night",
+        "weather": "clear",
+        "occlusion": "light",
+        "distance": "near",
+        "people": "single"
+      }
+    },
+    {
+      "sample_id": "test_TURN_LEFT_002",
+      "true_label": "TURN_LEFT",
+      "pred_label": "TURN_LEFT",
+      "scores": {
+        "NO_GESTURE": 0.003634472843259573,
+        "STOP": 0.0016773472307249904,
+        "GO_STRAIGHT": 0.0054984018206596375,
+        "TURN_LEFT": 0.981956958770752,
+        "LEFT_TURN_WAIT": 0.0006049317889846861,
+        "TURN_RIGHT": 0.0004364233755040914,
+        "CHANGE_LANE": 0.0019123032689094543,
+        "SLOW_DOWN": 0.0019456073641777039,
+        "PULL_OVER": 0.002333535812795162
+      },
+      "meta": {
+        "lighting": "night",
+        "weather": "clear",
+        "occlusion": "light",
+        "distance": "mid",
+        "people": "single"
+      }
+    },
+    {
+      "sample_id": "test_TURN_LEFT_003",
+      "true_label": "TURN_LEFT",
+      "pred_label": "TURN_LEFT",
+      "scores": {
+        "NO_GESTURE": 0.0035939430817961693,
+        "STOP": 0.0015504482435062528,
+        "GO_STRAIGHT": 0.005526032764464617,
+        "TURN_LEFT": 0.9824732542037964,
+        "LEFT_TURN_WAIT": 0.0005889371386729181,
+        "TURN_RIGHT": 0.0004150940221734345,
+        "CHANGE_LANE": 0.0018348128069192171,
+        "SLOW_DOWN": 0.0019191547762602568,
+        "PULL_OVER": 0.0020984066650271416
+      },
+      "meta": {
+        "lighting": "night",
+        "weather": "rain_aug",
+        "occlusion": "light",
+        "distance": "mid",
+        "people": "single"
+      }
+    },
+    {
+      "sample_id": "test_LEFT_TURN_WAIT_000",
+      "true_label": "LEFT_TURN_WAIT",
+      "pred_label": "LEFT_TURN_WAIT",
+      "scores": {
+        "NO_GESTURE": 0.0010587421711534262,
+        "STOP": 0.008978921920061111,
+        "GO_STRAIGHT": 0.003586371196433902,
+        "TURN_LEFT": 0.0014088363386690617,
+        "LEFT_TURN_WAIT": 0.9764986634254456,
+        "TURN_RIGHT": 0.0025509102270007133,
+        "CHANGE_LANE": 0.001518059754744172,
+        "SLOW_DOWN": 0.0013800582382827997,
+        "PULL_OVER": 0.003019370837137103
+      },
+      "meta": {
+        "lighting": "day",
+        "weather": "rain_aug",
+        "occlusion": "none",
+        "distance": "near",
+        "people": "single"
+      }
+    },
+    {
+      "sample_id": "test_LEFT_TURN_WAIT_001",
+      "true_label": "LEFT_TURN_WAIT",
+      "pred_label": "LEFT_TURN_WAIT",
+      "scores": {
+        "NO_GESTURE": 0.0010490227723494172,
+        "STOP": 0.008949416689574718,
+        "GO_STRAIGHT": 0.0035643652081489563,
+        "TURN_LEFT": 0.0013891642447561026,
+        "LEFT_TURN_WAIT": 0.9767097234725952,
+        "TURN_RIGHT": 0.002541126450523734,
+        "CHANGE_LANE": 0.0014870810555294156,
+        "SLOW_DOWN": 0.001366308657452464,
+        "PULL_OVER": 0.0029437383636832237
+      },
+      "meta": {
+        "lighting": "night",
+        "weather": "clear",
+        "occlusion": "light",
+        "distance": "mid",
+        "people": "single"
+      }
+    },
+    {
+      "sample_id": "test_LEFT_TURN_WAIT_002",
+      "true_label": "LEFT_TURN_WAIT",
+      "pred_label": "LEFT_TURN_WAIT",
+      "scores": {
+        "NO_GESTURE": 0.0010762736201286316,
+        "STOP": 0.009296840988099575,
+        "GO_STRAIGHT": 0.0035638653207570314,
+        "TURN_LEFT": 0.0014219337608665228,
+        "LEFT_TURN_WAIT": 0.9759717583656311,
+        "TURN_RIGHT": 0.002552588237449527,
+        "CHANGE_LANE": 0.0015261495718732476,
+        "SLOW_DOWN": 0.0014083193382248282,
+        "PULL_OVER": 0.0031822221353650093
+      },
+      "meta": {
+        "lighting": "day",
+        "weather": "clear",
+        "occlusion": "light",
+        "distance": "near",
+        "people": "single"
+      }
+    },
+    {
+      "sample_id": "test_LEFT_TURN_WAIT_003",
+      "true_label": "LEFT_TURN_WAIT",
+      "pred_label": "LEFT_TURN_WAIT",
+      "scores": {
+        "NO_GESTURE": 0.0011076858500018716,
+        "STOP": 0.009693881496787071,
+        "GO_STRAIGHT": 0.0035526694264262915,
+        "TURN_LEFT": 0.0014587754849344492,
+        "LEFT_TURN_WAIT": 0.975186288356781,
+        "TURN_RIGHT": 0.002535015344619751,
+        "CHANGE_LANE": 0.0015601044287905097,
+        "SLOW_DOWN": 0.0014460179954767227,
+        "PULL_OVER": 0.003459668718278408
+      },
+      "meta": {
+        "lighting": "night",
+        "weather": "rain_aug",
+        "occlusion": "none",
+        "distance": "mid",
+        "people": "single"
+      }
+    },
+    {
+      "sample_id": "test_TURN_RIGHT_000",
+      "true_label": "TURN_RIGHT",
+      "pred_label": "TURN_RIGHT",
+      "scores": {
+        "NO_GESTURE": 0.0034989728592336178,
+        "STOP": 0.0071484120562672615,
+        "GO_STRAIGHT": 0.0018501403974369168,
+        "TURN_LEFT": 0.0038324485067278147,
+        "LEFT_TURN_WAIT": 0.007547406014055014,
+        "TURN_RIGHT": 0.9636057019233704,
+        "CHANGE_LANE": 0.0036196415312588215,
+        "SLOW_DOWN": 0.0022050137631595135,
+        "PULL_OVER": 0.006692098453640938
+      },
+      "meta": {
+        "lighting": "night",
+        "weather": "rain_aug",
+        "occlusion": "none",
+        "distance": "mid",
+        "people": "single"
+      }
+    },
+    {
+      "sample_id": "test_TURN_RIGHT_001",
+      "true_label": "TURN_RIGHT",
+      "pred_label": "TURN_RIGHT",
+      "scores": {
+        "NO_GESTURE": 0.003461513202637434,
+        "STOP": 0.007362259551882744,
+        "GO_STRAIGHT": 0.0018196881283074617,
+        "TURN_LEFT": 0.0037632302846759558,
+        "LEFT_TURN_WAIT": 0.007720539346337318,
+        "TURN_RIGHT": 0.9636961817741394,
+        "CHANGE_LANE": 0.003556679468601942,
+        "SLOW_DOWN": 0.0021217456087470055,
+        "PULL_OVER": 0.006498110014945269
+      },
+      "meta": {
+        "lighting": "night",
+        "weather": "rain_aug",
+        "occlusion": "none",
+        "distance": "mid",
+        "people": "single"
+      }
+    },
+    {
+      "sample_id": "test_TURN_RIGHT_002",
+      "true_label": "TURN_RIGHT",
+      "pred_label": "TURN_RIGHT",
+      "scores": {
+        "NO_GESTURE": 0.003575514303520322,
+        "STOP": 0.007392500527203083,
+        "GO_STRAIGHT": 0.0018948465585708618,
+        "TURN_LEFT": 0.003986876457929611,
+        "LEFT_TURN_WAIT": 0.007648315746337175,
+        "TURN_RIGHT": 0.9625597596168518,
+        "CHANGE_LANE": 0.003734121797606349,
+        "SLOW_DOWN": 0.0022781374864280224,
+        "PULL_OVER": 0.006929963361471891
+      },
+      "meta": {
+        "lighting": "day",
+        "weather": "rain_aug",
+        "occlusion": "none",
+        "distance": "mid",
+        "people": "single"
+      }
+    },
+    {
+      "sample_id": "test_TURN_RIGHT_003",
+      "true_label": "TURN_RIGHT",
+      "pred_label": "TURN_RIGHT",
+      "scores": {
+        "NO_GESTURE": 0.003467429429292679,
+        "STOP": 0.007234811317175627,
+        "GO_STRAIGHT": 0.0018369641620665789,
+        "TURN_LEFT": 0.0038064271211624146,
+        "LEFT_TURN_WAIT": 0.007557057775557041,
+        "TURN_RIGHT": 0.9635547995567322,
+        "CHANGE_LANE": 0.0036200147587805986,
+        "SLOW_DOWN": 0.0021971790120005608,
+        "PULL_OVER": 0.006725429557263851
+      },
+      "meta": {
+        "lighting": "day",
+        "weather": "clear",
+        "occlusion": "none",
+        "distance": "mid",
+        "people": "single"
+      }
+    },
+    {
+      "sample_id": "test_SLOW_DOWN_000",
+      "true_label": "SLOW_DOWN",
+      "pred_label": "SLOW_DOWN",
+      "scores": {
+        "NO_GESTURE": 0.16698463261127472,
+        "STOP": 0.0042524696327745914,
+        "GO_STRAIGHT": 0.008640890941023827,
+        "TURN_LEFT": 0.011981271207332611,
+        "LEFT_TURN_WAIT": 0.005286641418933868,
+        "TURN_RIGHT": 0.016571510583162308,
+        "CHANGE_LANE": 0.002174947177991271,
+        "SLOW_DOWN": 0.7767966985702515,
+        "PULL_OVER": 0.007311016786843538
+      },
+      "meta": {
+        "lighting": "night",
+        "weather": "clear",
+        "occlusion": "none",
+        "distance": "mid",
+        "people": "single"
+      }
+    },
+    {
+      "sample_id": "test_SLOW_DOWN_001",
+      "true_label": "SLOW_DOWN",
+      "pred_label": "SLOW_DOWN",
+      "scores": {
+        "NO_GESTURE": 0.11122537404298782,
+        "STOP": 0.005799059756100178,
+        "GO_STRAIGHT": 0.01315123587846756,
+        "TURN_LEFT": 0.016189681366086006,
+        "LEFT_TURN_WAIT": 0.007703558541834354,
+        "TURN_RIGHT": 0.019700318574905396,
+        "CHANGE_LANE": 0.0031647603027522564,
+        "SLOW_DOWN": 0.8145659565925598,
+        "PULL_OVER": 0.008500045165419579
+      },
+      "meta": {
+        "lighting": "day",
+        "weather": "clear",
+        "occlusion": "none",
+        "distance": "mid",
+        "people": "single"
+      }
+    },
+    {
+      "sample_id": "test_SLOW_DOWN_002",
+      "true_label": "SLOW_DOWN",
+      "pred_label": "SLOW_DOWN",
+      "scores": {
+        "NO_GESTURE": 0.17169471085071564,
+        "STOP": 0.004159824922680855,
+        "GO_STRAIGHT": 0.008428089320659637,
+        "TURN_LEFT": 0.012062691152095795,
+        "LEFT_TURN_WAIT": 0.005184523295611143,
+        "TURN_RIGHT": 0.016863523051142693,
+        "CHANGE_LANE": 0.0021380684338510036,
+        "SLOW_DOWN": 0.7723355293273926,
+        "PULL_OVER": 0.00713302381336689
+      },
+      "meta": {
+        "lighting": "night",
+        "weather": "rain_aug",
+        "occlusion": "none",
+        "distance": "mid",
+        "people": "single"
+      }
+    },
+    {
+      "sample_id": "test_SLOW_DOWN_003",
+      "true_label": "SLOW_DOWN",
+      "pred_label": "SLOW_DOWN",
+      "scores": {
+        "NO_GESTURE": 0.2807302474975586,
+        "STOP": 0.00422133831307292,
+        "GO_STRAIGHT": 0.006874168291687965,
+        "TURN_LEFT": 0.01148307416588068,
+        "LEFT_TURN_WAIT": 0.004261516034603119,
+        "TURN_RIGHT": 0.01589960604906082,
+        "CHANGE_LANE": 0.0020210191141813993,
+        "SLOW_DOWN": 0.6671154499053955,
+        "PULL_OVER": 0.007393557112663984
+      },
+      "meta": {
+        "lighting": "night",
+        "weather": "clear",
+        "occlusion": "light",
+        "distance": "near",
+        "people": "single"
+      }
+    },
+    {
+      "sample_id": "test_PULL_OVER_000",
+      "true_label": "PULL_OVER",
+      "pred_label": "PULL_OVER",
+      "scores": {
+        "NO_GESTURE": 0.0039699021726846695,
+        "STOP": 0.020711785182356834,
+        "GO_STRAIGHT": 0.003924308344721794,
+        "TURN_LEFT": 0.007812540046870708,
+        "LEFT_TURN_WAIT": 0.004394449293613434,
+        "TURN_RIGHT": 0.0018737145001068711,
+        "CHANGE_LANE": 0.003207832109183073,
+        "SLOW_DOWN": 0.001158402650617063,
+        "PULL_OVER": 0.9529470205307007
+      },
+      "meta": {
+        "lighting": "night",
+        "weather": "rain_aug",
+        "occlusion": "light",
+        "distance": "near",
+        "people": "single"
+      }
+    },
+    {
+      "sample_id": "test_PULL_OVER_001",
+      "true_label": "PULL_OVER",
+      "pred_label": "PULL_OVER",
+      "scores": {
+        "NO_GESTURE": 0.003611978143453598,
+        "STOP": 0.022045252844691277,
+        "GO_STRAIGHT": 0.0038461703807115555,
+        "TURN_LEFT": 0.007554605137556791,
+        "LEFT_TURN_WAIT": 0.004486577585339546,
+        "TURN_RIGHT": 0.00186704914085567,
+        "CHANGE_LANE": 0.003209803719073534,
+        "SLOW_DOWN": 0.001121272100135684,
+        "PULL_OVER": 0.9522573351860046
+      },
+      "meta": {
+        "lighting": "day",
+        "weather": "clear",
+        "occlusion": "light",
+        "distance": "mid",
+        "people": "single"
+      }
+    },
+    {
+      "sample_id": "test_PULL_OVER_002",
+      "true_label": "PULL_OVER",
+      "pred_label": "PULL_OVER",
+      "scores": {
+        "NO_GESTURE": 0.004087215755134821,
+        "STOP": 0.02016466297209263,
+        "GO_STRAIGHT": 0.004041996784508228,
+        "TURN_LEFT": 0.008162694983184338,
+        "LEFT_TURN_WAIT": 0.00438645388931036,
+        "TURN_RIGHT": 0.0019296249374747276,
+        "CHANGE_LANE": 0.0032732838299125433,
+        "SLOW_DOWN": 0.0011927599553018808,
+        "PULL_OVER": 0.9527612924575806
+      },
+      "meta": {
+        "lighting": "day",
+        "weather": "rain_aug",
+        "occlusion": "light",
+        "distance": "mid",
+        "people": "single"
+      }
+    },
+    {
+      "sample_id": "test_PULL_OVER_003",
+      "true_label": "PULL_OVER",
+      "pred_label": "PULL_OVER",
+      "scores": {
+        "NO_GESTURE": 0.003389764577150345,
+        "STOP": 0.022948237136006355,
+        "GO_STRAIGHT": 0.003874041372910142,
+        "TURN_LEFT": 0.0073651159182190895,
+        "LEFT_TURN_WAIT": 0.004529349505901337,
+        "TURN_RIGHT": 0.0019003561465069652,
+        "CHANGE_LANE": 0.0032472065649926662,
+        "SLOW_DOWN": 0.0010858745081350207,
+        "PULL_OVER": 0.9516600370407104
+      },
+      "meta": {
+        "lighting": "night",
+        "weather": "clear",
+        "occlusion": "none",
+        "distance": "near",
+        "people": "single"
+      }
+    },
+    {
+      "sample_id": "test_NO_GESTURE_000",
+      "true_label": "NO_GESTURE",
+      "pred_label": "NO_GESTURE",
+      "scores": {
+        "NO_GESTURE": 0.9215602278709412,
+        "STOP": 0.004562627524137497,
+        "GO_STRAIGHT": 0.004061246756464243,
+        "TURN_LEFT": 0.010305287316441536,
+        "LEFT_TURN_WAIT": 0.0015082290628924966,
+        "TURN_RIGHT": 0.006491267587989569,
+        "CHANGE_LANE": 0.0027789799496531487,
+        "SLOW_DOWN": 0.0375053770840168,
+        "PULL_OVER": 0.011226638220250607
+      },
+      "meta": {
+        "lighting": "day",
+        "weather": "rain_aug",
+        "occlusion": "none",
+        "distance": "near",
+        "people": "single"
+      }
+    },
+    {
+      "sample_id": "test_NO_GESTURE_001",
+      "true_label": "NO_GESTURE",
+      "pred_label": "NO_GESTURE",
+      "scores": {
+        "NO_GESTURE": 0.919588029384613,
+        "STOP": 0.005819856189191341,
+        "GO_STRAIGHT": 0.004620634950697422,
+        "TURN_LEFT": 0.011622374877333641,
+        "LEFT_TURN_WAIT": 0.0017571410862728953,
+        "TURN_RIGHT": 0.0072815148159861565,
+        "CHANGE_LANE": 0.0034985970705747604,
+        "SLOW_DOWN": 0.0330391600728035,
+        "PULL_OVER": 0.012772554531693459
+      },
+      "meta": {
+        "lighting": "day",
+        "weather": "rain_aug",
+        "occlusion": "light",
+        "distance": "near",
+        "people": "single"
+      }
+    },
+    {
+      "sample_id": "test_NO_GESTURE_002",
+      "true_label": "NO_GESTURE",
+      "pred_label": "NO_GESTURE",
+      "scores": {
+        "NO_GESTURE": 0.9202722311019897,
+        "STOP": 0.0043078516609966755,
+        "GO_STRAIGHT": 0.003980249632149935,
+        "TURN_LEFT": 0.009961020201444626,
+        "LEFT_TURN_WAIT": 0.0014769230037927628,
+        "TURN_RIGHT": 0.006378862541168928,
+        "CHANGE_LANE": 0.002635703654959798,
+        "SLOW_DOWN": 0.04007219895720482,
+        "PULL_OVER": 0.010914993472397327
+      },
+      "meta": {
+        "lighting": "night",
+        "weather": "clear",
+        "occlusion": "light",
+        "distance": "mid",
+        "people": "single"
+      }
+    },
+    {
+      "sample_id": "test_NO_GESTURE_003",
+      "true_label": "NO_GESTURE",
+      "pred_label": "NO_GESTURE",
+      "scores": {
+        "NO_GESTURE": 0.9217469692230225,
+        "STOP": 0.0049739740788936615,
+        "GO_STRAIGHT": 0.0043100276961922646,
+        "TURN_LEFT": 0.010797010734677315,
+        "LEFT_TURN_WAIT": 0.0015731422463431954,
+        "TURN_RIGHT": 0.006642634514719248,
+        "CHANGE_LANE": 0.003026904072612524,
+        "SLOW_DOWN": 0.03497946262359619,
+        "PULL_OVER": 0.011949856765568256
+      },
+      "meta": {
+        "lighting": "day",
+        "weather": "clear",
+        "occlusion": "light",
+        "distance": "mid",
+        "people": "single"
+      }
+    }
+  ]
+}

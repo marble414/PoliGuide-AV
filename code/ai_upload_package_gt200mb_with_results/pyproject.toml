@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tpgr-av"
+version = "0.2.0"
+description = "PoliGuide-AV: 面向无人驾驶的交警手势识别系统"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+  {name = "OpenAI GPT-5.4 Pro generated baseline"}
+]
+dependencies = [
+  "numpy>=1.24,<2.0",
+  "opencv-python>=4.8,<5.0",
+  "PyYAML>=6.0,<7.0",
+  "torch>=2.1,<2.11",
+  "tqdm>=4.65,<5.0",
+  "scikit-learn>=1.4,<2.0",
+  "matplotlib>=3.8,<4.0",
+  "pandas>=2.2,<3.1"
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

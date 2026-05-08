@@ -1,0 +1,55 @@
+{
+  "config": "configs/eval_ctpgesture_v2_segmenter_ensemble_pair.yaml",
+  "split": "val",
+  "num_videos": 0,
+  "total_frames": 0,
+  "members": [
+    {
+      "name": "seg384_b12_d05_trainval",
+      "weight": 3.0,
+      "chunk_len": 4096,
+      "overlap": 1024
+    },
+    {
+      "name": "seg512_b12_d05_trainval",
+      "weight": 2.0,
+      "chunk_len": 4096,
+      "overlap": 1024
+    }
+  ],
+  "evaluation": {
+    "gesture_smooth_window": 1,
+    "command_smooth_window": 1,
+    "direction_smooth_window": 1,
+    "task_fusion": {
+      "command_weight": 0.6,
+      "direction_weight": 0.3
+    },
+    "decoder": {
+      "enabled": false
+    }
+  },
+  "gesture": {
+    "frames": 0,
+    "foreground_frames": 0,
+    "accuracy": 0.0,
+    "macro_precision": 0.0,
+    "macro_recall": 0.0,
+    "macro_f1": 0.0,
+    "macro_jaccard": 0.0,
+    "foreground_frame_accuracy": 0.0,
+    "foreground_macro_jaccard": 0.0,
+    "sequence_edit_similarity": 0.0,
+    "switch_delay_frames": 0.0,
+    "stable_output_latency_frames": 0.0
+  },
+  "command": {
+    "frames": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "macro_jaccard": 0.0
+  },
+  "mean_latency_ms": 0.0,
+  "system_fps_estimate": 0.0,
+  "end_to_end_wall_fps": 0.0
+}

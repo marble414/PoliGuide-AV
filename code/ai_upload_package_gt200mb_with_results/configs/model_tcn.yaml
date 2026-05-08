@@ -1,0 +1,7 @@
+model:
+  name: skeleton_tcn
+  input_dim: 85
+  num_classes: 9
+  hidden_dim: 128
+  num_blocks: 4
+  dropout: 0.2

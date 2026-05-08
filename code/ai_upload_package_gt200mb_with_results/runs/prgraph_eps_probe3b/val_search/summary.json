@@ -1,0 +1,98 @@
+[
+  {
+    "name": "cmd_up",
+    "smooth": 5,
+    "tta": 3,
+    "cw": 0.6,
+    "dw": 0.3,
+    "gesture_macro_jaccard": 0.5062449719584927,
+    "gesture_fg_macro_jaccard": 0.505710980919596,
+    "gesture_fg_acc": 0.8850169300225733,
+    "command_macro_jaccard": 0.4876144592445991,
+    "fps": 265.6694556491495
+  },
+  {
+    "name": "both_up",
+    "smooth": 5,
+    "tta": 3,
+    "cw": 0.6,
+    "dw": 0.45,
+    "gesture_macro_jaccard": 0.504935754965386,
+    "gesture_fg_macro_jaccard": 0.5044259765942548,
+    "gesture_fg_acc": 0.884734762979684,
+    "command_macro_jaccard": 0.4875672696389703,
+    "fps": 268.8541904729266
+  },
+  {
+    "name": "base",
+    "smooth": 5,
+    "tta": 1,
+    "cw": 0.45,
+    "dw": 0.3,
+    "gesture_macro_jaccard": 0.5042466277833526,
+    "gesture_fg_macro_jaccard": 0.5038815877023617,
+    "gesture_fg_acc": 0.8867099322799097,
+    "command_macro_jaccard": 0.4875672696389703,
+    "fps": 268.0787576738112
+  },
+  {
+    "name": "tta3",
+    "smooth": 5,
+    "tta": 3,
+    "cw": 0.45,
+    "dw": 0.3,
+    "gesture_macro_jaccard": 0.5042466277833526,
+    "gesture_fg_macro_jaccard": 0.5038815877023617,
+    "gesture_fg_acc": 0.8867099322799097,
+    "command_macro_jaccard": 0.4876144592445991,
+    "fps": 267.94202886140994
+  },
+  {
+    "name": "tta5",
+    "smooth": 5,
+    "tta": 5,
+    "cw": 0.45,
+    "dw": 0.3,
+    "gesture_macro_jaccard": 0.5042466277833526,
+    "gesture_fg_macro_jaccard": 0.5038815877023617,
+    "gesture_fg_acc": 0.8867099322799097,
+    "command_macro_jaccard": 0.4876144592445991,
+    "fps": 269.79411140228075
+  },
+  {
+    "name": "dir_up",
+    "smooth": 5,
+    "tta": 3,
+    "cw": 0.45,
+    "dw": 0.45,
+    "gesture_macro_jaccard": 0.5034027457410083,
+    "gesture_fg_macro_jaccard": 0.5030328302064334,
+    "gesture_fg_acc": 0.8858634311512416,
+    "command_macro_jaccard": 0.4876575383932519,
+    "fps": 264.55638151344084
+  },
+  {
+    "name": "smooth9_both",
+    "smooth": 9,
+    "tta": 3,
+    "cw": 0.6,
+    "dw": 0.45,
+    "gesture_macro_jaccard": 0.494571396903823,
+    "gesture_fg_macro_jaccard": 0.4940777080102844,
+    "gesture_fg_acc": 0.8728837471783296,
+    "command_macro_jaccard": 0.4876144592445991,
+    "fps": 268.1339717503209
+  },
+  {
+    "name": "smooth9",
+    "smooth": 9,
+    "tta": 3,
+    "cw": 0.45,
+    "dw": 0.3,
+    "gesture_macro_jaccard": 0.4933067703571464,
+    "gesture_fg_macro_jaccard": 0.4929314478047438,
+    "gesture_fg_acc": 0.8744356659142212,
+    "command_macro_jaccard": 0.4876144592445991,
+    "fps": 268.850773685853
+  }
+]

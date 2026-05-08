@@ -1,0 +1,6 @@
+# 可选：用于导出与部署
+# MediaPipe 真实视频路线请参考 requirements-mediapipe-local.txt
+# OpenMMLab 真实视频路线请参考 requirements-openmmlab.txt
+onnx>=1.16
+onnxruntime>=1.17
+onnxscript>=0.3

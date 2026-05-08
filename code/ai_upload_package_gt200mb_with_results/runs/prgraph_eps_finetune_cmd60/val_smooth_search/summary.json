@@ -1,0 +1,38 @@
+[
+  {
+    "smooth": 1,
+    "gesture_macro_jaccard": 0.5598469516904251,
+    "gesture_fg_macro_jaccard": 0.5591407793622999,
+    "gesture_fg_acc": 0.9225451467268623,
+    "seq_edit": 0.6746411483253589,
+    "stable_latency": 57.67307692307692,
+    "switch_delay": 18.485576923076923
+  },
+  {
+    "smooth": 3,
+    "gesture_macro_jaccard": 0.5551606221438493,
+    "gesture_fg_macro_jaccard": 0.5544580357528364,
+    "gesture_fg_acc": 0.917607223476298,
+    "seq_edit": 0.7177033492822966,
+    "stable_latency": 58.07692307692308,
+    "switch_delay": 18.83653846153846
+  },
+  {
+    "smooth": 5,
+    "gesture_macro_jaccard": 0.5500486018207277,
+    "gesture_fg_macro_jaccard": 0.5493566045848447,
+    "gesture_fg_acc": 0.9128103837471784,
+    "seq_edit": 0.7320574162679425,
+    "stable_latency": 58.48076923076923,
+    "switch_delay": 19.716346153846153
+  },
+  {
+    "smooth": 7,
+    "gesture_macro_jaccard": 0.543912422784921,
+    "gesture_fg_macro_jaccard": 0.5432095261596933,
+    "gesture_fg_acc": 0.9066027088036117,
+    "seq_edit": 0.7607655502392344,
+    "stable_latency": 58.94230769230769,
+    "switch_delay": 20.379807692307693
+  }
+]

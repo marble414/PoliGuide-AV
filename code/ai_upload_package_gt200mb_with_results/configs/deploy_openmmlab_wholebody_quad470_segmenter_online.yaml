@@ -1,0 +1,128 @@
+runtime:
+  sequence_len: 512
+  min_predict_len: 24
+  pose_backend:
+    type: openmmlab
+    model_alias: wholebody
+    device: cuda
+    pose2d_weights: weights/openmmlab/rtmpose-m_simcc-coco-wholebody_pt-aic-coco_270e-256x192-cd5e845c_20230123.pth
+    det_weights: weights/openmmlab/rtmdet_m_8xb32-100e_coco-obj365-person-235e8209.pth
+  tracker:
+    iou_threshold: 0.3
+    max_age: 12
+    min_hits: 1
+  selector:
+    center_weight: 0.35
+    size_weight: 0.15
+    visibility_weight: 0.25
+    hand_weight: 0.15
+    track_age_weight: 0.15
+    stability_weight: 0.08
+    vest_weight: 0.10
+    sticky_bonus: 0.10
+  state_machine:
+    window_size: 7
+    min_consensus: 4
+    conf_threshold: 0.55
+    hold_frames: 8
+    expiry_frames: 18
+
+classifier:
+  type: ensemble
+  members:
+    - type: torch
+      weight: 1.0
+      checkpoint: runs/ctpgesture_v2_segmenter_trainval_wholebody456_b12_d05/best.pt
+      representation: features
+      feature_variant: wholebody_focus
+      clip_len: 384
+      tta_num_clips: 1
+      temporal_mode: crop_pad
+      device: cuda
+      label_space: ctpv2_directional
+      task_fusion:
+        command_weight: 0.80
+        direction_weight: 0.30
+      model:
+        name: frame_segmenter_multitask
+        input_dim: 456
+        task_dims:
+          gesture: 33
+          command: 9
+          direction: 5
+        hidden_dim: 384
+        num_blocks: 12
+        dropout: 0.05
+        amp: true
+    - type: torch
+      weight: 0.75
+      checkpoint: runs/ctpgesture_v2_segmenter_trainval_wholebody456_b12_d05_seed7/best.pt
+      representation: features
+      feature_variant: wholebody_focus
+      clip_len: 384
+      tta_num_clips: 1
+      temporal_mode: crop_pad
+      device: cuda
+      label_space: ctpv2_directional
+      task_fusion:
+        command_weight: 0.80
+        direction_weight: 0.30
+      model:
+        name: frame_segmenter_multitask
+        input_dim: 456
+        task_dims:
+          gesture: 33
+          command: 9
+          direction: 5
+        hidden_dim: 384
+        num_blocks: 12
+        dropout: 0.05
+        amp: true
+    - type: torch
+      weight: 0.90
+      checkpoint: runs/ctpgesture_v2_segmenter_trainval_wholebody850_b12_d05/best.pt
+      representation: features
+      feature_variant: wholebody_full
+      clip_len: 384
+      tta_num_clips: 1
+      temporal_mode: crop_pad
+      device: cuda
+      label_space: ctpv2_directional
+      task_fusion:
+        command_weight: 0.80
+        direction_weight: 0.30
+      model:
+        name: frame_segmenter_multitask
+        input_dim: 826
+        task_dims:
+          gesture: 33
+          command: 9
+          direction: 5
+        hidden_dim: 384
+        num_blocks: 12
+        dropout: 0.05
+        amp: true
+    - type: torch
+      weight: 0.85
+      checkpoint: runs/ctpgesture_v2_segmenter_trainval_wholebody470_b12_d05/best.pt
+      representation: features
+      feature_variant: wholebody_focus_track
+      clip_len: 384
+      tta_num_clips: 1
+      temporal_mode: crop_pad
+      device: cuda
+      label_space: ctpv2_directional
+      task_fusion:
+        command_weight: 0.80
+        direction_weight: 0.30
+      model:
+        name: frame_segmenter_multitask
+        input_dim: 470
+        task_dims:
+          gesture: 33
+          command: 9
+          direction: 5
+        hidden_dim: 384
+        num_blocks: 12
+        dropout: 0.05
+        amp: true

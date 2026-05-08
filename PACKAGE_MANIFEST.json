@@ -1,0 +1,16 @@
+{
+  "project": "PoliGuide-AV",
+  "created_at_local": "2026-05-09 02:35:39 +0800",
+  "source_root": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新",
+  "policy": "Includes code, frontend showcase, processed demonstration videos, screenshots, models, and technical assets. Excludes written project materials, document files, markdown articles, cache files, logs, and duplicate archives.",
+  "included_file_count": 932,
+  "excluded_file_count": 313,
+  "excluded_summary": {
+    "markdown written material": 18,
+    "duplicate/archive payload": 2,
+    "cache/build artifact": 202,
+    "plain text written material": 4,
+    "cache/log artifact": 85,
+    "macOS metadata": 2
+  }
+}

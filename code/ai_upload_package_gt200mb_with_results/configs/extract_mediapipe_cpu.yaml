@@ -1,0 +1,8 @@
+runtime:
+  pose_backend:
+    type: mediapipe
+    static_image_mode: false
+    model_complexity: 1
+  detector:
+    score_threshold: 0.2
+    max_detections: 8

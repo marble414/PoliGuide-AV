@@ -1,0 +1,182 @@
+[
+  {
+    "smooth_window": 1,
+    "command_weight": 0.8,
+    "direction_weight": 0.3,
+    "decoder": false,
+    "gesture_fg_jaccard": 0.7456678383907449,
+    "gesture_macro_jaccard": 0.7478675155597174,
+    "command_macro_jaccard": 0.7470552257793996
+  },
+  {
+    "smooth_window": 1,
+    "command_weight": 0.8,
+    "direction_weight": 0.2,
+    "decoder": false,
+    "gesture_fg_jaccard": 0.7454800234745587,
+    "gesture_macro_jaccard": 0.747652374866204,
+    "command_macro_jaccard": 0.7470552257793996
+  },
+  {
+    "smooth_window": 1,
+    "command_weight": 0.6,
+    "direction_weight": 0.3,
+    "decoder": false,
+    "gesture_fg_jaccard": 0.7454204306744184,
+    "gesture_macro_jaccard": 0.7475956093640913,
+    "command_macro_jaccard": 0.7470552257793996
+  },
+  {
+    "smooth_window": 1,
+    "command_weight": 0.8,
+    "direction_weight": 0.4,
+    "decoder": false,
+    "gesture_fg_jaccard": 0.7453801541678825,
+    "gesture_macro_jaccard": 0.7475991950594368,
+    "command_macro_jaccard": 0.7470552257793996
+  },
+  {
+    "smooth_window": 1,
+    "command_weight": 0.6,
+    "direction_weight": 0.2,
+    "decoder": false,
+    "gesture_fg_jaccard": 0.7450859275751381,
+    "gesture_macro_jaccard": 0.7472350850448858,
+    "command_macro_jaccard": 0.7470552257793996
+  },
+  {
+    "smooth_window": 1,
+    "command_weight": 0.6,
+    "direction_weight": 0.4,
+    "decoder": false,
+    "gesture_fg_jaccard": 0.7449957374119583,
+    "gesture_macro_jaccard": 0.7472099464277271,
+    "command_macro_jaccard": 0.7470552257793996
+  },
+  {
+    "smooth_window": 1,
+    "command_weight": 0.4,
+    "direction_weight": 0.4,
+    "decoder": false,
+    "gesture_fg_jaccard": 0.7440837979984044,
+    "gesture_macro_jaccard": 0.7462809514454575,
+    "command_macro_jaccard": 0.7470552257793996
+  },
+  {
+    "smooth_window": 1,
+    "command_weight": 0.4,
+    "direction_weight": 0.2,
+    "decoder": false,
+    "gesture_fg_jaccard": 0.7435830869160782,
+    "gesture_macro_jaccard": 0.7457082299563336,
+    "command_macro_jaccard": 0.7470552257793996
+  },
+  {
+    "smooth_window": 1,
+    "command_weight": 0.4,
+    "direction_weight": 0.3,
+    "decoder": false,
+    "gesture_fg_jaccard": 0.7433843334337331,
+    "gesture_macro_jaccard": 0.7455421642310847,
+    "command_macro_jaccard": 0.7470552257793996
+  },
+  {
+    "smooth_window": 3,
+    "command_weight": 0.8,
+    "direction_weight": 0.2,
+    "decoder": false,
+    "gesture_fg_jaccard": 0.7394792457684745,
+    "gesture_macro_jaccard": 0.7416933895239239,
+    "command_macro_jaccard": 0.7404093252774597
+  },
+  {
+    "smooth_window": 3,
+    "command_weight": 0.6,
+    "direction_weight": 0.2,
+    "decoder": false,
+    "gesture_fg_jaccard": 0.7388284375493005,
+    "gesture_macro_jaccard": 0.7410220152732724,
+    "command_macro_jaccard": 0.7404093252774597
+  },
+  {
+    "smooth_window": 3,
+    "command_weight": 0.8,
+    "direction_weight": 0.3,
+    "decoder": false,
+    "gesture_fg_jaccard": 0.7384398099454013,
+    "gesture_macro_jaccard": 0.7406838841335233,
+    "command_macro_jaccard": 0.7404093252774597
+  },
+  {
+    "smooth_window": 3,
+    "command_weight": 0.8,
+    "direction_weight": 0.4,
+    "decoder": false,
+    "gesture_fg_jaccard": 0.7384027577726764,
+    "gesture_macro_jaccard": 0.7406564720946097,
+    "command_macro_jaccard": 0.7404093252774597
+  },
+  {
+    "smooth_window": 3,
+    "command_weight": 0.6,
+    "direction_weight": 0.3,
+    "decoder": false,
+    "gesture_fg_jaccard": 0.7381467911043113,
+    "gesture_macro_jaccard": 0.7403699666811987,
+    "command_macro_jaccard": 0.7404093252774597
+  },
+  {
+    "smooth_window": 3,
+    "command_weight": 0.6,
+    "direction_weight": 0.4,
+    "decoder": false,
+    "gesture_fg_jaccard": 0.7377781933115819,
+    "gesture_macro_jaccard": 0.7400292753357816,
+    "command_macro_jaccard": 0.7404093252774597
+  },
+  {
+    "smooth_window": 3,
+    "command_weight": 0.4,
+    "direction_weight": 0.3,
+    "decoder": false,
+    "gesture_fg_jaccard": 0.7372403202557152,
+    "gesture_macro_jaccard": 0.7394473350958374,
+    "command_macro_jaccard": 0.7404093252774597
+  },
+  {
+    "smooth_window": 3,
+    "command_weight": 0.4,
+    "direction_weight": 0.2,
+    "decoder": false,
+    "gesture_fg_jaccard": 0.737239212529906,
+    "gesture_macro_jaccard": 0.73942260545053,
+    "command_macro_jaccard": 0.7404093252774597
+  },
+  {
+    "smooth_window": 3,
+    "command_weight": 0.4,
+    "direction_weight": 0.4,
+    "decoder": false,
+    "gesture_fg_jaccard": 0.7372055662808072,
+    "gesture_macro_jaccard": 0.739453267981418,
+    "command_macro_jaccard": 0.7404093252774597
+  },
+  {
+    "smooth_window": 5,
+    "command_weight": 0.8,
+    "direction_weight": 0.2,
+    "decoder": false,
+    "gesture_fg_jaccard": 0.7292219445497882,
+    "gesture_macro_jaccard": 0.7315011427110361,
+    "command_macro_jaccard": 0.7325588725619008
+  },
+  {
+    "smooth_window": 5,
+    "command_weight": 0.8,
+    "direction_weight": 0.4,
+    "decoder": false,
+    "gesture_fg_jaccard": 0.7290596259995648,
+    "gesture_macro_jaccard": 0.7313955416577987,
+    "command_macro_jaccard": 0.7325588725619008
+  }
+]

@@ -1,0 +1,181 @@
+{
+  "output": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/processed_demo_videos/poliguide_submission_compilation_1080p.mp4",
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 30,
+  "crf": 18,
+  "max_size_bytes": 104857600,
+  "duration_sec": 65.3,
+  "clips": [
+    {
+      "kind": "title",
+      "title": "警势智行 PoliGuide-AV",
+      "subtitle": "真实道路场景下的交警手势识别与车辆指令解析",
+      "detail": "本片汇总夜间眩光、施工入口、路侧遮挡、逆光和正面指挥等实拍场景，画面中的主体框、COCO17 骨架、动作标签、车辆指令和 JSONL 记录来自同一处理链路。",
+      "source": null,
+      "start": 0.0,
+      "end": 4.0,
+      "focus": "",
+      "metric": "",
+      "display_duration": 0.0
+    },
+    {
+      "kind": "video",
+      "title": "夜间右向指挥",
+      "subtitle": "夜间强光下，手臂指向画面右侧，系统同步输出 TURN_RIGHT。",
+      "detail": "画面动作、顶部 gesture 标签和 command 输出保持同步，体现低照度场景下的稳定识别能力。",
+      "source": "demo_01_night_high_glare",
+      "start": 10.9,
+      "end": 14.1,
+      "focus": "TURN_RIGHT",
+      "metric": "平均姿态质量 / 延迟: 0.962 / 10.3ms\n动作/命令一致率: 100.0%\n主要输出: TURN_RIGHT:97",
+      "display_duration": 5.0
+    },
+    {
+      "kind": "video",
+      "title": "夜间示停指挥",
+      "subtitle": "示停动作清晰出现时，系统同步输出 STOP 指令。",
+      "detail": "横臂示停姿态与 STOP 标签一一对应，右侧面板同步给出姿态质量、延迟和命令统计。",
+      "source": "demo_01_night_high_glare",
+      "start": 20.1,
+      "end": 20.9,
+      "focus": "STOP",
+      "metric": "平均姿态质量 / 延迟: 0.990 / 10.3ms\n动作/命令一致率: 100.0%\n主要输出: STOP:25",
+      "display_duration": 4.2
+    },
+    {
+      "kind": "video",
+      "title": "施工入口右向指挥",
+      "subtitle": "施工围挡背景下，手臂指向画面右侧，系统同步输出 TURN_RIGHT。",
+      "detail": "主体跟踪框锁定指挥人员，骨架关键点稳定，动作标签和车辆命令同步变化。",
+      "source": "demo_02_construction_entry",
+      "start": 15.0,
+      "end": 18.6,
+      "focus": "TURN_RIGHT",
+      "metric": "平均姿态质量 / 延迟: 0.970 / 10.4ms\n动作/命令一致率: 100.0%\n主要输出: TURN_RIGHT:109",
+      "display_duration": 5.0
+    },
+    {
+      "kind": "video",
+      "title": "施工入口左向指挥",
+      "subtitle": "同一施工入口场景中，手臂指向画面左侧，系统同步输出 TURN_LEFT。",
+      "detail": "侧身姿态下仍能保持手臂方向、gesture 和 command 的连续对应关系。",
+      "source": "demo_02_construction_entry",
+      "start": 22.55,
+      "end": 24.6,
+      "focus": "TURN_LEFT",
+      "metric": "平均姿态质量 / 延迟: 0.954 / 10.4ms\n动作/命令一致率: 100.0%\n主要输出: TURN_LEFT:62",
+      "display_duration": 4.5
+    },
+    {
+      "kind": "video",
+      "title": "路侧车辆右向指挥",
+      "subtitle": "近车身遮挡场景中，手臂指向画面右侧，系统同步输出 TURN_RIGHT。",
+      "detail": "车辆前机盖遮挡部分下肢时，系统仍保持上肢关键点和方向指令一致。",
+      "source": "demo_03_roadside_vehicle",
+      "start": 11.5,
+      "end": 13.6,
+      "focus": "TURN_RIGHT",
+      "metric": "平均姿态质量 / 延迟: 0.899 / 10.4ms\n动作/命令一致率: 100.0%\n主要输出: TURN_RIGHT:64",
+      "display_duration": 4.5
+    },
+    {
+      "kind": "video",
+      "title": "路侧车辆左向指挥",
+      "subtitle": "路侧车辆遮挡下，手臂指向画面左侧，系统同步输出 TURN_LEFT。",
+      "detail": "连续多帧中，主体框、骨架姿态、动作标签和车辆指令保持一致。",
+      "source": "demo_03_roadside_vehicle",
+      "start": 15.5,
+      "end": 22.5,
+      "focus": "TURN_LEFT",
+      "metric": "平均姿态质量 / 延迟: 0.875 / 10.4ms\n动作/命令一致率: 100.0%\n主要输出: TURN_LEFT:211",
+      "display_duration": 7.5
+    },
+    {
+      "kind": "video",
+      "title": "夜间限速右向指挥",
+      "subtitle": "夜间道路标志和眩光背景下，右向指挥动作稳定输出 TURN_RIGHT。",
+      "detail": "强光、限速牌和暗背景共存时，系统仍能维持清晰的人体姿态与方向指令。",
+      "source": "demo_04_night_speed_limit",
+      "start": 4.2,
+      "end": 7.2,
+      "focus": "TURN_RIGHT",
+      "metric": "平均姿态质量 / 延迟: 0.995 / 10.8ms\n动作/命令一致率: 100.0%\n主要输出: TURN_RIGHT:91",
+      "display_duration": 5.0
+    },
+    {
+      "kind": "video",
+      "title": "夜间限速左向指挥",
+      "subtitle": "同一夜间路段中，左向指挥动作稳定输出 TURN_LEFT。",
+      "detail": "侧身姿态、手臂方向和命令输出一致，便于直观看到方向类指挥能力。",
+      "source": "demo_04_night_speed_limit",
+      "start": 13.0,
+      "end": 16.6,
+      "focus": "TURN_LEFT",
+      "metric": "平均姿态质量 / 延迟: 0.942 / 10.7ms\n动作/命令一致率: 100.0%\n主要输出: TURN_LEFT:109",
+      "display_duration": 5.0
+    },
+    {
+      "kind": "video",
+      "title": "逆光左向指挥",
+      "subtitle": "逆光侧身条件下，左向指挥动作与 TURN_LEFT 保持同步。",
+      "detail": "人物处于强逆光阴影区域，系统仍保持主体选择、关键点和命令输出一致。",
+      "source": "demo_05_backlight_side",
+      "start": 30.9,
+      "end": 32.3,
+      "focus": "TURN_LEFT",
+      "metric": "平均姿态质量 / 延迟: 0.965 / 10.5ms\n动作/命令一致率: 100.0%\n主要输出: TURN_LEFT:43",
+      "display_duration": 4.2
+    },
+    {
+      "kind": "video",
+      "title": "逆光慢行指挥",
+      "subtitle": "慢行动作出现时，系统同步输出 SLOW_DOWN 指令。",
+      "detail": "该场景用于展示非转向类指挥语义，动作、gesture 和 command 在短时窗口内一致。",
+      "source": "demo_05_backlight_side",
+      "start": 23.75,
+      "end": 24.45,
+      "focus": "SLOW_DOWN",
+      "metric": "平均姿态质量 / 延迟: 0.917 / 10.5ms\n动作/命令一致率: 100.0%\n主要输出: SLOW_DOWN:21",
+      "display_duration": 4.2
+    },
+    {
+      "kind": "video",
+      "title": "施工区域示停",
+      "subtitle": "施工路段人工接管时，示停动作稳定对应 STOP。",
+      "detail": "STOP 作为安全优先级最高的车辆命令，保持与示停姿态同步输出。",
+      "source": "demo_06_construction_stop",
+      "start": 23.35,
+      "end": 24.75,
+      "focus": "STOP",
+      "metric": "平均姿态质量 / 延迟: 0.997 / 10.8ms\n动作/命令一致率: 100.0%\n主要输出: STOP:42",
+      "display_duration": 4.2
+    },
+    {
+      "kind": "video",
+      "title": "正面右向指挥",
+      "subtitle": "正面视角下，右向指挥动作与 TURN_RIGHT 输出保持一致。",
+      "detail": "正面视角中保留 frame、track、gesture、command、confidence 和 latency 等逐帧字段。",
+      "source": "demo_07_front_direction",
+      "start": 3.65,
+      "end": 4.3,
+      "focus": "TURN_RIGHT",
+      "metric": "平均姿态质量 / 延迟: 0.978 / 10.8ms\n动作/命令一致率: 100.0%\n主要输出: TURN_RIGHT:20",
+      "display_duration": 4.0
+    },
+    {
+      "kind": "title",
+      "title": "结构化交付结果",
+      "subtitle": "画面动作、检测标签、车辆指令与逐帧 JSONL 可共同复核",
+      "detail": "视频用于直观展示，JSONL 用于工程追溯，命令语义可继续对接 JSON、ROS2、Autoware 与 CARLA 等平台。",
+      "source": null,
+      "start": 0.0,
+      "end": 4.0,
+      "focus": "",
+      "metric": "",
+      "display_duration": 0.0
+    }
+  ]
+}

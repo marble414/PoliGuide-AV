@@ -1,0 +1,52 @@
+seed: 42
+device: cuda
+
+dataset:
+  video_manifest_path: data/processed/ctpgesture_v2_vibe33/manifest_videos_trainval.jsonl
+  dataset_name: ctpgesture_v2
+  label_space: ctpv2_directional
+  eval_split: train
+
+evaluation:
+  smooth_window: 1
+  task_fusion:
+    command_weight: 1.1
+    direction_weight: 0.35
+
+members:
+  - name: seg384_b12_d05_trainval
+    config: configs/eval_ctpgesture_v2_segmenter_trainval_best.yaml
+    checkpoint: runs/ctpgesture_v2_segmenter_trainval_best/best.pt
+    weight: 3.0
+    chunk_len: 4096
+    overlap: 1024
+  - name: seg512_b12_d05_trainval
+    config: configs/eval_ctpgesture_v2_segmenter_trainval_seg512_b12_d05.yaml
+    checkpoint: runs/ctpgesture_v2_segmenter_trainval_seg512_b12_d05/best.pt
+    weight: 2.0
+    chunk_len: 4096
+    overlap: 1024
+  - name: seg384_focus_v2_trainval
+    config: configs/ctpgesture_v2_segmenter_trainval_focus384_v2.yaml
+    checkpoint: runs/ctpgesture_v2_segmenter_trainval_focus384_v2/best.pt
+    weight: 1.0
+    chunk_len: 4096
+    overlap: 1024
+  - name: seg_wholebody456_b12_d05_trainval
+    config: configs/eval_ctpgesture_v2_segmenter_trainval_wholebody456_b12_d05.yaml
+    checkpoint: runs/ctpgesture_v2_segmenter_trainval_wholebody456_b12_d05/best.pt
+    weight: 3.0
+    chunk_len: 4096
+    overlap: 1024
+  - name: seg_wholebody826_b12_d05_trainval
+    config: configs/eval_ctpgesture_v2_segmenter_trainval_wholebody850_b12_d05.yaml
+    checkpoint: runs/ctpgesture_v2_segmenter_trainval_wholebody850_b12_d05/best.pt
+    weight: 1.5
+    chunk_len: 4096
+    overlap: 1024
+  - name: seg_rich513_b12_d05_trainval
+    config: configs/eval_ctpgesture_v2_segmenter_trainval_rich513_b12_d05.yaml
+    checkpoint: runs/ctpgesture_v2_segmenter_trainval_rich513_b12_d05/best.pt
+    weight: 1.5
+    chunk_len: 4096
+    overlap: 1024

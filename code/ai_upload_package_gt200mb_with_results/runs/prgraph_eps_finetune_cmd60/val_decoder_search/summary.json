@@ -1,0 +1,58 @@
+[
+  {
+    "name": "dec_sb8",
+    "stay": 8.0,
+    "same_dir": 2.5,
+    "same_cmd": 1.5,
+    "cross": 0.15,
+    "bg": 1.0,
+    "em": 1.0,
+    "gesture_macro_jaccard": 0.521558189790405,
+    "gesture_fg_macro_jaccard": 0.5206454989979168,
+    "gesture_fg_acc": 0.8706264108352144,
+    "command_macro_jaccard": 0.5339753552762346,
+    "seq_edit": 0.8277511961722488
+  },
+  {
+    "name": "dec_sb12_strong",
+    "stay": 12.0,
+    "same_dir": 3.5,
+    "same_cmd": 2.0,
+    "cross": 0.1,
+    "bg": 1.2,
+    "em": 1.0,
+    "gesture_macro_jaccard": 0.5215476892215293,
+    "gesture_fg_macro_jaccard": 0.5206271482154677,
+    "gesture_fg_acc": 0.8707674943566591,
+    "command_macro_jaccard": 0.5339753552762346,
+    "seq_edit": 0.8229665071770335
+  },
+  {
+    "name": "dec_sb12",
+    "stay": 12.0,
+    "same_dir": 2.5,
+    "same_cmd": 1.5,
+    "cross": 0.15,
+    "bg": 1.0,
+    "em": 1.0,
+    "gesture_macro_jaccard": 0.5214733094526436,
+    "gesture_fg_macro_jaccard": 0.520563863488721,
+    "gesture_fg_acc": 0.8706264108352144,
+    "command_macro_jaccard": 0.5340306507899804,
+    "seq_edit": 0.8277511961722488
+  },
+  {
+    "name": "dec_sb18",
+    "stay": 18.0,
+    "same_dir": 2.5,
+    "same_cmd": 1.5,
+    "cross": 0.15,
+    "bg": 1.0,
+    "em": 1.0,
+    "gesture_macro_jaccard": 0.5214733094526436,
+    "gesture_fg_macro_jaccard": 0.520563863488721,
+    "gesture_fg_acc": 0.8706264108352144,
+    "command_macro_jaccard": 0.5339483569835678,
+    "seq_edit": 0.8277511961722488
+  }
+]
