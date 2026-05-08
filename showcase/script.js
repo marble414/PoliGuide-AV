@@ -357,7 +357,7 @@ const builderPresets = {
 
 const releaseCheckLabels = {
   environment: "环境可创建，pip install -e . 已通过",
-  assets: "code.zip、报告、需求文档、在线和离线演示资源可访问",
+  assets: "代码目录、前端、截图、模型与演示资源可访问",
   camera: "摄像头实时推理命令可运行并生成 JSONL",
   video: "离线视频推理已生成 MP4 和 JSONL 结果",
   interface: "JSON / ROS2 / Autoware / CARLA 字段映射已校验",

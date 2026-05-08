@@ -2187,6 +2187,13 @@ pre {
   margin-top: 18px;
 }
 
+.resource-note {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.65;
+  margin: 18px 0 0;
+}
+
 .delivery-grid article > .resource-action {
   margin-top: 18px;
 }
