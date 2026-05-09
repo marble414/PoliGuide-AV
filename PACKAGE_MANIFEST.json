@@ -1,9 +1,9 @@
 {
   "project": "PoliGuide-AV",
-  "created_at_local": "2026-05-09 07:08:26 +0800",
+  "created_at_local": "2026-05-09 09:23:06 +0800",
   "source_root": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新",
   "policy": "Includes code, frontend showcase, processed demonstration videos, screenshots, models, technical assets, and this repository README. Excludes written project materials, document files, markdown articles, cache files, logs, and duplicate archives.",
-  "included_file_count": 933,
+  "included_file_count": 946,
   "excluded_file_count": 313,
   "excluded_summary": {
     "markdown written material": 18,
@@ -12,5 +12,9 @@
     "plain text written material": 4,
     "cache/log artifact": 85,
     "macOS metadata": 2
-  }
+  },
+  "showcase_screenshot_count": 84,
+  "showcase_screenshot_manifest": "showcase_uhd_screenshots/manifest.json",
+  "final_submission_video": "processed_demo_videos/最终提交.mp4",
+  "final_submission_video_audit": "processed_demo_videos/gesture_alignment_review/frame_by_frame_audit.json"
 }

@@ -82,7 +82,7 @@ http://127.0.0.1:8765/showcase/
 | 在线演示 | [`在线演示.mp4`](在线演示.mp4) | 展示摄像头链路下的实时输入、主体选择、识别叠加和诊断面板 |
 | 离线演示 | [`离线演示.mp4`](离线演示.mp4) | 展示视频文件推理、输出视频和 JSONL 结果解释 |
 | 实拍演示集 | [`processed_demo_videos/`](processed_demo_videos/) | 7 个实拍场景视频、poster、JSONL、帧级审核图和对齐检查图 |
-| 高清截图集 | [`showcase_uhd_screenshots/`](showcase_uhd_screenshots/) | 4K 截图，覆盖前端各功能区、接口对接状态和运行命令面板 |
+| 高清截图集 | [`showcase_uhd_screenshots/`](showcase_uhd_screenshots/) | 84 张 4K 截图，覆盖前端主区块、操作台模式、工具状态、场景、路线、32 个接口组合、运行命令和完整视频演示区 |
 
 演示视频采用同一处理链路生成，画面中同时呈现主体框、骨架、手势标签、车辆命令、姿态质量、延迟、命令一致率和安全状态，便于直接观察实际动作与识别输出之间的对应关系。
 
@@ -107,7 +107,7 @@ http://127.0.0.1:8765/showcase/
 .
 ├── code/ai_upload_package_gt200mb_with_results/   # Python 工程源码、配置、训练评估结果与运行入口
 ├── showcase/                                      # 产品级前端展示页面
-├── showcase_uhd_screenshots/                     # 前端各页面与交互状态的超高清截图
+├── showcase_uhd_screenshots/                     # 84 张前端各页面与交互状态的超高清截图
 ├── processed_demo_videos/                        # 处理后的演示视频、JSONL、poster、审核帧与总览视频
 ├── models/pose_landmarker_full.task              # MediaPipe 姿态模型资源
 ├── tools/                                        # 演示视频生成与汇总视频制作脚本

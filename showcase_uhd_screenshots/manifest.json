@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-07T18:33:06",
-  "base_url": "http://127.0.0.1:8765/showcase/",
+  "generated_at": "2026-05-09T09:23:06+08:00",
+  "base_url": "http://127.0.0.1:8766/showcase/",
   "viewport_css": {
     "width": 1920,
     "height": 1080
@@ -10,679 +10,690 @@
     "width": 3840,
     "height": 2160
   },
+  "file_count": 84,
+  "category_counts": {
+    "01_sections": 18,
+    "02_workspace_builder": 7,
+    "03_workspace_tools": 4,
+    "04_scenarios": 6,
+    "05_routes": 4,
+    "06_integration": 32,
+    "07_runbook": 8,
+    "08_demo_frontend": 5
+  },
+  "notes": "Latest final-submission capture. Includes section screenshots, workspace modes, tool states, scenarios, routes, 32 integration combinations, runbook states, and full demo-video frontend area.",
   "files": [
     {
-      "label": "首页概览",
-      "state": {
-        "type": "section",
-        "anchor": "top"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/01_sections/01_top_首页概览.png",
-      "relative_path": "01_sections/01_top_首页概览.png"
-    },
-    {
-      "label": "体验路径",
-      "state": {
-        "type": "section",
-        "anchor": "experience"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/01_sections/02_experience_体验路径.png",
-      "relative_path": "01_sections/02_experience_体验路径.png"
-    },
-    {
-      "label": "系统操作台",
-      "state": {
-        "type": "section",
-        "anchor": "workspace"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/01_sections/03_workspace_系统操作台.png",
-      "relative_path": "01_sections/03_workspace_系统操作台.png"
-    },
-    {
-      "label": "需求覆盖",
-      "state": {
-        "type": "section",
-        "anchor": "coverage"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/01_sections/04_coverage_需求覆盖.png",
-      "relative_path": "01_sections/04_coverage_需求覆盖.png"
-    },
-    {
-      "label": "功能矩阵",
-      "state": {
-        "type": "section",
-        "anchor": "capabilities"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/01_sections/05_capabilities_功能矩阵.png",
-      "relative_path": "01_sections/05_capabilities_功能矩阵.png"
-    },
-    {
-      "label": "场景实验室",
-      "state": {
-        "type": "section",
-        "anchor": "scenarios"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/01_sections/06_scenarios_场景实验室.png",
-      "relative_path": "01_sections/06_scenarios_场景实验室.png"
-    },
-    {
-      "label": "在线流水线",
-      "state": {
-        "type": "section",
-        "anchor": "pipeline"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/01_sections/07_pipeline_在线流水线.png",
-      "relative_path": "01_sections/07_pipeline_在线流水线.png"
-    },
-    {
-      "label": "系统架构",
-      "state": {
-        "type": "section",
-        "anchor": "architecture"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/01_sections/08_architecture_系统架构.png",
-      "relative_path": "01_sections/08_architecture_系统架构.png"
-    },
-    {
-      "label": "安全状态机",
-      "state": {
-        "type": "section",
-        "anchor": "safety"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/01_sections/09_safety_安全状态机.png",
-      "relative_path": "01_sections/09_safety_安全状态机.png"
-    },
-    {
-      "label": "路线对比",
-      "state": {
-        "type": "section",
-        "anchor": "routes"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/01_sections/10_routes_路线对比.png",
-      "relative_path": "01_sections/10_routes_路线对比.png"
-    },
-    {
-      "label": "指标总览",
-      "state": {
-        "type": "section",
-        "anchor": "metrics"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/01_sections/11_metrics_指标总览.png",
-      "relative_path": "01_sections/11_metrics_指标总览.png"
-    },
-    {
-      "label": "在线演示",
-      "state": {
-        "type": "section",
-        "anchor": "demo"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/01_sections/12_demo_在线演示.png",
-      "relative_path": "01_sections/12_demo_在线演示.png"
-    },
-    {
-      "label": "命令字典",
-      "state": {
-        "type": "section",
-        "anchor": "commands"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/01_sections/13_commands_命令字典.png",
-      "relative_path": "01_sections/13_commands_命令字典.png"
-    },
-    {
-      "label": "接口对接",
-      "state": {
-        "type": "section",
-        "anchor": "integration"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/01_sections/14_integration_接口对接.png",
-      "relative_path": "01_sections/14_integration_接口对接.png"
-    },
-    {
-      "label": "运行命令",
-      "state": {
-        "type": "section",
-        "anchor": "runbook"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/01_sections/15_runbook_运行命令.png",
-      "relative_path": "01_sections/15_runbook_运行命令.png"
-    },
-    {
-      "label": "交付依据",
-      "state": {
-        "type": "section",
-        "anchor": "evidence"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/01_sections/16_evidence_交付依据.png",
-      "relative_path": "01_sections/16_evidence_交付依据.png"
-    },
-    {
-      "label": "能力验证",
-      "state": {
-        "type": "section",
-        "anchor": "validation"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/01_sections/17_validation_能力验证.png",
-      "relative_path": "01_sections/17_validation_能力验证.png"
-    },
-    {
-      "label": "交付资源",
-      "state": {
-        "type": "section",
-        "anchor": "delivery"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/01_sections/18_delivery_交付资源.png",
-      "relative_path": "01_sections/18_delivery_交付资源.png"
-    },
-    {
-      "label": "运行配置器",
-      "state": {
-        "type": "workspace",
-        "tab": "builder"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/02_workspace/01_builder_运行配置器.png",
-      "relative_path": "02_workspace/01_builder_运行配置器.png"
-    },
-    {
-      "label": "接口校验器",
-      "state": {
-        "type": "workspace",
-        "tab": "validator"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/02_workspace/02_validator_接口校验器.png",
-      "relative_path": "02_workspace/02_validator_接口校验器.png"
-    },
-    {
-      "label": "JSONL解析器",
-      "state": {
-        "type": "workspace",
-        "tab": "analyzer"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/02_workspace/03_analyzer_JSONL解析器.png",
-      "relative_path": "02_workspace/03_analyzer_JSONL解析器.png"
-    },
-    {
-      "label": "上线检查",
-      "state": {
-        "type": "workspace",
-        "tab": "release"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/02_workspace/04_release_上线检查.png",
-      "relative_path": "02_workspace/04_release_上线检查.png"
-    },
-    {
-      "label": "信号灯故障",
-      "state": {
-        "type": "scenario",
-        "scenario": "signal"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/03_scenarios/01_signal_信号灯故障.png",
-      "relative_path": "03_scenarios/01_signal_信号灯故障.png"
-    },
-    {
-      "label": "事故占道",
-      "state": {
-        "type": "scenario",
-        "scenario": "accident"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/03_scenarios/02_accident_事故占道.png",
-      "relative_path": "03_scenarios/02_accident_事故占道.png"
-    },
-    {
-      "label": "临时交通管制",
-      "state": {
-        "type": "scenario",
-        "scenario": "control"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/03_scenarios/03_control_临时交通管制.png",
-      "relative_path": "03_scenarios/03_control_临时交通管制.png"
-    },
-    {
-      "label": "施工绕行",
-      "state": {
-        "type": "scenario",
-        "scenario": "construction"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/03_scenarios/04_construction_施工绕行.png",
-      "relative_path": "03_scenarios/04_construction_施工绕行.png"
-    },
-    {
-      "label": "检查点接管",
-      "state": {
-        "type": "scenario",
-        "scenario": "checkpoint"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/03_scenarios/05_checkpoint_检查点接管.png",
-      "relative_path": "03_scenarios/05_checkpoint_检查点接管.png"
-    },
-    {
-      "label": "多人干扰",
-      "state": {
-        "type": "scenario",
-        "scenario": "interference"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/03_scenarios/06_interference_多人干扰.png",
-      "relative_path": "03_scenarios/06_interference_多人干扰.png"
-    },
-    {
-      "label": "在线部署主线",
-      "state": {
-        "type": "route",
-        "route": "online"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/04_routes/01_online_在线部署主线.png",
-      "relative_path": "04_routes/01_online_在线部署主线.png"
-    },
-    {
-      "label": "公平评测主线",
-      "state": {
-        "type": "route",
-        "route": "fair"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/04_routes/02_fair_公平评测主线.png",
-      "relative_path": "04_routes/02_fair_公平评测主线.png"
-    },
-    {
-      "label": "上限实验主线",
-      "state": {
-        "type": "route",
-        "route": "upper"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/04_routes/03_upper_上限实验主线.png",
-      "relative_path": "04_routes/03_upper_上限实验主线.png"
-    },
-    {
-      "label": "JSON输出 - 直行",
-      "state": {
-        "type": "integration",
-        "api": "json",
-        "command": "GO_STRAIGHT"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/05_integration/01_json_GO_STRAIGHT_JSON输出_直行.png",
-      "relative_path": "05_integration/01_json_GO_STRAIGHT_JSON输出_直行.png"
-    },
-    {
-      "label": "JSON输出 - 停止",
-      "state": {
-        "type": "integration",
-        "api": "json",
-        "command": "STOP"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/05_integration/02_json_STOP_JSON输出_停止.png",
-      "relative_path": "05_integration/02_json_STOP_JSON输出_停止.png"
-    },
-    {
-      "label": "JSON输出 - 左转待转",
-      "state": {
-        "type": "integration",
-        "api": "json",
-        "command": "LEFT_TURN_WAIT"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/05_integration/03_json_LEFT_TURN_WAIT_JSON输出_左转待转.png",
-      "relative_path": "05_integration/03_json_LEFT_TURN_WAIT_JSON输出_左转待转.png"
-    },
-    {
-      "label": "JSON输出 - 减速慢行",
-      "state": {
-        "type": "integration",
-        "api": "json",
-        "command": "SLOW_DOWN"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/05_integration/04_json_SLOW_DOWN_JSON输出_减速慢行.png",
-      "relative_path": "05_integration/04_json_SLOW_DOWN_JSON输出_减速慢行.png"
-    },
-    {
-      "label": "JSON输出 - 左转",
-      "state": {
-        "type": "integration",
-        "api": "json",
-        "command": "TURN_LEFT"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/05_integration/05_json_TURN_LEFT_JSON输出_左转.png",
-      "relative_path": "05_integration/05_json_TURN_LEFT_JSON输出_左转.png"
-    },
-    {
-      "label": "JSON输出 - 右转",
-      "state": {
-        "type": "integration",
-        "api": "json",
-        "command": "TURN_RIGHT"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/05_integration/06_json_TURN_RIGHT_JSON输出_右转.png",
-      "relative_path": "05_integration/06_json_TURN_RIGHT_JSON输出_右转.png"
-    },
-    {
-      "label": "JSON输出 - 变道",
-      "state": {
-        "type": "integration",
-        "api": "json",
-        "command": "CHANGE_LANE"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/05_integration/07_json_CHANGE_LANE_JSON输出_变道.png",
-      "relative_path": "05_integration/07_json_CHANGE_LANE_JSON输出_变道.png"
-    },
-    {
-      "label": "JSON输出 - 靠边停车",
-      "state": {
-        "type": "integration",
-        "api": "json",
-        "command": "PULL_OVER"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/05_integration/08_json_PULL_OVER_JSON输出_靠边停车.png",
-      "relative_path": "05_integration/08_json_PULL_OVER_JSON输出_靠边停车.png"
-    },
-    {
-      "label": "ROS2 - 直行",
-      "state": {
-        "type": "integration",
-        "api": "ros2",
-        "command": "GO_STRAIGHT"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/05_integration/09_ros2_GO_STRAIGHT_ROS2_直行.png",
-      "relative_path": "05_integration/09_ros2_GO_STRAIGHT_ROS2_直行.png"
-    },
-    {
-      "label": "ROS2 - 停止",
-      "state": {
-        "type": "integration",
-        "api": "ros2",
-        "command": "STOP"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/05_integration/10_ros2_STOP_ROS2_停止.png",
-      "relative_path": "05_integration/10_ros2_STOP_ROS2_停止.png"
-    },
-    {
-      "label": "ROS2 - 左转待转",
-      "state": {
-        "type": "integration",
-        "api": "ros2",
-        "command": "LEFT_TURN_WAIT"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/05_integration/11_ros2_LEFT_TURN_WAIT_ROS2_左转待转.png",
-      "relative_path": "05_integration/11_ros2_LEFT_TURN_WAIT_ROS2_左转待转.png"
-    },
-    {
-      "label": "ROS2 - 减速慢行",
-      "state": {
-        "type": "integration",
-        "api": "ros2",
-        "command": "SLOW_DOWN"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/05_integration/12_ros2_SLOW_DOWN_ROS2_减速慢行.png",
-      "relative_path": "05_integration/12_ros2_SLOW_DOWN_ROS2_减速慢行.png"
-    },
-    {
-      "label": "ROS2 - 左转",
-      "state": {
-        "type": "integration",
-        "api": "ros2",
-        "command": "TURN_LEFT"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/05_integration/13_ros2_TURN_LEFT_ROS2_左转.png",
-      "relative_path": "05_integration/13_ros2_TURN_LEFT_ROS2_左转.png"
-    },
-    {
-      "label": "ROS2 - 右转",
-      "state": {
-        "type": "integration",
-        "api": "ros2",
-        "command": "TURN_RIGHT"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/05_integration/14_ros2_TURN_RIGHT_ROS2_右转.png",
-      "relative_path": "05_integration/14_ros2_TURN_RIGHT_ROS2_右转.png"
-    },
-    {
-      "label": "ROS2 - 变道",
-      "state": {
-        "type": "integration",
-        "api": "ros2",
-        "command": "CHANGE_LANE"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/05_integration/15_ros2_CHANGE_LANE_ROS2_变道.png",
-      "relative_path": "05_integration/15_ros2_CHANGE_LANE_ROS2_变道.png"
-    },
-    {
-      "label": "ROS2 - 靠边停车",
-      "state": {
-        "type": "integration",
-        "api": "ros2",
-        "command": "PULL_OVER"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/05_integration/16_ros2_PULL_OVER_ROS2_靠边停车.png",
-      "relative_path": "05_integration/16_ros2_PULL_OVER_ROS2_靠边停车.png"
-    },
-    {
-      "label": "Autoware - 直行",
-      "state": {
-        "type": "integration",
-        "api": "autoware",
-        "command": "GO_STRAIGHT"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/05_integration/17_autoware_GO_STRAIGHT_Autoware_直行.png",
-      "relative_path": "05_integration/17_autoware_GO_STRAIGHT_Autoware_直行.png"
-    },
-    {
-      "label": "Autoware - 停止",
-      "state": {
-        "type": "integration",
-        "api": "autoware",
-        "command": "STOP"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/05_integration/18_autoware_STOP_Autoware_停止.png",
-      "relative_path": "05_integration/18_autoware_STOP_Autoware_停止.png"
-    },
-    {
-      "label": "Autoware - 左转待转",
-      "state": {
-        "type": "integration",
-        "api": "autoware",
-        "command": "LEFT_TURN_WAIT"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/05_integration/19_autoware_LEFT_TURN_WAIT_Autoware_左转待转.png",
-      "relative_path": "05_integration/19_autoware_LEFT_TURN_WAIT_Autoware_左转待转.png"
-    },
-    {
-      "label": "Autoware - 减速慢行",
-      "state": {
-        "type": "integration",
-        "api": "autoware",
-        "command": "SLOW_DOWN"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/05_integration/20_autoware_SLOW_DOWN_Autoware_减速慢行.png",
-      "relative_path": "05_integration/20_autoware_SLOW_DOWN_Autoware_减速慢行.png"
-    },
-    {
-      "label": "Autoware - 左转",
-      "state": {
-        "type": "integration",
-        "api": "autoware",
-        "command": "TURN_LEFT"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/05_integration/21_autoware_TURN_LEFT_Autoware_左转.png",
-      "relative_path": "05_integration/21_autoware_TURN_LEFT_Autoware_左转.png"
-    },
-    {
-      "label": "Autoware - 右转",
-      "state": {
-        "type": "integration",
-        "api": "autoware",
-        "command": "TURN_RIGHT"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/05_integration/22_autoware_TURN_RIGHT_Autoware_右转.png",
-      "relative_path": "05_integration/22_autoware_TURN_RIGHT_Autoware_右转.png"
-    },
-    {
-      "label": "Autoware - 变道",
-      "state": {
-        "type": "integration",
-        "api": "autoware",
-        "command": "CHANGE_LANE"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/05_integration/23_autoware_CHANGE_LANE_Autoware_变道.png",
-      "relative_path": "05_integration/23_autoware_CHANGE_LANE_Autoware_变道.png"
-    },
-    {
-      "label": "Autoware - 靠边停车",
-      "state": {
-        "type": "integration",
-        "api": "autoware",
-        "command": "PULL_OVER"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/05_integration/24_autoware_PULL_OVER_Autoware_靠边停车.png",
-      "relative_path": "05_integration/24_autoware_PULL_OVER_Autoware_靠边停车.png"
-    },
-    {
-      "label": "CARLA - 直行",
-      "state": {
-        "type": "integration",
-        "api": "carla",
-        "command": "GO_STRAIGHT"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/05_integration/25_carla_GO_STRAIGHT_CARLA_直行.png",
-      "relative_path": "05_integration/25_carla_GO_STRAIGHT_CARLA_直行.png"
-    },
-    {
-      "label": "CARLA - 停止",
-      "state": {
-        "type": "integration",
-        "api": "carla",
-        "command": "STOP"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/05_integration/26_carla_STOP_CARLA_停止.png",
-      "relative_path": "05_integration/26_carla_STOP_CARLA_停止.png"
-    },
-    {
-      "label": "CARLA - 左转待转",
-      "state": {
-        "type": "integration",
-        "api": "carla",
-        "command": "LEFT_TURN_WAIT"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/05_integration/27_carla_LEFT_TURN_WAIT_CARLA_左转待转.png",
-      "relative_path": "05_integration/27_carla_LEFT_TURN_WAIT_CARLA_左转待转.png"
-    },
-    {
-      "label": "CARLA - 减速慢行",
-      "state": {
-        "type": "integration",
-        "api": "carla",
-        "command": "SLOW_DOWN"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/05_integration/28_carla_SLOW_DOWN_CARLA_减速慢行.png",
-      "relative_path": "05_integration/28_carla_SLOW_DOWN_CARLA_减速慢行.png"
-    },
-    {
-      "label": "CARLA - 左转",
-      "state": {
-        "type": "integration",
-        "api": "carla",
-        "command": "TURN_LEFT"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/05_integration/29_carla_TURN_LEFT_CARLA_左转.png",
-      "relative_path": "05_integration/29_carla_TURN_LEFT_CARLA_左转.png"
-    },
-    {
-      "label": "CARLA - 右转",
-      "state": {
-        "type": "integration",
-        "api": "carla",
-        "command": "TURN_RIGHT"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/05_integration/30_carla_TURN_RIGHT_CARLA_右转.png",
-      "relative_path": "05_integration/30_carla_TURN_RIGHT_CARLA_右转.png"
-    },
-    {
-      "label": "CARLA - 变道",
-      "state": {
-        "type": "integration",
-        "api": "carla",
-        "command": "CHANGE_LANE"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/05_integration/31_carla_CHANGE_LANE_CARLA_变道.png",
-      "relative_path": "05_integration/31_carla_CHANGE_LANE_CARLA_变道.png"
-    },
-    {
-      "label": "CARLA - 靠边停车",
-      "state": {
-        "type": "integration",
-        "api": "carla",
-        "command": "PULL_OVER"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/05_integration/32_carla_PULL_OVER_CARLA_靠边停车.png",
-      "relative_path": "05_integration/32_carla_PULL_OVER_CARLA_靠边停车.png"
-    },
-    {
-      "label": "摄像头实时",
-      "state": {
-        "type": "runbook",
-        "tab": "camera"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/06_runbook/01_camera_摄像头实时.png",
-      "relative_path": "06_runbook/01_camera_摄像头实时.png"
-    },
-    {
-      "label": "准备环境",
-      "state": {
-        "type": "runbook",
-        "tab": "setup"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/06_runbook/02_setup_准备环境.png",
-      "relative_path": "06_runbook/02_setup_准备环境.png"
-    },
-    {
-      "label": "训练主线",
-      "state": {
-        "type": "runbook",
-        "tab": "train"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/06_runbook/03_train_训练主线.png",
-      "relative_path": "06_runbook/03_train_训练主线.png"
-    },
-    {
-      "label": "离线视频",
-      "state": {
-        "type": "runbook",
-        "tab": "video"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/06_runbook/04_video_离线视频.png",
-      "relative_path": "06_runbook/04_video_离线视频.png"
-    },
-    {
-      "label": "可视化诊断",
-      "state": {
-        "type": "runbook",
-        "tab": "debug"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/06_runbook/05_debug_可视化诊断.png",
-      "relative_path": "06_runbook/05_debug_可视化诊断.png"
-    },
-    {
-      "label": "闭环自检",
-      "state": {
-        "type": "runbook",
-        "tab": "toy"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/06_runbook/06_toy_闭环自检.png",
-      "relative_path": "06_runbook/06_toy_闭环自检.png"
-    },
-    {
-      "label": "公平评测",
-      "state": {
-        "type": "runbook",
-        "tab": "fair"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/06_runbook/07_fair_公平评测.png",
-      "relative_path": "06_runbook/07_fair_公平评测.png"
-    },
-    {
-      "label": "导出ONNX",
-      "state": {
-        "type": "runbook",
-        "tab": "onnx"
-      },
-      "path": "/Users/boma/Desktop/2026春季比赛/专项赛/检测/提交/codex/最新/showcase_uhd_screenshots/06_runbook/08_onnx_导出ONNX.png",
-      "relative_path": "06_runbook/08_onnx_导出ONNX.png"
+      "relative_path": "01_sections/01_top_首页概览.png",
+      "category": "01_sections",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "01_sections/02_experience_体验路径.png",
+      "category": "01_sections",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "01_sections/03_workspace_系统操作台.png",
+      "category": "01_sections",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "01_sections/04_coverage_需求覆盖.png",
+      "category": "01_sections",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "01_sections/05_capabilities_功能矩阵.png",
+      "category": "01_sections",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "01_sections/06_scenarios_场景实验室.png",
+      "category": "01_sections",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "01_sections/07_pipeline_在线流水线.png",
+      "category": "01_sections",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "01_sections/08_architecture_系统架构.png",
+      "category": "01_sections",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "01_sections/09_safety_安全状态机.png",
+      "category": "01_sections",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "01_sections/10_routes_路线对比.png",
+      "category": "01_sections",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "01_sections/11_metrics_指标总览.png",
+      "category": "01_sections",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "01_sections/12_demo_在线演示.png",
+      "category": "01_sections",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "01_sections/13_commands_命令字典.png",
+      "category": "01_sections",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "01_sections/14_integration_接口对接.png",
+      "category": "01_sections",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "01_sections/15_runbook_运行命令.png",
+      "category": "01_sections",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "01_sections/16_evidence_交付依据.png",
+      "category": "01_sections",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "01_sections/17_validation_能力验证.png",
+      "category": "01_sections",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "01_sections/18_delivery_交付资源.png",
+      "category": "01_sections",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "02_workspace_builder/01_camera_摄像头实时推理.png",
+      "category": "02_workspace_builder",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "02_workspace_builder/02_video_离线视频推理.png",
+      "category": "02_workspace_builder",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "02_workspace_builder/03_debug_单视频诊断.png",
+      "category": "02_workspace_builder",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "02_workspace_builder/04_fair_公平split评测.png",
+      "category": "02_workspace_builder",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "02_workspace_builder/05_wholebody_在线wholebody路线.png",
+      "category": "02_workspace_builder",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "02_workspace_builder/06_onnx_导出ONNX.png",
+      "category": "02_workspace_builder",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "02_workspace_builder/07_toy_闭环自检.png",
+      "category": "02_workspace_builder",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "03_workspace_tools/01_validator_接口校验器_已校验.png",
+      "category": "03_workspace_tools",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "03_workspace_tools/02_analyzer_JSONL解析器_已解析.png",
+      "category": "03_workspace_tools",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "03_workspace_tools/03_release_上线检查_未勾选.png",
+      "category": "03_workspace_tools",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "03_workspace_tools/04_release_上线检查_全部确认.png",
+      "category": "03_workspace_tools",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "04_scenarios/01_signal_信号灯故障.png",
+      "category": "04_scenarios",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "04_scenarios/02_accident_事故占道.png",
+      "category": "04_scenarios",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "04_scenarios/03_control_临时交通管制.png",
+      "category": "04_scenarios",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "04_scenarios/04_construction_施工绕行.png",
+      "category": "04_scenarios",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "04_scenarios/05_checkpoint_检查点接管.png",
+      "category": "04_scenarios",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "04_scenarios/06_interference_多人干扰.png",
+      "category": "04_scenarios",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "05_routes/01_online_在线部署主线.png",
+      "category": "05_routes",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "05_routes/02_fair_公平评测主线.png",
+      "category": "05_routes",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "05_routes/03_upper_上限实验主线.png",
+      "category": "05_routes",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "05_routes/04_wholebody_在线wholebody路线.png",
+      "category": "05_routes",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "06_integration/autoware_Autoware_CHANGE_LANE_变道.png",
+      "category": "06_integration",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "06_integration/autoware_Autoware_GO_STRAIGHT_直行.png",
+      "category": "06_integration",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "06_integration/autoware_Autoware_LEFT_TURN_WAIT_左转待转.png",
+      "category": "06_integration",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "06_integration/autoware_Autoware_PULL_OVER_靠边停车.png",
+      "category": "06_integration",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "06_integration/autoware_Autoware_SLOW_DOWN_减速慢行.png",
+      "category": "06_integration",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "06_integration/autoware_Autoware_STOP_停止.png",
+      "category": "06_integration",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "06_integration/autoware_Autoware_TURN_LEFT_左转.png",
+      "category": "06_integration",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "06_integration/autoware_Autoware_TURN_RIGHT_右转.png",
+      "category": "06_integration",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "06_integration/carla_CARLA_CHANGE_LANE_变道.png",
+      "category": "06_integration",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "06_integration/carla_CARLA_GO_STRAIGHT_直行.png",
+      "category": "06_integration",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "06_integration/carla_CARLA_LEFT_TURN_WAIT_左转待转.png",
+      "category": "06_integration",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "06_integration/carla_CARLA_PULL_OVER_靠边停车.png",
+      "category": "06_integration",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "06_integration/carla_CARLA_SLOW_DOWN_减速慢行.png",
+      "category": "06_integration",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "06_integration/carla_CARLA_STOP_停止.png",
+      "category": "06_integration",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "06_integration/carla_CARLA_TURN_LEFT_左转.png",
+      "category": "06_integration",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "06_integration/carla_CARLA_TURN_RIGHT_右转.png",
+      "category": "06_integration",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "06_integration/json_JSON输出_CHANGE_LANE_变道.png",
+      "category": "06_integration",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "06_integration/json_JSON输出_GO_STRAIGHT_直行.png",
+      "category": "06_integration",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "06_integration/json_JSON输出_LEFT_TURN_WAIT_左转待转.png",
+      "category": "06_integration",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "06_integration/json_JSON输出_PULL_OVER_靠边停车.png",
+      "category": "06_integration",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "06_integration/json_JSON输出_SLOW_DOWN_减速慢行.png",
+      "category": "06_integration",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "06_integration/json_JSON输出_STOP_停止.png",
+      "category": "06_integration",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "06_integration/json_JSON输出_TURN_LEFT_左转.png",
+      "category": "06_integration",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "06_integration/json_JSON输出_TURN_RIGHT_右转.png",
+      "category": "06_integration",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "06_integration/ros2_ROS2_CHANGE_LANE_变道.png",
+      "category": "06_integration",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "06_integration/ros2_ROS2_GO_STRAIGHT_直行.png",
+      "category": "06_integration",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "06_integration/ros2_ROS2_LEFT_TURN_WAIT_左转待转.png",
+      "category": "06_integration",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "06_integration/ros2_ROS2_PULL_OVER_靠边停车.png",
+      "category": "06_integration",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "06_integration/ros2_ROS2_SLOW_DOWN_减速慢行.png",
+      "category": "06_integration",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "06_integration/ros2_ROS2_STOP_停止.png",
+      "category": "06_integration",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "06_integration/ros2_ROS2_TURN_LEFT_左转.png",
+      "category": "06_integration",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "06_integration/ros2_ROS2_TURN_RIGHT_右转.png",
+      "category": "06_integration",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "07_runbook/01_camera_摄像头实时.png",
+      "category": "07_runbook",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "07_runbook/02_setup_准备环境.png",
+      "category": "07_runbook",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "07_runbook/03_train_训练主线.png",
+      "category": "07_runbook",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "07_runbook/04_video_离线视频.png",
+      "category": "07_runbook",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "07_runbook/05_debug_可视化诊断.png",
+      "category": "07_runbook",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "07_runbook/06_toy_闭环自检.png",
+      "category": "07_runbook",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "07_runbook/07_fair_公平评测.png",
+      "category": "07_runbook",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "07_runbook/08_onnx_导出ONNX.png",
+      "category": "07_runbook",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "08_demo_frontend/01_demo_提交版总览视频.png",
+      "category": "08_demo_frontend",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "08_demo_frontend/02_demo_在线离线视频卡片.png",
+      "category": "08_demo_frontend",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "08_demo_frontend/03_demo_实拍视频卡片_上半部分.png",
+      "category": "08_demo_frontend",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "08_demo_frontend/04_demo_实拍视频卡片_中间部分.png",
+      "category": "08_demo_frontend",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    {
+      "relative_path": "08_demo_frontend/05_demo_实拍视频卡片_下半部分.png",
+      "category": "08_demo_frontend",
+      "pixel_size": {
+        "width": 3840,
+        "height": 2160
+      }
     }
-  ],
-  "warnings": [],
-  "browser_console": []
+  ]
 }
